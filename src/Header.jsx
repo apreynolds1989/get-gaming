@@ -10,7 +10,7 @@ const pages = ['Home', 'Games', 'Gallery', 'Contact'];
 
 const ResponsiveAppBar = () => {
     return (
-        <AppBar position='fixed' color='transparent'>
+        <AppBar position='fixed' style={{ backgroundColor: 'white' }}>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
                     <GetGamingLogo />
