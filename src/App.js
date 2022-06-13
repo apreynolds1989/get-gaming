@@ -9,7 +9,7 @@ function App() {
     return (
       <>
         <Header />
-        <Splash sx={{ mb: 5 }} />
+        <Splash />
         <EventCard />  
       </>
     );

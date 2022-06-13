@@ -11,6 +11,7 @@ const EventCard = () => {
         flexDirection={'column'}
         justifyContent="center"
         alignItems="center"
+        mb={5}
         >
             <Typography variant='h3' color='#6B3FA0' sx={{ fontWeight: 'bold' }}>
                 UPCOMING EVENT

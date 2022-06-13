@@ -6,7 +6,7 @@ import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 import { Box } from '@mui/system';
 import Button from '@mui/material/Button';
 
-const pages = ['Home', 'Games', 'Gallery', 'Contact'];
+const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
 const ResponsiveAppBar = () => {
     return (
