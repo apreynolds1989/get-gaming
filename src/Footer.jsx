@@ -21,10 +21,19 @@ const Footer = () => {
                     alignItems="center"
                     mb={5}
                 >
-                    <WhiteGetGaming />
                     <Box
                         display="flex"
-                        flexDirection='row'
+                        flexDirection='column'
+                        justifyContent="center"
+                        alignItems="center"
+                    >
+                        <WhiteGetGaming />
+                        <Box borderTop={1} borderColor='white' >
+                            <small>Events in partnership with <a className='footer' href="http://https://www.getcoding.ca/">Get Coding</a></small>
+                        </Box>
+                    </Box>
+                    <Box
+                        display="flex"
                         justifyContent="center"
                         alignItems="center"
                     >
@@ -50,7 +59,7 @@ const Footer = () => {
                     alignItems="center"
                     mb={5}
                 >
-                    <small>Copyright &copy; Weekly Games Tracker</small>
+                    <small>Copyright &copy; 2022 - Get Gaming</small>
                 </Box>     
             </Box>
         </div>
