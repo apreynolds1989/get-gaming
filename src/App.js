@@ -44,7 +44,7 @@ function App() {
             alignItems="center"
           >
             <DownArrow />
-            <GameCard gameName='Five Tribes' desc={gameOneDesc} />
+            <GameCard gameName='Five Tribes' desc={gameOneDesc} embedId='hfvDro2ecFw' />
           </Box>
           <Box
             display="flex"
@@ -53,7 +53,7 @@ function App() {
             alignItems="center"
           >
             <DownArrow />
-            <GameCard gameName='Cosmic Encounter' desc={gameTwoDesc} />
+            <GameCard gameName='Cosmic Encounter' desc={gameTwoDesc} embedId='hIwsQ774Yi8' />
           </Box>
         </Box>
         <Footer />  

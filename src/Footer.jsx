@@ -45,7 +45,7 @@ const Footer = () => {
                             return (
                                 <Button
                                 key={page}
-                                sx={{ my: 2, color: '#6B3FA0', display: 'block', fontSize: 14, borderRight: borderSize, borderColor: 'white', borderRadius: 0 }}
+                                sx={{ my: 2, color: 'white', display: 'block', fontSize: 14, borderRight: borderSize, borderColor: 'white', borderRadius: 0 }}
                                 >
                                     {page}
                                 </Button>

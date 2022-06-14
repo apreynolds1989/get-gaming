@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import BoardGame from './img/BoardGame.png';
 import EmbedVideo from './EmbedVideo';
 
-const GameCard = ({ gameName, desc }) => {
+const GameCard = ({ gameName, desc, embedId }) => {
     return (
         <Box
         display="flex"
@@ -35,7 +35,7 @@ const GameCard = ({ gameName, desc }) => {
                         <Typography fontWeight={'bold'} borderBottom={1} borderColor={'gray'}>
                             How to Play?
                         </Typography>
-                        <EmbedVideo embedId="hfvDro2ecFw" />
+                        <EmbedVideo embedId={embedId} />
                     </Box>
                 </CardContent>
             </Card>
