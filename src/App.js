@@ -7,6 +7,7 @@ import Splash from './Splash';
 import EventCard from './EventCard';
 import DownArrow from './DownArrow';
 import GameCard from './GameCard';
+import Footer from './Footer';
 
 const gameOneDesc = `Crossing into the Land of 1001 Nights, your caravan arrives at the fabled Sultanate of Naqala. The old sultan just died and control of Naqala is up for grabs! The oracles foretold of strangers who would maneuver the Five Tribes to gain influence over the legendary city-state. Will you fulfill the prophecy? Invoke the old Djinns and move the Tribes into position at the right time, and the Sultanate may become yours!
 
@@ -54,7 +55,8 @@ function App() {
             <DownArrow />
             <GameCard gameName='Cosmic Encounter' desc={gameTwoDesc} />
           </Box>
-        </Box>  
+        </Box>
+        <Footer />  
       </>
     );
 }
