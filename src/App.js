@@ -9,6 +9,10 @@ import DownArrow from './DownArrow';
 import GameCard from './GameCard';
 import Footer from './Footer';
 
+const gameOneURL = 'https://cf.geekdo-images.com/dmo-WD6HZHVUPrbVHunaTw__itemrep/img/4RfYsuXBO2FrnJynkXV5zTj7PU4=/fit-in/246x300/filters:strip_icc()/pic2055255.jpg';
+
+const gameTwoURL = 'https://cf.geekdo-images.com/S8cE-Ld7XP5sVz-upKJ-Bg__itemrep/img/1jghBEL53dxF3twlsYyNTNWTPp0=/fit-in/246x300/filters:strip_icc()/pic1521633.jpg';
+
 const gameOneDesc = `Crossing into the Land of 1001 Nights, your caravan arrives at the fabled Sultanate of Naqala. The old sultan just died and control of Naqala is up for grabs! The oracles foretold of strangers who would maneuver the Five Tribes to gain influence over the legendary city-state. Will you fulfill the prophecy? Invoke the old Djinns and move the Tribes into position at the right time, and the Sultanate may become yours!
 
 Designed by Bruno Cathala, Five Tribes builds on a long tradition of German-style games that feature wooden meeples. Here, in a unique twist on the now-standard "worker placement" genre, the game begins with the meeples already in place – and players must cleverly maneuver them over the villages, markets, oases, and sacred places tiles that make up Naqala. How, when, and where you dis-place these Five Tribes of Assassins, Elders, Builders, Merchants, and Viziers determine your victory or failure.
@@ -44,7 +48,12 @@ function App() {
             alignItems="center"
           >
             <DownArrow />
-            <GameCard gameName='Five Tribes' desc={gameOneDesc} embedId='hfvDro2ecFw' />
+            <GameCard
+              imgURL={gameOneURL}
+              alt='Five Tribes game box'
+              gameName='Five Tribes' 
+              desc={gameOneDesc} 
+              embedId='hfvDro2ecFw' />
           </Box>
           <Box
             display="flex"
@@ -53,7 +62,12 @@ function App() {
             alignItems="center"
           >
             <DownArrow />
-            <GameCard gameName='Cosmic Encounter' desc={gameTwoDesc} embedId='hIwsQ774Yi8' />
+            <GameCard 
+              imgURL={gameTwoURL}
+              alt='Cosmic Encounter'
+              gameName='Cosmic Encounter' 
+              desc={gameTwoDesc} 
+              embedId='hIwsQ774Yi8' />
           </Box>
         </Box>
         <Footer />  
