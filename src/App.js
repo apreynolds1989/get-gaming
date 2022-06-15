@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import './App.css';
-import Header from './Header';
+import HeaderAppBar from './HeaderAppBar';
 import Splash from './Splash';
 import EventCard from './EventCard';
 import DownArrow from './DownArrow';
@@ -28,10 +28,10 @@ In Cosmic Encounter, each player becomes the leader of one of dozens of alien ra
 
 The object of the game is to establish colonies in other players' planetary systems. The winner(s) are the first player(s) to have five colonies on any planets outside his or her home system. These colonies may all be in one system or scattered over multiple systems. The players must use force, cunning, and diplomacy to ensure their victory. And, because alliances are a key part of the game, multiple players can win together!`
 
-function App() {
+const App = () => {
     return (
       <>
-        <Header />
+        <HeaderAppBar />
         <Splash />
         <EventCard />
         <Box

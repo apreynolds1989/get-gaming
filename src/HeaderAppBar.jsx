@@ -3,12 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
-import { Box } from '@mui/system';
+import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
 
 const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
-const ResponsiveAppBar = () => {
+const HeaderAppBar = () => {
     return (
         <AppBar position='fixed' style={{ backgroundColor: 'white' }}>
             <Container maxWidth='xl'>
@@ -30,4 +30,4 @@ const ResponsiveAppBar = () => {
     );
 };
 
-export default ResponsiveAppBar;
+export default HeaderAppBar;
