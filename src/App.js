@@ -1,5 +1,4 @@
 import React from 'react';
-// import * as React from 'react';  <--- What's the difference??
 import Box from '@mui/material/Box';
 import './App.css';
 import Header from './Header';
