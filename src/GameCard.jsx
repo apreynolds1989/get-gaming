@@ -17,7 +17,7 @@ const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
             <Typography variant='h4' color='#6B3FA0' sx={{ fontWeight: 'bold' }}>
                 {gameName}
             </Typography>
-            <Card sx={{ minWidth: 275, maxWidth:500, maxHeight:1000, px: 10, mt: 1, border: 1, borderColor: 'black', bgcolor: '#F0ECF6' }}>
+            <Card sx={{ minWidth: 275, maxWidth:500, maxHeight:1000, px: 10, mt: 1, bgcolor: '#F0ECF6' }}>
                 <CardContent>
                     <Box display="flex" justifyContent='center' >
                         <img src={imgURL} alt={alt} height={200} />

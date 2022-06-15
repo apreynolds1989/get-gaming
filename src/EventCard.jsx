@@ -16,7 +16,7 @@ const EventCard = () => {
             <Typography variant='h3' color='#6B3FA0' sx={{ fontWeight: 'bold' }}>
                 UPCOMING EVENT
             </Typography>
-            <Card sx={{ minWidth: 275, px: 10, mt: 1, border: 1, borderColor: 'black', bgcolor: '#F0ECF6' }}>
+            <Card sx={{ minWidth: 275, px: 10, mt: 1, bgcolor: '#F0ECF6' }}>
                 <CardContent>
                     <Box display="flex" flexDirection={'row'} justifyContent='space-around' py={1}>
                         <Box flexDirection={'column'} textAlign={'center'}>
