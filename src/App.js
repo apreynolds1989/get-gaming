@@ -4,8 +4,7 @@ import './App.css';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Splash } from './Splash';
 import { EventCard } from './EventCard';
-import { DownArrow } from './DownArrow';
-import { GameCard } from './GameCard';
+import { GameDisplay } from './GameDisplay';
 import { Footer } from './Footer';
 
 const gameOneURL = 'https://cf.geekdo-images.com/dmo-WD6HZHVUPrbVHunaTw__itemrep/img/4RfYsuXBO2FrnJynkXV5zTj7PU4=/fit-in/246x300/filters:strip_icc()/pic2055255.jpg';
@@ -40,34 +39,20 @@ export const App = () => {
           justifyContent="space-around"
           alignItems="center"
         >
-          <Box
-            display="flex"
-            flexDirection={'column'}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <DownArrow />
-            <GameCard
-              imgURL={gameOneURL}
-              alt='Five Tribes game box'
-              gameName='Five Tribes' 
-              desc={gameOneDesc} 
-              embedId='hfvDro2ecFw' />
-          </Box>
-          <Box
-            display="flex"
-            flexDirection={'column'}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <DownArrow />
-            <GameCard 
-              imgURL={gameTwoURL}
-              alt='Cosmic Encounter'
-              gameName='Cosmic Encounter' 
-              desc={gameTwoDesc} 
-              embedId='hIwsQ774Yi8' />
-          </Box>
+          <GameDisplay 
+            imgURL={gameOneURL}
+            alt='Five Tribes game box'
+            gameName='Five Tribes' 
+            desc={gameOneDesc} 
+            embedId='hfvDro2ecFw'
+          />
+          <GameDisplay 
+            imgURL={gameTwoURL}
+            alt='Cosmic Encounter'
+            gameName='Cosmic Encounter' 
+            desc={gameTwoDesc} 
+            embedId='hIwsQ774Yi8' 
+          />
         </Box>
         <Footer />  
       </>
