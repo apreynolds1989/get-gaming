@@ -11,13 +11,14 @@ export const GameDisplay = ({ imgURL, alt, gameName, desc, embedId }) => {
         justifyContent="center"
         alignItems="center"
         >
-        <DownArrow />
-        <GameCard
+            <DownArrow />
+            <GameCard
             imgURL={imgURL}
             alt={alt}
             gameName={gameName} 
             desc={desc} 
-            embedId={embedId} />
+            embedId={embedId} 
+            />
         </Box>
     );
 };

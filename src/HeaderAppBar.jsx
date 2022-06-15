@@ -10,15 +10,32 @@ const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
 export const HeaderAppBar = () => {
     return (
-        <AppBar position='fixed' style={{ backgroundColor: 'white' }}>
+        <AppBar 
+        position='fixed' 
+        style={{ backgroundColor: 'white' }}
+        >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
                     <GetGamingLogo />
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'flex-end' } }}>
+                    <Box 
+                    sx={{ 
+                        flexGrow: 1, 
+                        display: 
+                            { xs: 'none', 
+                              md: 'flex', 
+                              justifyContent: 'flex-end' 
+                            }
+                     }}
+                    >
                         {pages.map((page) => (
                             <Button
                                 key={page}
-                                sx={{ my: 2, color: '#6B3FA0', display: 'block', fontSize: 18 }}
+                                sx={{ 
+                                    my: 2, 
+                                    color: '#6B3FA0', 
+                                    display: 'block', 
+                                    fontSize: 18 
+                                }}
                             >
                                 {page}
                             </Button>

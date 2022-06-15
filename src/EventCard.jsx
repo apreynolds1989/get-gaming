@@ -13,13 +13,32 @@ export const EventCard = ({ date, time, location, openTo }) => {
         alignItems="center"
         mb={5}
         >
-            <Typography variant='h3' color='#6B3FA0' sx={{ fontWeight: 'bold' }}>
+            <Typography 
+            variant='h3' 
+            color='#6B3FA0' 
+            sx={{ fontWeight: 'bold' }}
+            >
                 UPCOMING EVENT
             </Typography>
-            <Card sx={{ minWidth: 275, px: 10, mt: 1, bgcolor: '#F0ECF6' }}>
+            <Card 
+            sx={{ 
+                minWidth: 275, 
+                px: 10, 
+                mt: 1, 
+                bgcolor: '#F0ECF6' 
+              }}
+            >
                 <CardContent>
-                    <Box display="flex" flexDirection={'row'} justifyContent='space-around' py={1}>
-                        <Box flexDirection={'column'} textAlign={'center'}>
+                    <Box 
+                    display="flex" 
+                    flexDirection={'row'} 
+                    justifyContent='space-around' p
+                    y={1}
+                    >
+                        <Box 
+                        flexDirection={'column'} 
+                        textAlign={'center'}
+                        >
                             <Typography fontWeight={'bold'}>
                                 Date
                             </Typography>
@@ -36,7 +55,11 @@ export const EventCard = ({ date, time, location, openTo }) => {
                             </Typography>
                         </Box>
                     </Box>
-                    <Box flexDirection={'column'} textAlign={'center'} py={1}>
+                    <Box 
+                    flexDirection={'column'} 
+                    textAlign={'center'} 
+                    py={1}
+                    >
                         <Typography fontWeight={'bold'}>
                             Location
                         </Typography>
@@ -44,7 +67,11 @@ export const EventCard = ({ date, time, location, openTo }) => {
                             {location}
                         </Typography>
                     </Box>
-                    <Box flexDirection={'column'} textAlign={'center'} py={1}>
+                    <Box 
+                    flexDirection={'column'} 
+                    textAlign={'center'} 
+                    py={1}
+                    >
                         <Typography fontWeight={'bold'}>
                             Open to:
                         </Typography>

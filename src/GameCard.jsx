@@ -14,24 +14,56 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
         alignItems="center"
         mb={5}
         >
-            <Typography variant='h4' color='#6B3FA0' sx={{ fontWeight: 'bold' }}>
+            <Typography 
+            variant='h4' 
+            color='#6B3FA0' 
+            sx={{ fontWeight: 'bold' }}
+            >
                 {gameName}
             </Typography>
-            <Card sx={{ minWidth: 275, maxWidth:500, maxHeight:1000, px: 10, mt: 1, bgcolor: '#F0ECF6' }}>
+            <Card 
+            sx={{ 
+                minWidth: 275, 
+                maxWidth:500, 
+                maxHeight:1000, 
+                px: 10, 
+                mt: 1, 
+                bgcolor: '#F0ECF6' 
+              }}
+            >
                 <CardContent>
-                    <Box display="flex" justifyContent='center' >
+                    <Box 
+                    display="flex" 
+                    justifyContent='center' 
+                    >
                         <img src={imgURL} alt={alt} height={200} />
                     </Box>
-                    <Box flexDirection={'column'} textAlign={'left'} py={1}>
-                        <Typography fontWeight={'bold'} borderBottom={1} borderColor={'gray'}>
+                    <Box 
+                    flexDirection={'column'} 
+                    textAlign={'left'}
+                    py={1}
+                    >
+                        <Typography 
+                        fontWeight={'bold'} 
+                        borderBottom={1} 
+                        borderColor={'gray'}
+                        >
                             Description
                         </Typography>
                         <Typography style={{ whiteSpace: 'break-spaces' }}>
                             {desc}
                         </Typography>
                     </Box>
-                    <Box flexDirection={'column'} textAlign={'left'} py={1}>
-                        <Typography fontWeight={'bold'} borderBottom={1} borderColor={'gray'}>
+                    <Box 
+                    flexDirection={'column'}
+                    textAlign={'left'} 
+                    py={1}
+                    >
+                        <Typography 
+                        fontWeight={'bold'} 
+                        borderBottom={1} 
+                        borderColor={'gray'}
+                        >
                             How to Play?
                         </Typography>
                         <EmbedVideo embedId={embedId} />

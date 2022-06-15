@@ -4,8 +4,18 @@ import Container from '@mui/material/Container';
 
 export const Splash = () => {
     return (
-        <Container maxWidth='xl' sx={{ mt: 7, backgroundImage: `url(${background})`, backgroundRepeat:'no-repeat', backgroundSize: 'contain', height: 600, width: 1000 }}>
-             
+        <Container 
+        maxWidth='xl' 
+        sx={{ 
+            mt: 7, 
+            backgroundImage: `url(${background})`, 
+            backgroundRepeat:'no-repeat', 
+            backgroundSize: 'contain', 
+            height: 600, 
+            width: 1000 
+          }}
+        >
+        
         </Container>
     )
 }
