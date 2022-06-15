@@ -26,7 +26,7 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                         <Typography fontWeight={'bold'} borderBottom={1} borderColor={'gray'}>
                             Description
                         </Typography>
-                        <Typography>
+                        <Typography style={{ whiteSpace: 'break-spaces' }}>
                             {desc}
                         </Typography>
                     </Box>

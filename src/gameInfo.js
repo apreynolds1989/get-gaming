@@ -15,13 +15,9 @@ export const gameInfo = {
         imgUrl: 'https://cf.geekdo-images.com/S8cE-Ld7XP5sVz-upKJ-Bg__itemrep/img/1jghBEL53dxF3twlsYyNTNWTPp0=/fit-in/246x300/filters:strip_icc()/pic1521633.jpg',
         alt: 'Cosmic Encounter game',
         embedId: 'hIwsQ774Yi8',
-        desc: `Build a galactic empire...
+        desc: `Build a galactic empire... In the depths of space, the alien races of the Cosmos vie with each other for control of the universe. Alliances form and shift from moment to moment, while cataclysmic battles send starships screaming into the warp.
         
-        In the depths of space, the alien races of the Cosmos vie with each other for control of the universe. Alliances form and shift from moment to moment, while cataclysmic battles send starships screaming into the warp.
-        
-        This classic game of alien politics returns from the warp once more!
-        
-        In Cosmic Encounter, each player becomes the leader of one of dozens of alien races, each with its own unique power. On a player's turn, he or she becomes the offense. The offense encounters another player on a planet by moving a group of his or her ships through the hyperspace gate to that planet. Both sides can invite allies and play cards to try and tip the encounter in their favor.
+        This classic game of alien politics returns from the warp once more! In Cosmic Encounter, each player becomes the leader of one of dozens of alien races, each with its own unique power. On a player's turn, he or she becomes the offense. The offense encounters another player on a planet by moving a group of his or her ships through the hyperspace gate to that planet. Both sides can invite allies and play cards to try and tip the encounter in their favor.
        
         The object of the game is to establish colonies in other players' planetary systems. The winner(s) are the first player(s) to have five colonies on any planets outside his or her home system. These colonies may all be in one system or scattered over multiple systems. The players must use force, cunning, and diplomacy to ensure their victory. And, because alliances are a key part of the game, multiple players can win together!`
     }
