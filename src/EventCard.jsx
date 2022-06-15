@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export const EventCard = () => {
+export const EventCard = ({ date, time, location, openTo }) => {
     return (
         <Box
         display="flex"
@@ -24,7 +24,7 @@ export const EventCard = () => {
                                 Date
                             </Typography>
                             <Typography>
-                                TBD
+                                {date}
                             </Typography>
                         </Box>
                         <Box flexDirection={'column'}>
@@ -32,7 +32,7 @@ export const EventCard = () => {
                                Time
                             </Typography>
                             <Typography>
-                                TBD
+                                {time}
                             </Typography>
                         </Box>
                     </Box>
@@ -41,7 +41,7 @@ export const EventCard = () => {
                             Location
                         </Typography>
                         <Typography>
-                            TBD
+                            {location}
                         </Typography>
                     </Box>
                     <Box flexDirection={'column'} textAlign={'center'} py={1}>
@@ -49,7 +49,7 @@ export const EventCard = () => {
                             Open to:
                         </Typography>
                         <Typography>
-                            TBD
+                            {openTo}
                         </Typography>
                     </Box>
                 </CardContent>

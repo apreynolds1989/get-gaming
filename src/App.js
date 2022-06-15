@@ -32,7 +32,12 @@ export const App = () => {
       <>
         <HeaderAppBar />
         <Splash />
-        <EventCard />
+        <EventCard 
+          date='TBD'
+          time='TBD'
+          location='TBD'
+          openTo='TBD'
+        />
         <Box
           display="flex"
           flexDirection={'row'}
