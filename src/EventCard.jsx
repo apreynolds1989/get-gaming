@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-const EventCard = () => {
+export const EventCard = () => {
     return (
         <Box
         display="flex"
@@ -57,5 +57,3 @@ const EventCard = () => {
         </Box>
     );  
 };
-
-export default EventCard;

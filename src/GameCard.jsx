@@ -3,9 +3,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import EmbedVideo from './EmbedVideo';
+import { EmbedVideo } from './EmbedVideo';
 
-const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
+export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
     return (
         <Box
         display="flex"
@@ -41,5 +41,3 @@ const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
         </Box>
     );  
 };
-
-export default GameCard;

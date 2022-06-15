@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import './App.css';
-import HeaderAppBar from './HeaderAppBar';
-import Splash from './Splash';
-import EventCard from './EventCard';
-import DownArrow from './DownArrow';
-import GameCard from './GameCard';
-import Footer from './Footer';
+import { HeaderAppBar } from './HeaderAppBar';
+import { Splash } from './Splash';
+import { EventCard } from './EventCard';
+import { DownArrow } from './DownArrow';
+import { GameCard } from './GameCard';
+import { Footer } from './Footer';
 
 const gameOneURL = 'https://cf.geekdo-images.com/dmo-WD6HZHVUPrbVHunaTw__itemrep/img/4RfYsuXBO2FrnJynkXV5zTj7PU4=/fit-in/246x300/filters:strip_icc()/pic2055255.jpg';
 
@@ -28,7 +28,7 @@ In Cosmic Encounter, each player becomes the leader of one of dozens of alien ra
 
 The object of the game is to establish colonies in other players' planetary systems. The winner(s) are the first player(s) to have five colonies on any planets outside his or her home system. These colonies may all be in one system or scattered over multiple systems. The players must use force, cunning, and diplomacy to ensure their victory. And, because alliances are a key part of the game, multiple players can win together!`
 
-const App = () => {
+export const App = () => {
     return (
       <>
         <HeaderAppBar />
@@ -73,5 +73,3 @@ const App = () => {
       </>
     );
 }
-
-export default App;

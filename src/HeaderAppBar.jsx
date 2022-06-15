@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 
 const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
-const HeaderAppBar = () => {
+export const HeaderAppBar = () => {
     return (
         <AppBar position='fixed' style={{ backgroundColor: 'white' }}>
             <Container maxWidth='xl'>
@@ -29,5 +29,3 @@ const HeaderAppBar = () => {
         </AppBar>
     );
 };
-
-export default HeaderAppBar;

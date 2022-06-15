@@ -5,7 +5,7 @@ import { ReactComponent as WhiteGetGaming } from './img/WhiteGetGaming.svg';
 
 const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <div className='footer'>
             <Box
@@ -65,5 +65,3 @@ const Footer = () => {
         </div>
     );
 };
-
-export default Footer;
