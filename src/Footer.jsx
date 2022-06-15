@@ -7,7 +7,7 @@ const pages = ['Home', 'Library', 'Gallery', 'Contact'];
 
 export const Footer = () => {
     return (
-        <div className='footer'>
+        <Box mx={0} sx={{ backgroundColor: 'black', color: 'white' }}>
             <Box
                 display="flex"
                 flexDirection='column'
@@ -29,7 +29,7 @@ export const Footer = () => {
                     >
                         <WhiteGetGaming />
                         <Box borderTop={1} borderColor='white' >
-                            <small>Events in partnership with <a className='footer' href="http://https://www.getcoding.ca/">Get Coding</a></small>
+                            <small>Events in partnership with <a style={{ color: 'white' }} href="http://https://www.getcoding.ca/">Get Coding</a></small>
                         </Box>
                     </Box>
                     <Box
@@ -62,6 +62,6 @@ export const Footer = () => {
                     <small>Copyright &copy; 2022 - Get Gaming</small>
                 </Box>     
             </Box>
-        </div>
+        </Box>
     );
 };
