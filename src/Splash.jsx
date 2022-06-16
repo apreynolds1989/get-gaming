@@ -6,7 +6,11 @@ export const Splash = () => {
     return (
         <Container 
         maxWidth='xl' 
-        sx={{ 
+        sx={{
+            display: {
+                xs: 'none',
+                sm: 'block'
+            }, 
             mt: 7, 
             backgroundImage: `url(${background})`, 
             backgroundRepeat:'no-repeat', 

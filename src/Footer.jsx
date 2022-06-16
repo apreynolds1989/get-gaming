@@ -11,7 +11,7 @@ export const Footer = () => {
         mx={0} 
         sx={{ 
             backgroundColor: 'black', 
-            color: 'white' 
+            color: 'white',
           }}
         >
             <Box
@@ -22,7 +22,12 @@ export const Footer = () => {
             >
                 <Box
                 display="flex"
-                flexDirection='row'
+                sx={{ 
+                    flexDirection: {
+                      xs: 'column-reverse',
+                      md: 'row'
+                    }
+                  }}
                 justifyContent="space-around"
                 alignItems="center"
                 mb={5}
@@ -39,7 +44,7 @@ export const Footer = () => {
                         borderColor='white' 
                         >
                             <small>
-                                Events in partnership with 
+                                Events in partnership with&nbsp; 
                                 <a style={{ color: 'white' }}
                                    href="http://https://www.getcoding.ca/">
                                        Get Coding
@@ -51,6 +56,21 @@ export const Footer = () => {
                     display="flex"
                     justifyContent="center"
                     alignItems="center"
+                    borderColor='white'
+                    sx={{
+                        borderBottom: {
+                            xs: 1,
+                            md: 0
+                        },
+                        borderTop: {
+                            xs: 1,
+                            md: 0
+                        },
+                        marginBottom: {
+                            xs: 5,
+                            md: 0
+                        }
+                    }}
                     >
                         {pages.map((page, i, arr) => {
                             let borderSize;

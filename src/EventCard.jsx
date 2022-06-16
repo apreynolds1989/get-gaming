@@ -12,18 +12,44 @@ export const EventCard = ({ date, time, location, openTo }) => {
         justifyContent="center"
         alignItems="center"
         mb={5}
+        sx={{
+            marginTop: {
+                xs: 15,
+                sm: 5
+            }
+        }}
         >
+            <Typography 
+            variant='h4' 
+            color='#6B3FA0' 
+            sx={{ 
+                fontWeight: 'bold',
+                display: {
+                    xs: 'block',
+                    sm: 'none'
+                }
+            }}
+            >
+                UPCOMING EVENT
+            </Typography>
             <Typography 
             variant='h3' 
             color='#6B3FA0' 
-            sx={{ fontWeight: 'bold' }}
+            sx={{ 
+                fontWeight: 'bold',
+                display: {
+                    xs: 'none',
+                    sm: 'block'
+                }
+            }}
             >
                 UPCOMING EVENT
             </Typography>
             <Card 
             sx={{ 
-                minWidth: 275, 
-                px: 10, 
+                borderRadius: 5,
+                minWidth: 200, 
+                px: 7, 
                 mt: 1, 
                 bgcolor: '#F0ECF6' 
               }}
@@ -32,25 +58,35 @@ export const EventCard = ({ date, time, location, openTo }) => {
                     <Box 
                     display="flex" 
                     flexDirection={'row'} 
-                    justifyContent='space-around' p
-                    y={1}
+                    justifyContent='space-between' 
+                    py={1}
                     >
                         <Box 
                         flexDirection={'column'} 
                         textAlign={'center'}
+                        paddingRight={3}
                         >
-                            <Typography fontWeight={'bold'}>
+                            <Typography 
+                            fontWeight={'bold'}
+                            color='#6B3FA0'
+                            >
                                 Date
                             </Typography>
-                            <Typography>
+                            <Typography color='#201C77'>
                                 {date}
                             </Typography>
                         </Box>
-                        <Box flexDirection={'column'}>
-                            <Typography fontWeight={'bold'}>
+                        <Box 
+                        flexDirection={'column'}
+                        paddingLeft={3}
+                        >
+                            <Typography 
+                            fontWeight={'bold'}
+                            color='#6B3FA0'
+                            >
                                Time
                             </Typography>
-                            <Typography>
+                            <Typography color='#201C77'>
                                 {time}
                             </Typography>
                         </Box>
@@ -60,10 +96,13 @@ export const EventCard = ({ date, time, location, openTo }) => {
                     textAlign={'center'} 
                     py={1}
                     >
-                        <Typography fontWeight={'bold'}>
+                        <Typography 
+                        fontWeight={'bold'}
+                        color='#6B3FA0'
+                        >
                             Location
                         </Typography>
-                        <Typography>
+                        <Typography color='#201C77'>
                             {location}
                         </Typography>
                     </Box>
@@ -72,10 +111,12 @@ export const EventCard = ({ date, time, location, openTo }) => {
                     textAlign={'center'} 
                     py={1}
                     >
-                        <Typography fontWeight={'bold'}>
+                        <Typography 
+                        fontWeight={'bold'}
+                        color='#6B3FA0'>
                             Open to:
                         </Typography>
-                        <Typography>
+                        <Typography color='#201C77'>
                             {openTo}
                         </Typography>
                     </Box>

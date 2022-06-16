@@ -23,10 +23,12 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
             </Typography>
             <Card 
             sx={{ 
-                minWidth: 275, 
+                borderRadius: 5,
+                minWidth: 150, 
                 maxWidth:500, 
                 maxHeight:1000, 
-                px: 10, 
+                px: 3,
+                mx: 5, 
                 mt: 1, 
                 bgcolor: '#F0ECF6' 
               }}
@@ -45,12 +47,16 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                     >
                         <Typography 
                         fontWeight={'bold'} 
+                        color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'gray'}
+                        borderColor={'#6B3FA0'}
                         >
                             Description
                         </Typography>
-                        <Typography style={{ whiteSpace: 'break-spaces' }}>
+                        <Typography 
+                        style={{ whiteSpace: 'break-spaces' }}
+                        color='#201C77'
+                        >
                             {desc}
                         </Typography>
                     </Box>
@@ -61,8 +67,10 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                     >
                         <Typography 
                         fontWeight={'bold'} 
+                        color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'gray'}
+                        borderColor={'#6B3FA0'}
+                        marginBottom={1}
                         >
                             How to Play?
                         </Typography>

@@ -8,39 +8,42 @@ import { GameDisplay } from './GameDisplay';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
 
-console.log(gameInfo.gameTwo.desc)
-
 export const App = () => {
     return (
       <>
         <HeaderAppBar />
         <Splash />
         <EventCard 
-          date='TBD'
-          time='TBD'
-          location='TBD'
-          openTo='TBD'
+        date='TBD'
+        time='TBD'
+        location='TBD'
+        openTo='TBD'
         />
         <Box
-          display="flex"
-          flexDirection={'row'}
-          justifyContent="space-around"
-          alignItems="center"
+        display="flex"
+        sx={{ 
+          flexDirection: {
+            xs: 'column',
+            lg: 'row'
+          } 
+        }}
+        justifyContent="space-around"
+        alignItems="center"
         >
-          <GameDisplay 
+            <GameDisplay 
             imgURL={gameInfo.gameOne.imgUrl}
             alt={gameInfo.gameOne.alt}
             gameName={gameInfo.gameOne.name} 
             desc={gameInfo.gameOne.desc} 
             embedId={gameInfo.gameOne.embedId}
-          />
-          <GameDisplay 
+            />
+            <GameDisplay 
             imgURL={gameInfo.gameTwo.imgUrl}
             alt={gameInfo.gameTwo.alt}
             gameName={gameInfo.gameTwo.name} 
             desc={gameInfo.gameTwo.desc}
             embedId={gameInfo.gameTwo.embedId}
-          />
+            />
         </Box>
         <Footer />  
       </>
