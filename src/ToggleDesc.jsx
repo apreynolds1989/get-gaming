@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 export const ToggleDesc = ({ desc }) => {
-    const [chars, moreChars] = useState(desc.slice(0, 1000));
+    let [chars, moreChars] = useState(desc.slice(0, 1000));
     console.log(chars);
     let expanded = false;
 
@@ -24,13 +24,13 @@ export const ToggleDesc = ({ desc }) => {
             {chars}
             {expanded ? (
                 <Button
-                onClick={showLess()}
+                onClick={showLess}
                 >
                     Show Less
                 </Button>
                 ) : (
                 <Button
-                onClick={showMore()}
+                onClick={showMore}
                 >
                     Show More
                 </Button>  
