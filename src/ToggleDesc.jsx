@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 export const ToggleDesc = ({ desc }) => {
-    let [chars, moreChars] = useState(desc.slice(0, 1000));
+    let [chars, moreChars] = useState(desc.slice(0, 750));
     console.log(chars);
     let expanded = false;
 
