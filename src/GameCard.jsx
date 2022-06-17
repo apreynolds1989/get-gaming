@@ -1,11 +1,10 @@
 import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { Card, CardContent, Typography, Box } from '@mui/material';
+import { ToggleDesc } from './ToggleDesc';
 import { EmbedVideo } from './EmbedVideo';
 
 export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
+
     return (
         <Box
         display="flex"
@@ -45,7 +44,8 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                     textAlign={'left'}
                     py={1}
                     >
-                        <Typography 
+                        <ToggleDesc desc={desc} />
+                        {/* <Typography 
                         fontWeight={'bold'} 
                         color='#6B3FA0'
                         borderBottom={1} 
@@ -58,7 +58,7 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                         color='#201C77'
                         >
                             {desc}
-                        </Typography>
+                        </Typography> */}
                     </Box>
                     <Box 
                     flexDirection={'column'}
