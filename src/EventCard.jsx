@@ -14,8 +14,8 @@ export const EventCard = ({ date, time, location, openTo }) => {
         mb={5}
         sx={{
             marginTop: {
-                xs: 15,
-                sm: 5
+                sm: 15,
+                md: 5
             }
         }}
         >

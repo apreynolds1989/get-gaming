@@ -8,8 +8,8 @@ export const Splash = () => {
         maxWidth='xl' 
         sx={{
             display: {
-                xs: 'none',
-                sm: 'block'
+                sm: 'none',
+                md: 'block'
             }, 
             mt: 7, 
             backgroundImage: `url(${background})`, 
