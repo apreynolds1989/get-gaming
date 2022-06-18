@@ -14,24 +14,34 @@ export const ToggleDesc = ({ desc }) => {
     };
 
     return (
-        <Typography 
-        style={{ whiteSpace: 'break-spaces' }}
-        color='#201C77'
-        >
-            {chars}
-            {(chars === desc) ? (
-                <Button
-                onClick={showLess}
-                >
-                    Show Less
-                </Button>
-                ) : (
-                <Button
-                onClick={showMore}
-                >
-                    Show More
-                </Button>  
-            )}
-        </Typography>
+        <>
+            <Typography 
+            fontWeight={'bold'} 
+            color='#6B3FA0'
+            borderBottom={1} 
+            borderColor={'#6B3FA0'}
+            >
+                Description
+            </Typography>
+            <Typography 
+            style={{ whiteSpace: 'break-spaces' }}
+            color='#201C77'
+            >
+                {chars}
+                {(chars === desc) ? (
+                    <Button
+                    onClick={showLess}
+                    >
+                        Show Less
+                    </Button>
+                    ) : (
+                    <Button
+                    onClick={showMore}
+                    >
+                        Show More
+                    </Button>  
+                )}
+            </Typography>
+        </>
     );
 };

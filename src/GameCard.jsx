@@ -44,20 +44,6 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
                     py={1}
                     >
                         <ToggleDesc desc={desc} />
-                        {/* <Typography 
-                        fontWeight={'bold'} 
-                        color='#6B3FA0'
-                        borderBottom={1} 
-                        borderColor={'#6B3FA0'}
-                        >
-                            Description
-                        </Typography>
-                        <Typography 
-                        style={{ whiteSpace: 'break-spaces' }}
-                        color='#201C77'
-                        >
-                            {desc}
-                        </Typography> */}
                     </Box>
                     <Box 
                     flexDirection={'column'}
