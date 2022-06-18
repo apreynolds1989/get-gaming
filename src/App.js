@@ -7,6 +7,7 @@ import { EventCard } from './EventCard';
 import { GameDisplay } from './GameDisplay';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
+import { ContactForm } from './ContactForm';
 
 export const App = () => {
     return (
@@ -48,6 +49,8 @@ export const App = () => {
             embedId={gameInfo.gameTwo.embedId}
             />
         </Box>
+
+        <ContactForm />
         <Footer />  
       </>
     );
