@@ -20,15 +20,18 @@ export const App = () => {
         openTo='TBD'
         />
         <Box
-        display="flex"
+        display='flex'
         sx={{ 
           flexDirection: {
             xs: 'column',
             lg: 'row'
+          },
+          alignItems: {
+            xs: 'center',
+            lg: 'flex-start'
           } 
         }}
-        justifyContent="space-around"
-        alignItems="flex-start"
+        justifyContent='space-around'
         >
             <GameDisplay 
             imgURL={gameInfo.gameOne.imgUrl}

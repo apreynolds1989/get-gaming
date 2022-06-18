@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 export const ToggleDesc = ({ desc }) => {
-    let [chars, changeChars] = useState(desc.slice(0, 700));
+    const limitedChars = desc.slice(0, 700);
+    let [chars, changeChars] = useState(limitedChars);
 
     const showMore = () => {
         changeChars(chars = desc);
     };
 
     const showLess = () => {
-        changeChars(chars = desc.slice(0, 1000));
+        changeChars(chars = limitedChars);
     };
 
     return (
