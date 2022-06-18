@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 export const ToggleDesc = ({ desc }) => {
-    let [chars, moreChars] = useState(desc.slice(0, 750));
-    console.log(chars);
-    let expanded = false;
+    let [chars, changeChars] = useState(desc.slice(0, 700));
 
     const showMore = () => {
-        moreChars(chars = desc);
-        expanded = true;
+        changeChars(chars = desc);
     };
 
     const showLess = () => {
-        moreChars(chars = desc.slice(0, 1000));
-        expanded = false;
+        changeChars(chars = desc.slice(0, 1000));
     };
 
     return (
@@ -22,7 +18,7 @@ export const ToggleDesc = ({ desc }) => {
         color='#201C77'
         >
             {chars}
-            {expanded ? (
+            {(chars === desc) ? (
                 <Button
                 onClick={showLess}
                 >
@@ -34,7 +30,7 @@ export const ToggleDesc = ({ desc }) => {
                 >
                     Show More
                 </Button>  
-            )};
+            )}
         </Typography>
     );
 };

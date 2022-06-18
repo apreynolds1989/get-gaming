@@ -9,8 +9,6 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
         <Box
         display="flex"
         flexDirection={'column'}
-        // How do I keep everything aligned equally to the top of the div when
-        // I expand the text? (insert distraught face here...)
         justifyContent="center"
         alignItems="center"
         mb={5}
@@ -26,7 +24,7 @@ export const GameCard = ({ imgURL, alt, gameName, desc, embedId }) => {
             sx={{ 
                 borderRadius: 5,
                 minWidth: 150, 
-                maxWidth:500,  
+                maxWidth: 500, 
                 px: 3,
                 mx: 5, 
                 mt: 1, 

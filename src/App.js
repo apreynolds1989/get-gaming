@@ -28,7 +28,7 @@ export const App = () => {
           } 
         }}
         justifyContent="space-around"
-        alignItems="center"
+        alignItems="flex-start"
         >
             <GameDisplay 
             imgURL={gameInfo.gameOne.imgUrl}

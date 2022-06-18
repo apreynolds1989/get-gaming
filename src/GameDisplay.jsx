@@ -8,8 +8,8 @@ export const GameDisplay = ({ imgURL, alt, gameName, desc, embedId }) => {
         <Box
         display="flex"
         flexDirection={'column'}
-        justifyContent="center"
         alignItems="center"
+        marginBottom={5}
         >
             <DownArrow />
             <GameCard
