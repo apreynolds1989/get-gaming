@@ -1,9 +1,7 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@mui/material';
-import { ToggleDesc } from './ToggleDesc';
-import { EmbedVideo } from './EmbedVideo';
 
-export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
+export const ExtraGamesCard = () => {
 
     return (
         <Box
@@ -15,12 +13,10 @@ export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
         >
             <Typography 
             variant='h4' 
-            color='#6B3FA0' 
+            color='transparent' 
             sx={{ fontWeight: 'bold' }}
             >
-                <a href={link} style={{ textDecoration: 'none' }}>
-                    {gameName}
-                </a>
+                PlaceHolder
             </Typography>
             <Card 
             sx={{ 
@@ -38,16 +34,28 @@ export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
                     display="flex" 
                     justifyContent='center' 
                     >
-                        <a href={link}>
-                            <img src={imgURL} alt={alt} height={200} />
-                        </a>
+                       <Typography 
+                        variant='h6'
+                        fontWeight={'bold'} 
+                        color='#6B3FA0'
+                        borderBottom={1} 
+                        borderColor={'#6B3FA0'}
+                        marginBottom={1}
+                        >
+                            Extras and Filler Games
+                        </Typography>
                     </Box>
-                    <Box 
-                    flexDirection={'column'} 
-                    textAlign={'left'}
-                    py={1}
+                    <Box
+                    display='flex'
+                    color='#201C77'
                     >
-                        <ToggleDesc desc={desc} />
+                        <ul>
+                            <li>Hive</li>
+                            <li>SpyFall</li>
+                            <li>The Resistance</li>
+                            <li>Elevenses</li>
+                            <li>Santorini</li>
+                        </ul>
                     </Box>
                     <Box 
                     flexDirection={'column'}
@@ -55,15 +63,24 @@ export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
                     py={1}
                     >
                         <Typography 
+                        variant='h6'
                         fontWeight={'bold'} 
                         color='#6B3FA0'
                         borderBottom={1} 
                         borderColor={'#6B3FA0'}
                         marginBottom={1}
                         >
-                            How to Play?
+                            Have a Favourite of Your Own?
                         </Typography>
-                        <EmbedVideo embedId={embedId} />
+                        <Typography  
+                        color='#201C77'
+                        marginBottom={1}
+                        >
+                            Feel free to bring along your own games! <br />
+                            If we are not comfortable with the rules of your game,
+                            you will be responsible for teaching the rules and 
+                            moderation of the game.
+                        </Typography>
                     </Box>
                 </CardContent>
             </Card>

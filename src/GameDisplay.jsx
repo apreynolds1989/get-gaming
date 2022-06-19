@@ -3,7 +3,7 @@ import { GameCard } from './GameCard';
 import { DownArrow } from './DownArrow';
 import Box from '@mui/material/Box';
 
-export const GameDisplay = ({ imgURL, alt, gameName, desc, embedId }) => {
+export const GameDisplay = ({ imgURL, alt, link, gameName, desc, embedId }) => {
     return (
         <Box
         display="flex"
@@ -15,6 +15,7 @@ export const GameDisplay = ({ imgURL, alt, gameName, desc, embedId }) => {
             <GameCard
             imgURL={imgURL}
             alt={alt}
+            link={link}
             gameName={gameName} 
             desc={desc} 
             embedId={embedId} 
