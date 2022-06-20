@@ -9,6 +9,7 @@ import { ExtraGamesDisplay } from './ExtraGamesDisplay';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
 import { ContactForm } from './ContactForm';
+import { Library } from './Library';
 
 export const App = () => {
     const gameOne = gameInfo.fiveTribes;
@@ -82,6 +83,8 @@ export const App = () => {
         </Box>
 
         <ContactForm />
+
+        <Library />
         <Footer />  
       </>
     );
