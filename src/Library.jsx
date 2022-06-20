@@ -8,9 +8,6 @@ import { gameInfo } from './gameInfo';
 const gamesObj = gameInfo;
 const gameNames = Object.keys(gamesObj);
 
-// Why am I getting the following error in console:
-// Warning: validateDOMNesting(...): Text nodes cannot appear as a child of <tbody>.
-
 export const Library = () => {
     return (
         <TableContainer component={Paper}>
