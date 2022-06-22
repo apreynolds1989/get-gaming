@@ -10,6 +10,7 @@ import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
 import { ContactForm } from './ContactForm';
 import { Library } from './Library';
+import { Gallery } from './Gallery';
 
 export const App = () => {
     const gameOne = gameInfo.fiveTribes;
@@ -85,6 +86,9 @@ export const App = () => {
         <ContactForm />
 
         <Library />
+
+        <Gallery />
+        
         <Footer />  
       </>
     );
