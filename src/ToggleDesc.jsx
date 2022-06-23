@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 export const ToggleDesc = ({ desc }) => {
-    const limitedChars = desc.slice(0, 700);
-    let [chars, changeChars] = useState(limitedChars);
+    const limitedChars = desc.slice(0, 700) + '... ';
+    let [gameDesc, setGameDesc] = useState(limitedChars);
 
     const showMore = () => {
-        changeChars(chars = desc);
+        setGameDesc(desc);
+        setIsShowingFullDesc(!isShowingFullDesc);
     };
 
     const showLess = () => {
-        changeChars(chars = limitedChars);
+        setGameDesc(limitedChars);
+        setIsShowingFullDesc(!isShowingFullDesc);
     };
+
+    const [isShowingFullDesc, setIsShowingFullDesc] = useState(false);
 
     return (
         <>
@@ -27,8 +31,8 @@ export const ToggleDesc = ({ desc }) => {
             style={{ whiteSpace: 'break-spaces' }}
             color='#201C77'
             >
-                {chars}
-                {(chars === desc) ? (
+                {gameDesc}
+                {(isShowingFullDesc) ? (
                     <Button
                     onClick={showLess}
                     >
