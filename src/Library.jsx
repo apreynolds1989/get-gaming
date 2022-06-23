@@ -5,8 +5,7 @@ import {
 } from '@mui/material';
 import { gameInfo } from './gameInfo';
 
-const gamesObj = gameInfo;
-const gameNames = Object.keys(gamesObj);
+const gameNames = Object.keys(gameInfo);
 
 export const Library = () => {
     return (
@@ -38,7 +37,7 @@ export const Library = () => {
                 <TableBody>
                     {gameNames.map((name) => (
                         <TableRow
-                        key={gamesObj[name].name}
+                        key={gameInfo[name].name}
                         sx={{ 
                             borderBottom: 1,
                             borderColor: '#6B3FA0',
@@ -54,12 +53,12 @@ export const Library = () => {
                             }}
                             >
                                 <a 
-                                href={gamesObj[name].link}
+                                href={gameInfo[name].link}
                                 style={{
                                     textDecoration: 'none'
                                 }}
                                 >
-                                    {gamesObj[name].name}
+                                    {gameInfo[name].name}
                                 </a>
                             </TableCell>
                         </TableRow>
