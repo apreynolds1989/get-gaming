@@ -42,17 +42,17 @@ export const App = () => {
         justifyContent='space-around'
         >
             <GameDisplay 
-            imgURL={gameOne.imgUrl}
+            gameImgURL={gameOne.gameImgURL}
             alt={gameOne.alt}
-            link={gameOne.link}
+            gameSiteURL={gameOne.gameSiteURL}
             gameName={gameOne.name} 
             desc={gameOne.desc} 
             embedId={gameOne.embedId}
             />
             <GameDisplay 
-            imgURL={gameTwo.imgUrl}
+            gameImgURL={gameTwo.gameImgURL}
             alt={gameTwo.alt}
-            link={gameTwo.link}
+            gameSiteURL={gameTwo.gameSiteURL}
             gameName={gameTwo.name} 
             desc={gameTwo.desc}
             embedId={gameTwo.embedId}
@@ -73,9 +73,9 @@ export const App = () => {
         justifyContent='space-around'
         >
            <GameDisplay 
-            imgURL={gameThree.imgUrl}
+            gameImgURL={gameThree.gameImgURL}
             alt={gameThree.alt}
-            link={gameThree.link}
+            gameSiteURL={gameThree.gameSiteURL}
             gameName={gameThree.name} 
             desc={gameThree.desc}
             embedId={gameThree.embedId}
@@ -88,7 +88,7 @@ export const App = () => {
         <Library />
 
         <Gallery />
-        
+
         <Footer />  
       </>
     );

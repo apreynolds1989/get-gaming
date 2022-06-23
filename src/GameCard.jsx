@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Box } from '@mui/material';
 import { ToggleDesc } from './ToggleDesc';
 import { EmbedVideo } from './EmbedVideo';
 
-export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
+export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
 
     return (
         <Box
@@ -18,7 +18,7 @@ export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
             color='#6B3FA0' 
             sx={{ fontWeight: 'bold' }}
             >
-                <a href={link} style={{ textDecoration: 'none' }}>
+                <a href={gameSiteURL} style={{ textDecoration: 'none' }}>
                     {gameName}
                 </a>
             </Typography>
@@ -38,8 +38,8 @@ export const GameCard = ({ imgURL, alt, link, gameName, desc, embedId }) => {
                     display="flex" 
                     justifyContent='center' 
                     >
-                        <a href={link}>
-                            <img src={imgURL} alt={alt} height={200} />
+                        <a href={gameSiteURL}>
+                            <img src={gameImgURL} alt={alt} height={200} />
                         </a>
                     </Box>
                     <Box 
