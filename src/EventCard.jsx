@@ -1,7 +1,9 @@
 import React from 'react';
-import { Card, CardContent, Typography, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box, useMediaQuery } from '@mui/material';
 
 export const EventCard = ({ date, time, location, openTo }) => {
+    const variantSize = useMediaQuery('(min-width:600px)') ? 'h3' : 'h4';
+
     return (
         <Box
         display="flex"
@@ -16,28 +18,11 @@ export const EventCard = ({ date, time, location, openTo }) => {
             }
         }}
         >
-            <Typography 
-            variant='h4' 
+            <Typography
+            variant={variantSize} 
             color='#6B3FA0' 
-            sx={{ 
+            sx={{
                 fontWeight: 'bold',
-                display: {
-                    xs: 'block',
-                    sm: 'none'
-                }
-            }}
-            >
-                UPCOMING EVENT
-            </Typography>
-            <Typography 
-            variant='h3' 
-            color='#6B3FA0' 
-            sx={{ 
-                fontWeight: 'bold',
-                display: {
-                    xs: 'none',
-                    sm: 'block'
-                }
             }}
             >
                 UPCOMING EVENT

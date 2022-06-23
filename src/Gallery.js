@@ -1,25 +1,26 @@
 import React from 'react';
 import { ImageList, ImageListItem } from '@mui/material';
 
-const importAll = (r) => {
+// importAll() and require.context was found by searching how to import all photos
+// from a file in React. I followed this information:
+// https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
+const importAll = (arrayOfFiles) => {
     let images = {};
-    r.keys().forEach((item, index) => {
-        images[item.replace('./', '')] = r(item);
+    arrayOfFiles.keys().forEach((item, index) => {
+        images[item.replace('./', '')] = arrayOfFiles(item);
     });
     return images;
 };
 
 const images = importAll(require.context('./photos', false, /\.(png|jpe?g|svg)$/));
 const imageNames = Object.keys(images);
-{/* <img src={images[`IMG_0975.jpeg`]} alt="" /> */}
-
 
 export const Gallery = () => {
     return (
         <ImageList
         sx={{
             width: 500,
-            // height: 'fit',
+            // height: 450,
         }}
         cols={3}
         rowHeight={164}
@@ -28,9 +29,6 @@ export const Gallery = () => {
                 <ImageListItem key={image}>
                     <img 
                         src={images[image]}
-                        // On MUI docs it's written as below?
-                        // src={`${images[image]}?w=164&h=164&fit=crop&auto=format`}
-                        // srcSet={`${images[image]}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                         loading='lazy'
                     />
                 </ImageListItem>

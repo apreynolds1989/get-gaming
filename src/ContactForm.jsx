@@ -1,7 +1,9 @@
 import React from 'react';
-import { Card, CardContent, Typography, Box, TextField } from '@mui/material';
+import { Card, CardContent, Typography, Box, TextField, useMediaQuery } from '@mui/material';
 
 export const ContactForm = () => {
+    const variantSize = useMediaQuery('(min-width:600px)') ? 'h3' : 'h4';
+
     return (
         <Box
         display='flex'
@@ -17,31 +19,12 @@ export const ContactForm = () => {
         }}
         >
             <Typography 
-            variant='h4' 
+            variant={variantSize} 
             color='#6B3FA0'
             borderBottom={1}
             borderColor='#6B3FA0' 
             sx={{ 
                 fontWeight: 'bold',
-                display: {
-                    xs: 'block',
-                    sm: 'none'
-                }
-            }}
-            >
-                Contact Us
-            </Typography>
-            <Typography 
-            variant='h3' 
-            color='#6B3FA0'
-            borderBottom={1}
-            borderColor='#6B3FA0' 
-            sx={{ 
-                fontWeight: 'bold',
-                display: {
-                    xs: 'none',
-                    sm: 'block'
-                }
             }}
             >
                 Contact Us
@@ -57,7 +40,13 @@ export const ContactForm = () => {
             >
                 <CardContent>
                     <Box
-                    display='flex' 
+                    display='flex'
+                    sx={{
+                        flexDirection: {
+                            xs: 'column',
+                            sm: 'row'
+                        }
+                    }} 
                     flexDirection='row'
                     >
                         <TextField
@@ -68,9 +57,6 @@ export const ContactForm = () => {
                         color='secondary'
                         margin='dense'
                         fullWidth
-                        sx={{
-                            marginRight: 1
-                        }}
                         />
                         <TextField
                         required
@@ -81,7 +67,10 @@ export const ContactForm = () => {
                         margin='dense'
                         fullWidth
                         sx={{
-                            marginLeft: 1
+                            marginLeft: {
+                                xs: 0,
+                                sm: 2
+                            }
                         }}
                         />
                     </Box>
