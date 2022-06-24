@@ -43,8 +43,10 @@ export const Gallery = () => {
                     // height: 450,
                 }}
                 cols={3}
+                gap={8}
                 rowHeight={164}
             >
+                {/* can't figure out how to hande vertical photos */}
                 {imageNames.map((imageName, index) => (
                     <ImageListItem key={imageName}>
                         <img 
