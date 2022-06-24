@@ -7,7 +7,8 @@ export const Lightbox = ({images, lightboxController}) => {
     return (
         <FsLightbox 
             toggler={lightboxController.toggler} 
-            sources={sources} 
+            sources={sources}
+            type='image'
             slide={lightboxController.slide}
         />
     );

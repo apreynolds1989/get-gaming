@@ -17,12 +17,12 @@ const importAll = (arrayOfFiles) => {
 const images = importAll(require.context('./photos', false, /\.(png|jpe?g|svg)$/));
 const imageNames = Object.keys(images);
 
+// Utilizing fslightbox-react
+// https://fslightbox.com/react/documentation
 export const Gallery = () => {
-    // if toggler is updated when lightbox is closed it will open it
-    // if toggler is updated when lightbox is opened it will close it
-    const [toggler, setToggler] = useState(false);
-
-    // State to control opening Lightbox on clicked image
+    // State to control opening Lightbox on clicked image (slide)
+    // if toggler is updated when lightbox is closed (false) it will open it
+    // if toggler is updated when lightbox is opened (true) it will close it
     const [lightboxController, setLightboxController] = useState({
         toggler: false,
         slide: 1
