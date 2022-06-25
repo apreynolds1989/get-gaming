@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import { gameInfo } from './gameInfo';
 
-const gameNames = Object.keys(gameInfo);
+const gameNames = Object.keys(gameInfo).sort();
 
 export const Library = () => {
     return (
@@ -53,7 +53,7 @@ export const Library = () => {
                             }}
                             >
                                 <a 
-                                href={gameInfo[name].link}
+                                href={`${gameInfo[name].gameSiteURL}`}
                                 style={{
                                     textDecoration: 'none'
                                 }}

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@mui/material';
+import { smallGameInfo } from './gameInfo';
+
+const smallGameNames = Object.keys(smallGameInfo).sort();
 
 export const ExtraGamesCard = () => {
 
@@ -50,11 +53,31 @@ export const ExtraGamesCard = () => {
                     color='#201C77'
                     >
                         <ul>
-                            <li>Hive</li>
+                            {smallGameNames.map((name) => (
+                                <li
+                                key={smallGameInfo[name].name}
+                                sx={{ 
+                                    borderBottom: 1,
+                                    borderColor: '#6B3FA0',
+                                    color: '#201C77',
+                                }}
+                                >
+                                        <a 
+                                        href={smallGameInfo[name].gameSiteURL}
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: '#201C77'
+                                        }}
+                                        >
+                                            {smallGameInfo[name].name}
+                                        </a>
+                                </li>
+                            ))}
+                            {/* <li>Hive</li>
                             <li>SpyFall</li>
                             <li>The Resistance</li>
                             <li>Elevenses</li>
-                            <li>Santorini</li>
+                            <li>Santorini</li> */}
                         </ul>
                     </Box>
                     <Box 
