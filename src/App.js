@@ -5,12 +5,13 @@ import { HeaderAppBar } from './HeaderAppBar';
 import { Splash } from './Splash';
 import { EventCard } from './EventCard';
 import { GameDisplay } from './GameDisplay';
-import { ExtraGamesDisplay } from './ExtraGamesDisplay';
+import { GameCard } from './GameCard';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
 import { ContactForm } from './ContactForm';
 import { Library } from './Library';
 import { Gallery } from './Gallery';
+import { ExtraGamesCard } from './ExtraGamesCard';
 
 export const App = () => {
     const gameOne = gameInfo.fiveTribes;
@@ -41,46 +42,62 @@ export const App = () => {
         }}
         justifyContent='space-around'
         >
-            <GameDisplay 
-            gameImgURL={gameOne.gameImgURL}
-            alt={gameOne.alt}
-            gameSiteURL={gameOne.gameSiteURL}
-            gameName={gameOne.name} 
-            desc={gameOne.desc} 
-            embedId={gameOne.embedId}
+            <GameDisplay
+                cardToDisplay={
+                    <GameCard
+                        gameImgURL={gameOne.gameImgURL}
+                        alt={gameOne.alt}
+                        gameSiteURL={gameOne.gameSiteURL}
+                        gameName={gameOne.name} 
+                        desc={gameOne.desc} 
+                        embedId={gameOne.embedId} 
+                        />
+                } 
             />
-            <GameDisplay 
-            gameImgURL={gameTwo.gameImgURL}
-            alt={gameTwo.alt}
-            gameSiteURL={gameTwo.gameSiteURL}
-            gameName={gameTwo.name} 
-            desc={gameTwo.desc}
-            embedId={gameTwo.embedId}
+            <GameDisplay
+                cardToDisplay={
+                    <GameCard
+                        gameImgURL={gameTwo.gameImgURL}
+                        alt={gameTwo.alt}
+                        gameSiteURL={gameTwo.gameSiteURL}
+                        gameName={gameTwo.name} 
+                        desc={gameTwo.desc} 
+                        embedId={gameTwo.embedId} 
+                        />
+                } 
             />
         </Box>
         <Box
-        display='flex'
-        sx={{ 
-          flexDirection: {
-            xs: 'column',
-            lg: 'row'
-          },
-          alignItems: {
-            xs: 'center',
-            lg: 'flex-start'
-          } 
-        }}
-        justifyContent='space-around'
+            display='flex'
+            sx={{ 
+              flexDirection: {
+                xs: 'column',
+                lg: 'row'
+              },
+              alignItems: {
+                xs: 'center',
+                lg: 'flex-start'
+              } 
+            }}
+            justifyContent='space-around'
         >
-           <GameDisplay 
-            gameImgURL={gameThree.gameImgURL}
-            alt={gameThree.alt}
-            gameSiteURL={gameThree.gameSiteURL}
-            gameName={gameThree.name} 
-            desc={gameThree.desc}
-            embedId={gameThree.embedId}
+            <GameDisplay
+                cardToDisplay={
+                    <GameCard
+                        gameImgURL={gameThree.gameImgURL}
+                        alt={gameThree.alt}
+                        gameSiteURL={gameThree.gameSiteURL}
+                        gameName={gameThree.name} 
+                        desc={gameThree.desc} 
+                        embedId={gameThree.embedId} 
+                        />
+                } 
             />
-          <ExtraGamesDisplay />
+              <GameDisplay
+                  cardToDisplay={
+                      <ExtraGamesCard /> 
+                  } 
+              />
         </Box>
 
         <ContactForm />

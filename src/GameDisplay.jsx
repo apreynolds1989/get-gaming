@@ -1,9 +1,10 @@
 import React from 'react';
 import { GameCard } from './GameCard';
+import { ToggleDesc } from './ToggleDesc';
 import { DownArrow } from './DownArrow';
 import Box from '@mui/material/Box';
 
-export const GameDisplay = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
+export const GameDisplay = ({ cardToDisplay }) => {
     return (
         <Box
         display="flex"
@@ -12,14 +13,7 @@ export const GameDisplay = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embe
         marginBottom={5}
         >
             <DownArrow />
-            <GameCard
-            gameImgURL={gameImgURL}
-            alt={alt}
-            gameSiteURL={gameSiteURL}
-            gameName={gameName} 
-            desc={desc} 
-            embedId={embedId} 
-            />
+            {cardToDisplay}
         </Box>
     );
 };
