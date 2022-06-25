@@ -55,7 +55,8 @@ export const Library = () => {
                                 <a 
                                 href={`${gameInfo[name].gameSiteURL}`}
                                 style={{
-                                    textDecoration: 'none'
+                                    color: '#201C77',
+                                    textDecoration: 'none',
                                 }}
                                 >
                                     {gameInfo[name].name}
