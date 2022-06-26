@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -46,16 +46,30 @@ export const HeaderAppBar = () => {
                      }}
                     >
                         {pages.map((page) => (
-                            <Button
-                                key={page.title}
-                                sx={{ 
-                                    my: 2, 
-                                    color: '#6B3FA0', 
-                                    display: 'block', 
-                                    fontSize: 18 
-                                }}
-                            >
-                                <Link to={`/${page.route}`}>{page.title}</Link>
+                            <Button>
+                                <NavLink
+                                    style={({ isActive }) => {
+                                        return {
+                                            my: 2, 
+                                            display: 'block', 
+                                            fontSize: 18, 
+                                            fontWeight: 'bold',
+                                            textDecoration: 'none',
+                                            color: isActive ? '#000000' : '#6B3FA0',
+                                        };
+                                    }}
+                                    
+                                    to={`/${page.route}`}
+                                    key={page.title}
+                                >
+                                    {page.title}
+                                </NavLink>
+                                {/* <Link 
+                                    to={`/${page.route}`}
+                                    style={{ color: '#6B3FA0' }}
+                                >
+                                    {page.title}
+                                </Link> */}
                             </Button>
                         ))}
                     </Box>

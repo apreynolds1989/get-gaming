@@ -20,6 +20,14 @@ root.render(
             <Route path="Library" element={<Library />} />
             <Route path="Gallery" element={<Gallery />} />
             <Route path="ContactForm" element={<ContactForm />} />
+            <Route
+                path="*"
+                element={
+                    <main style={{ padding: "1rem" }}>
+                    <p>Hmm.. something is missing..</p>
+                    </main>
+                }
+            />
         </Routes>
     </BrowserRouter>,
     root

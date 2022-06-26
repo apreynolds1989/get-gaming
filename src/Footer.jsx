@@ -99,8 +99,7 @@ export const Footer = () => {
                                 <Button
                                 key={page.title}
                                 sx={{ 
-                                    my: 2, 
-                                    color: 'white', 
+                                    my: 2,
                                     display: 'block',
                                     fontSize: 14, 
                                     borderRight: borderSize, 
@@ -108,7 +107,12 @@ export const Footer = () => {
                                     borderRadius: 0 
                                   }}
                                 >
-                                    <Link to={`/${page.route}`}>{page.title}</Link>
+                                    <Link 
+                                        to={`/${page.route}`}
+                                        style={{ color: 'white' }}
+                                    >
+                                        {page.title}
+                                    </Link>
                                 </Button>
                             );
                         })}
