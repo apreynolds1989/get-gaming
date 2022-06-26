@@ -10,7 +10,7 @@ export const GameDisplay = ({ cardToDisplay }) => {
         display="flex"
         flexDirection={'column'}
         alignItems="center"
-        marginBottom={5}
+        marginBottom={1}
         >
             <DownArrow />
             {cardToDisplay}

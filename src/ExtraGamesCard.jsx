@@ -16,10 +16,10 @@ export const ExtraGamesCard = () => {
         >
             <Typography 
             variant='h4' 
-            color='transparent' 
+            color='#6B3FA0' 
             sx={{ fontWeight: 'bold' }}
             >
-                PlaceHolder
+                What Else?
             </Typography>
             <Card 
             sx={{ 
@@ -35,9 +35,29 @@ export const ExtraGamesCard = () => {
                 <CardContent>
                     <Box 
                     display="flex" 
+                    flexDirection={'column'}
                     justifyContent='center' 
                     >
-                       <Typography 
+                        <Typography 
+                        variant='h6'
+                        fontWeight={'bold'} 
+                        color='#6B3FA0'
+                        borderBottom={1} 
+                        borderColor={'#6B3FA0'}
+                        marginBottom={1}
+                        >
+                            Want something simple, quick and fun?
+                        </Typography>
+                        <Typography  
+                        color='#201C77'
+                        marginBottom={1}
+                        >
+                            We aim to have a selection of smaller games available
+                            at all of our events. If you don't have time for, or 
+                            simply don't want to play a game that may take multiple
+                            hours, grab one of these instead.
+                        </Typography>
+                        <Typography 
                         variant='h6'
                         fontWeight={'bold'} 
                         color='#6B3FA0'
