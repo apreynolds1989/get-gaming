@@ -34,7 +34,7 @@ export const HeaderAppBar = () => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    <GetGamingLogo />
+                    <Link to='/'><GetGamingLogo /></Link>
                     <Box 
                     sx={{ 
                         flexGrow: 1, 

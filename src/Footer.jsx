@@ -1,9 +1,27 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { ReactComponent as WhiteGetGaming } from './img/WhiteGetGaming.svg';
 
-const pages = ['Home', 'Library', 'Gallery', 'Contact'];
+const pages = [
+    {
+        title: 'Home',
+        route: '',
+    },
+    {
+        title: 'Library',
+        route: 'Library',
+    },
+    {
+        title: 'Gallery',
+        route: 'Gallery',
+    },
+    {
+        title: 'Contact',
+        route: 'ContactForm'
+    },
+];
 
 export const Footer = () => {
     return (
@@ -38,7 +56,7 @@ export const Footer = () => {
                     justifyContent="center"
                     alignItems="center"
                     >
-                        <WhiteGetGaming />
+                        <Link to='/'><WhiteGetGaming /></Link>
                         <Box 
                         borderTop={1} 
                         borderColor='white' 
@@ -79,7 +97,7 @@ export const Footer = () => {
 
                             return (
                                 <Button
-                                key={page}
+                                key={page.title}
                                 sx={{ 
                                     my: 2, 
                                     color: 'white', 
@@ -90,7 +108,7 @@ export const Footer = () => {
                                     borderRadius: 0 
                                   }}
                                 >
-                                    {page}
+                                    <Link to={`/${page.route}`}>{page.title}</Link>
                                 </Button>
                             );
                         })}
