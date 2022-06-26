@@ -13,7 +13,7 @@ export const Library = () => {
     return (
         <>
             <HeaderAppBar />
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} sx={{ mt: 12 }}>
                 <Table 
                 sx={{ 
                     maxWidth: 750, 

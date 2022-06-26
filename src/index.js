@@ -29,8 +29,7 @@ root.render(
                 }
             />
         </Routes>
-    </BrowserRouter>,
-    root
+    </BrowserRouter>
     // <React.StrictMode >
     //     <App / >
     // </React.StrictMode>

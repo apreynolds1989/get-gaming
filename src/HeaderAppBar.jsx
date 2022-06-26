@@ -46,7 +46,7 @@ export const HeaderAppBar = () => {
                      }}
                     >
                         {pages.map((page) => (
-                            <Button>
+                            <Button key={page.title}>
                                 <NavLink
                                     style={({ isActive }) => {
                                         return {
@@ -64,12 +64,6 @@ export const HeaderAppBar = () => {
                                 >
                                     {page.title}
                                 </NavLink>
-                                {/* <Link 
-                                    to={`/${page.route}`}
-                                    style={{ color: '#6B3FA0' }}
-                                >
-                                    {page.title}
-                                </Link> */}
                             </Button>
                         ))}
                     </Box>

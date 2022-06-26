@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { ImageList, ImageListItem } from '@mui/material';
-import FsLightbox from "fslightbox-react";
+import { Box, Typography, ImageList, ImageListItem, useMediaQuery } from '@mui/material';
 import { Lightbox } from './Lightbox';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
@@ -22,6 +21,8 @@ const imageNames = Object.keys(images);
 // Utilizing fslightbox-react
 // https://fslightbox.com/react/documentation
 export const Gallery = () => {
+    const mobileSize = useMediaQuery('(max-width:600px)');
+
     // State to control opening Lightbox on clicked image (slide)
     // if toggler is updated when lightbox is closed (false) it will open it
     // if toggler is updated when lightbox is opened (true) it will close it
@@ -40,26 +41,57 @@ export const Gallery = () => {
     return (
         <>
             <HeaderAppBar />
-            <ImageList
-                sx={{
-                    width: 500,
-                    // height: 450,
-                }}
-                cols={3}
-                gap={8}
-                rowHeight={164}
+            <Box
+            display='flex'
+            flexDirection='column'
+            maxWidth={700}
+            mx='auto'
+            sx={{
+                marginTop: 12,
+                marginBottom: 10,
+            }}
             >
-                {/* can't figure out how to hande vertical photos */}
-                {imageNames.map((imageName, index) => (
-                    <ImageListItem key={imageName}>
-                        <img 
-                            src={images[imageName]}
-                            onClick={() => openLightboxOnSlide(index + 1)}
-                            loading='lazy'
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
+                <Typography 
+                variant={mobileSize ? 'h4' : 'h3'} 
+                color='#6B3FA0'
+                borderBottom={1}
+                borderColor='#6B3FA0' 
+                sx={{ 
+                    alignSelf: {
+                        xs: 'center',
+                        sm: 'left',
+                    },
+                    fontWeight: 'bold',
+                }}
+                >
+                    Gallery
+                </Typography>
+                <ImageList
+                    sx={{
+                        alignSelf: 'center',
+                        width: {
+                            xs: 164,
+                            sm: 500,
+                        },
+                        // height: 450,
+                    }}
+                    cols={mobileSize ? 1 : 3}
+                    gap={8}
+                    rowHeight={164}
+                >
+                    {/* can't figure out how to hande vertical photos */}
+                    {imageNames.map((imageName, index) => (
+                        <ImageListItem key={imageName}>
+                            <img 
+                                src={images[imageName]}
+                                alt={images[imageName]}
+                                onClick={() => openLightboxOnSlide(index + 1)}
+                                loading='lazy'
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </Box>
             <Lightbox
                 images={images} 
                 lightboxController={lightboxController}

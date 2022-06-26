@@ -4,7 +4,7 @@ import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
 
 export const ContactForm = () => {
-    const variantSize = useMediaQuery('(min-width:600px)') ? 'h3' : 'h4';
+    const mobileSize = useMediaQuery('(max-width:600px)');
 
     return (
         <>
@@ -14,20 +14,21 @@ export const ContactForm = () => {
             flexDirection='column'
             maxWidth={700}
             mx='auto'
-            mb={5}
             sx={{
-                marginTop: {
-                    sm: 15,
-                    md: 5
-                }
+                marginTop: 12,
+                marginBottom: 10,
             }}
             >
                 <Typography 
-                variant={variantSize} 
+                variant={mobileSize ? 'h4' : 'h3'} 
                 color='#6B3FA0'
                 borderBottom={1}
                 borderColor='#6B3FA0' 
                 sx={{ 
+                    alignSelf: {
+                        xs: 'center',
+                        sm: 'left',
+                    },
                     fontWeight: 'bold',
                 }}
                 >
