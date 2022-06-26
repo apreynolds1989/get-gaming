@@ -26,6 +26,7 @@ export const ExtraGamesCard = () => {
                 borderRadius: 5,
                 minWidth: 150, 
                 maxWidth: 500, 
+                minHeight: 900, 
                 px: 3,
                 mx: 5, 
                 mt: 1, 
@@ -35,8 +36,8 @@ export const ExtraGamesCard = () => {
                 <CardContent>
                     <Box 
                     display="flex" 
-                    flexDirection={'column'}
-                    justifyContent='center' 
+                    flexDirection='column'
+                    justifyItems='center'
                     >
                         <Typography 
                         variant='h6'

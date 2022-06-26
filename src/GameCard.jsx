@@ -26,7 +26,8 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
             sx={{ 
                 borderRadius: 5,
                 minWidth: 150, 
-                maxWidth: 500, 
+                maxWidth: 500,
+                minHeight: 900, 
                 px: 3,
                 mx: 5, 
                 mt: 1, 
