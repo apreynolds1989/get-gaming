@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { ImageList, ImageListItem } from '@mui/material';
 import FsLightbox from "fslightbox-react";
 import { Lightbox } from './Lightbox';
+import { HeaderAppBar } from './HeaderAppBar';
+import { Footer } from './Footer';
 
 // importAll() and require.context was found by searching how to import all photos
 // from a file in React. I followed this information:
@@ -37,6 +39,7 @@ export const Gallery = () => {
 
     return (
         <>
+            <HeaderAppBar />
             <ImageList
                 sx={{
                     width: 500,
@@ -61,6 +64,7 @@ export const Gallery = () => {
                 images={images} 
                 lightboxController={lightboxController}
             />
+            <Footer />
         </>
     );
 }

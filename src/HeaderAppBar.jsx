@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
@@ -6,7 +7,24 @@ import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
 
-const pages = ['Home', 'Library', 'Gallery', 'Contact'];
+const pages = [
+    {
+        title: 'Home',
+        route: '',
+    },
+    {
+        title: 'Library',
+        route: 'Library',
+    },
+    {
+        title: 'Gallery',
+        route: 'Gallery',
+    },
+    {
+        title: 'Contact',
+        route: 'ContactForm'
+    },
+];
 
 export const HeaderAppBar = () => {
     return (
@@ -29,7 +47,7 @@ export const HeaderAppBar = () => {
                     >
                         {pages.map((page) => (
                             <Button
-                                key={page}
+                                key={page.title}
                                 sx={{ 
                                     my: 2, 
                                     color: '#6B3FA0', 
@@ -37,7 +55,7 @@ export const HeaderAppBar = () => {
                                     fontSize: 18 
                                 }}
                             >
-                                {page}
+                                <Link to={`/${page.route}`}>{page.title}</Link>
                             </Button>
                         ))}
                     </Box>

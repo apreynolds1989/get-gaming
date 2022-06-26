@@ -8,9 +8,6 @@ import { GameDisplay } from './GameDisplay';
 import { GameCard } from './GameCard';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
-import { ContactForm } from './ContactForm';
-import { Library } from './Library';
-import { Gallery } from './Gallery';
 import { ExtraGamesCard } from './ExtraGamesCard';
 
 export const App = () => {
@@ -99,13 +96,6 @@ export const App = () => {
                   } 
               />
         </Box>
-
-        <ContactForm />
-
-        <Library />
-
-        <Gallery />
-
         <Footer />  
       </>
     );
