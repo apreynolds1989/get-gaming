@@ -25,10 +25,6 @@ export const ContactForm = () => {
                 borderBottom={1}
                 borderColor='#6B3FA0' 
                 sx={{ 
-                    alignSelf: {
-                        xs: 'center',
-                        sm: 'left',
-                    },
                     fontWeight: 'bold',
                 }}
                 >

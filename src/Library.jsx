@@ -42,7 +42,7 @@ export const Library = () => {
                         {gameNames.map((name) => (
                             <TableRow
                             key={gameInfo[name].name}
-                            sx={{ 
+                            sx={{
                                 borderBottom: 1,
                                 borderColor: '#6B3FA0',
                             }}
