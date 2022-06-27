@@ -37,7 +37,6 @@ export const ExtraGamesCard = () => {
                     <Box 
                     display="flex" 
                     flexDirection='column'
-                    justifyItems='center'
                     >
                         <Typography 
                         variant='h6'

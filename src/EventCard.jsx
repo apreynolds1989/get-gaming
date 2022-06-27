@@ -12,10 +12,7 @@ export const EventCard = ({ date, time, location, openTo }) => {
         alignItems="center"
         mb={5}
         sx={{
-            marginTop: {
-                sm: 15,
-                md: 5
-            }
+            marginTop: 5,
         }}
         >
             <Typography

@@ -1,25 +1,46 @@
 import React from 'react';
 import background from './img/Root-bg.jpeg';
-import Container from '@mui/material/Container';
+import { Box, Container } from '@mui/material';
+import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 
 export const Splash = () => {
     return (
-        <Container 
-        maxWidth='xl' 
-        sx={{
-            display: {
-                sm: 'none',
-                md: 'block'
-            }, 
-            mt: 7, 
-            backgroundImage: `url(${background})`, 
-            backgroundRepeat:'no-repeat', 
-            backgroundSize: 'contain', 
-            height: 600, 
-            width: 1000 
-          }}
-        >
-        
-        </Container>
+        <>
+            <Container 
+                maxWidth='false'
+                disableGutters
+                sx={{
+                    marginX: 0,
+                    marginTop: 10,
+                    marginBottom: 0,
+                    display: {
+                        xs: 'none',
+                        sm: 'flex',
+                    },
+                    backgroundImage: `url(${background})`, 
+                    backgroundRepeat:'no-repeat',
+                    backgroundPosition: 'center', 
+                    backgroundSize: 'cover', 
+                    height: {
+                        xs: 300,
+                        sm: 400,
+                        md: 500,
+                    }, 
+                    // width: 'fit' 
+                }}
+            />
+            <Box
+                sx={{
+                    marginTop: 10,
+                    display: {
+                        xs: 'flex',
+                        sm: 'none'
+                    },
+                    justifyContent: 'center'
+                }}
+            >
+                <GetGamingLogo />
+            </Box>
+        </>
     )
 }
