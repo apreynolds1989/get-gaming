@@ -11,7 +11,7 @@ export const Splash = () => {
                 disableGutters
                 sx={{
                     marginX: 0,
-                    marginTop: 10,
+                    marginTop: 0,
                     marginBottom: 0,
                     display: {
                         xs: 'none',
@@ -19,12 +19,14 @@ export const Splash = () => {
                     },
                     backgroundImage: `url(${background})`, 
                     backgroundRepeat:'no-repeat',
-                    backgroundPosition: 'center', 
+                    // backgroundPosition: 'center', 
                     backgroundSize: 'cover', 
                     height: {
-                        xs: 300,
-                        sm: 400,
-                        md: 500,
+                        xs: 200,
+                        sm: 250,
+                        md: 325,
+                        lg: 400,
+                        xl: 450,
                     }, 
                     // width: 'fit' 
                 }}
