@@ -77,7 +77,7 @@ export const Gallery = () => {
                 >
                     {/* can't figure out how to hande vertical photos */}
                     {imageNames.map((imageName, index) => (
-                        <ImageListItem key={imageName}>
+                        <ImageListItem key={imageName} sx={{ overflowY: 'hidden'}}>
                             <img 
                                 src={images[imageName]}
                                 alt={images[imageName]}
