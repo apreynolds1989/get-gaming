@@ -1,6 +1,5 @@
 import React from 'react';
-import { GameCard } from './GameCard';
-import { ToggleDesc } from './ToggleDesc';
+
 import { DownArrow } from './DownArrow';
 import Box from '@mui/material/Box';
 
