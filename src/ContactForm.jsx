@@ -4,7 +4,7 @@ import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
 
 export const ContactForm = () => {
-    const mobileSize = useMediaQuery('(max-width:600px)');
+    const isMobileSize = useMediaQuery('(max-width:600px)');
 
     return (
         <>
@@ -20,7 +20,7 @@ export const ContactForm = () => {
             }}
             >
                 <Typography 
-                variant={mobileSize ? 'h4' : 'h3'} 
+                variant={isMobileSize ? 'h4' : 'h3'} 
                 color='#6B3FA0'
                 borderBottom={1}
                 borderColor='#6B3FA0' 

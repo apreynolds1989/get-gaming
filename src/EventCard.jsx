@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, Typography, Box, useMediaQuery } from '@mui/material';
 
 export const EventCard = ({ date, time, location, openTo }) => {
-    const variantSize = useMediaQuery('(min-width:600px)') ? 'h3' : 'h4';
+    const isVariantSize = useMediaQuery('(min-width:600px)') ? 'h3' : 'h4';
 
     return (
         <Box
@@ -16,7 +16,7 @@ export const EventCard = ({ date, time, location, openTo }) => {
         }}
         >
             <Typography
-            variant={variantSize} 
+            variant={isVariantSize} 
             color='#6B3FA0' 
             sx={{
                 fontWeight: 'bold',

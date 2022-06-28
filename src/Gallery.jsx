@@ -21,7 +21,7 @@ const imageNames = Object.keys(images);
 // Utilizing fslightbox-react
 // https://fslightbox.com/react/documentation
 export const Gallery = () => {
-    const mobileSize = useMediaQuery('(max-width:600px)');
+    const isMobileSize = useMediaQuery('(max-width:600px)');
 
     // State to control opening Lightbox on clicked image (slide)
     // if toggler is updated when lightbox is closed (false) it will open it
@@ -52,7 +52,7 @@ export const Gallery = () => {
             }}
             >
                 <Typography 
-                variant={mobileSize ? 'h4' : 'h3'} 
+                variant={isMobileSize ? 'h4' : 'h3'} 
                 color='#6B3FA0'
                 borderBottom={1}
                 borderColor='#6B3FA0' 
@@ -71,7 +71,7 @@ export const Gallery = () => {
                         },
                         // height: 450,
                     }}
-                    cols={mobileSize ? 1 : 3}
+                    cols={isMobileSize ? 1 : 3}
                     gap={8}
                     rowHeight={164}
                 >

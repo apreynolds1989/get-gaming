@@ -23,7 +23,7 @@ const pages = [
 ];
 
 export const HeaderAppBar = () => {
-    const mobileSize = useMediaQuery('(max-width:600px)');
+    const isMobileSize = useMediaQuery('(max-width:600px)');
 
     return (
         <AppBar 
@@ -32,7 +32,7 @@ export const HeaderAppBar = () => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    {mobileSize ? false : <Link to='/'><GetGamingLogo /></Link>}
+                    {isMobileSize ? false : <Link to='/'><GetGamingLogo /></Link>}
                     {/* <Link to='/'><GetGamingLogo /></Link> */}
                     <Box 
                     sx={{ 
