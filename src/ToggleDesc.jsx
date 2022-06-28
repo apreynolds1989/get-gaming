@@ -20,35 +20,35 @@ export const ToggleDesc = ({ desc }) => {
     return (
         <>
             <Typography 
-            fontWeight='bold' 
-            color='#6B3FA0'
-            borderBottom={1} 
-            borderColor='#6B3FA0'
+                fontWeight='bold' 
+                color='#6B3FA0'
+                borderBottom={1} 
+                borderColor='#6B3FA0'
             >
                 Description
             </Typography>
             <Typography 
-            style={{ 
-                whiteSpace: 'break-spaces', 
-            }}
-            color='#201C77'
+                style={{ 
+                    whiteSpace: 'break-spaces', 
+                }}
+                color='#201C77'
             >
                 {gameDesc}
                 {(isShowingFullDesc) ? (
                     <Button
-                    onClick={showLess}
-                    sx={{
-                        lineHeight: 1,
-                    }}
+                        onClick={showLess}
+                        sx={{
+                            lineHeight: 1,
+                        }}
                     >
                         Show Less
                     </Button>
                     ) : (
                     <Button
-                    onClick={showMore}
-                    sx={{
-                        lineHeight: 1,
-                    }}
+                        onClick={showMore}
+                        sx={{
+                            lineHeight: 1,
+                        }}
                     >
                         Show More
                     </Button>  

@@ -17,24 +17,24 @@ export const Library = () => {
             <HeaderAppBar isMobileSize={isMobileSize} />
             <TableContainer component={Paper} sx={{ mt: 12 }}>
                 <Table 
-                sx={{ 
-                    maxWidth: 750, 
-                    margin: 'auto', 
-                    marginBottom: 5
-                }} 
-                aria-label="simple table"
+                    sx={{ 
+                        maxWidth: 750, 
+                        margin: 'auto', 
+                        marginBottom: 5
+                    }} 
+                    aria-label="simple table"
                 >
                     <TableHead>
                         <TableRow>
                             <TableCell 
-                            sx={{
-                                fontWeight: 'bold',
-                                fontSize: 25,
-                                bgcolor: '#F0ECF6',
-                                color: '#6B3FA0',
-                                borderTopLeftRadius: 10,
-                                borderTopRightRadius: 10,
-                            }}
+                                sx={{
+                                    fontWeight: 'bold',
+                                    fontSize: 25,
+                                    bgcolor: '#F0ECF6',
+                                    color: '#6B3FA0',
+                                    borderTopLeftRadius: 10,
+                                    borderTopRightRadius: 10,
+                                }}
                             >
                                 Available Games
                             </TableCell>
@@ -43,27 +43,27 @@ export const Library = () => {
                     <TableBody>
                         {gameNames.map((name) => (
                             <TableRow
-                            key={gameInfo[name].name}
-                            sx={{
-                                borderBottom: 1,
-                                borderColor: '#6B3FA0',
-                            }}
-                            >
-                                <TableCell 
-                                component="th" 
-                                scope="row"
+                                key={gameInfo[name].name}
                                 sx={{
-                                    color: '#201C77',
-                                    borderBottom: 2,
+                                    borderBottom: 1,
                                     borderColor: '#6B3FA0',
                                 }}
+                            >
+                                <TableCell 
+                                    component="th" 
+                                    scope="row"
+                                    sx={{
+                                        color: '#201C77',
+                                        borderBottom: 2,
+                                        borderColor: '#6B3FA0',
+                                    }}
                                 >
                                     <a 
-                                    href={`${gameInfo[name].gameSiteURL}`}
-                                    style={{
-                                        color: '#201C77',
-                                        textDecoration: 'none',
-                                    }}
+                                        href={`${gameInfo[name].gameSiteURL}`}
+                                        style={{
+                                            color: '#201C77',
+                                            textDecoration: 'none',
+                                        }}
                                     >
                                         {gameInfo[name].name}
                                     </a>

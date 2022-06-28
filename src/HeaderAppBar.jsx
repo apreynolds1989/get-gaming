@@ -26,35 +26,36 @@ export const HeaderAppBar = ({ isMobileSize }) => {
     
     return (
         <AppBar 
-        position='fixed' 
-        style={{ backgroundColor: 'white' }}
+            position='fixed' 
+            style={{ backgroundColor: 'white' }}
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
                     {isMobileSize || <Link to='/'><GetGamingLogo /></Link>}
                     {/* <Link to='/'><GetGamingLogo /></Link> */}
                     <Box 
-                    sx={{ 
-                        flexGrow: 1, 
-                        display: 'flex',
-                        justifyContent: {
-                            xs: 'center',
-                            sm: 'flex-end',
-                        }
-                            // { xs: 'none', 
-                            //   sm: 'flex', 
-                            //   justifyContent: 'flex-end' 
-                            // }
-                     }}
+                        sx={{ 
+                            flexGrow: 1, 
+                            display: 'flex',
+                            justifyContent: {
+                                xs: 'center',
+                                sm: 'flex-end',
+                            }
+                                // { xs: 'none', 
+                                //   sm: 'flex', 
+                                //   justifyContent: 'flex-end' 
+                                // }
+                        }}
                     >
                         {pages.map((page) => (
-                            <Button key={page.title}
-                            sx={{
-                                fontSize: {
-                                    xs: 14,
-                                    sm: 18,
-                                },
-                            }}
+                            <Button 
+                                key={page.title}
+                                sx={{
+                                    fontSize: {
+                                        xs: 14,
+                                        sm: 18,
+                                    },
+                                }}
                             >
                                 <NavLink
                                     style={({ isActive }) => {

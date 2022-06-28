@@ -42,23 +42,23 @@ export const Gallery = () => {
         <>
             <HeaderAppBar isMobileSize={isMobileSize} />
             <Box
-            display='flex'
-            flexDirection='column'
-            maxWidth={700}
-            mx='auto'
-            sx={{
-                marginTop: 12,
-                marginBottom: 10,
-            }}
+                display='flex'
+                flexDirection='column'
+                maxWidth={700}
+                mx='auto'
+                sx={{
+                    marginTop: 12,
+                    marginBottom: 10,
+                }}
             >
                 <Typography 
-                variant={isMobileSize ? 'h4' : 'h3'} 
-                color='#6B3FA0'
-                borderBottom={1}
-                borderColor='#6B3FA0' 
-                sx={{ 
-                    fontWeight: 'bold',
-                }}
+                    variant={isMobileSize ? 'h4' : 'h3'} 
+                    color='#6B3FA0'
+                    borderBottom={1}
+                    borderColor='#6B3FA0' 
+                    sx={{ 
+                        fontWeight: 'bold',
+                    }}
                 >
                     Gallery
                 </Typography>
