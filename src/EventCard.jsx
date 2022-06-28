@@ -5,48 +5,48 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
 
     return (
         <Box
-        display="flex"
-        flexDirection={'column'}
-        justifyContent="center"
-        alignItems="center"
-        mb={5}
-        sx={{
-            marginTop: 5,
-        }}
+            display="flex"
+            flexDirection={'column'}
+            justifyContent="center"
+            alignItems="center"
+            mb={5}
+            sx={{
+                marginTop: 5,
+            }}
         >
             <Typography
-            variant={isMobileSize ? 'h4' : 'h3'} 
-            color='#6B3FA0' 
-            sx={{
-                fontWeight: 'bold',
-            }}
+                variant={isMobileSize ? 'h4' : 'h3'} 
+                color='#6B3FA0' 
+                sx={{
+                    fontWeight: 'bold',
+                }}
             >
                 UPCOMING EVENT
             </Typography>
             <Card 
-            sx={{ 
-                borderRadius: 5,
-                minWidth: 200, 
-                px: 7, 
-                mt: 1, 
-                bgcolor: '#F0ECF6' 
-              }}
+                sx={{ 
+                    borderRadius: 5,
+                    minWidth: 200, 
+                    px: 7, 
+                    mt: 1, 
+                    bgcolor: '#F0ECF6' 
+                }}
             >
                 <CardContent>
                     <Box 
-                    display="flex" 
-                    flexDirection='row' 
-                    justifyContent='space-between' 
-                    py={1}
+                        display="flex" 
+                        flexDirection='row' 
+                        justifyContent='space-between' 
+                        py={1}
                     >
                         <Box 
-                        flexDirection='column'
-                        textAlign='center'
-                        paddingRight={3}
+                            flexDirection='column'
+                            textAlign='center'
+                            paddingRight={3}
                         >
                             <Typography 
-                            fontWeight='bold'
-                            color='#6B3FA0'
+                                fontWeight='bold'
+                                color='#6B3FA0'
                             >
                                 Date
                             </Typography>
@@ -55,12 +55,12 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                             </Typography>
                         </Box>
                         <Box 
-                        flexDirection='column'
-                        paddingLeft={3}
+                            flexDirection='column'
+                            paddingLeft={3}
                         >
                             <Typography 
-                            fontWeight='bold'
-                            color='#6B3FA0'
+                                fontWeight='bold'
+                                color='#6B3FA0'
                             >
                                Time
                             </Typography>
@@ -70,13 +70,13 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         </Box>
                     </Box>
                     <Box 
-                    flexDirection='column' 
-                    textAlign='center' 
-                    py={1}
+                        flexDirection='column' 
+                        textAlign='center' 
+                        py={1}
                     >
                         <Typography 
-                        fontWeight='bold'
-                        color='#6B3FA0'
+                            fontWeight='bold'
+                            color='#6B3FA0'
                         >
                             Location
                         </Typography>
@@ -85,13 +85,14 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         </Typography>
                     </Box>
                     <Box 
-                    flexDirection='column' 
-                    textAlign='center' 
-                    py={1}
+                        flexDirection='column' 
+                        textAlign='center' 
+                        py={1}
                     >
                         <Typography 
-                        fontWeight='bold'
-                        color='#6B3FA0'>
+                            fontWeight='bold'
+                            color='#6B3FA0'
+                        >
                             Open to:
                         </Typography>
                         <Typography color='#201C77'>

@@ -10,69 +10,69 @@ export const ContactForm = () => {
         <>
             <HeaderAppBar isMobileSize={isMobileSize} />
             <Box
-            display='flex'
-            flexDirection='column'
-            maxWidth={700}
-            mx='auto'
-            sx={{
-                marginTop: 12,
-                marginBottom: 10,
-            }}
+                display='flex'
+                flexDirection='column'
+                maxWidth={700}
+                mx='auto'
+                sx={{
+                    marginTop: 12,
+                    marginBottom: 10,
+                }}
             >
                 <Typography 
-                variant={isMobileSize ? 'h4' : 'h3'} 
-                color='#6B3FA0'
-                borderBottom={1}
-                borderColor='#6B3FA0' 
-                sx={{ 
-                    fontWeight: 'bold',
-                }}
+                    variant={isMobileSize ? 'h4' : 'h3'} 
+                    color='#6B3FA0'
+                    borderBottom={1}
+                    borderColor='#6B3FA0' 
+                    sx={{ 
+                        fontWeight: 'bold',
+                    }}
                 >
                     Contact Us
                 </Typography>
                 <Card 
-                sx={{ 
-                    borderRadius: 5,
-                    minWidth: 200, 
-                    px: 7, 
-                    mt: 1, 
-                    bgcolor: '#F0ECF6' 
-                }}
+                    sx={{ 
+                        borderRadius: 5,
+                        minWidth: 200, 
+                        px: 7, 
+                        mt: 1, 
+                        bgcolor: '#F0ECF6' 
+                    }}
                 >
                     <CardContent>
                         <Box
-                        display='flex'
-                        sx={{
-                            flexDirection: {
-                                xs: 'column',
-                                sm: 'row'
-                            }
-                        }} 
-                        flexDirection='row'
+                            display='flex'
+                            sx={{
+                                flexDirection: {
+                                    xs: 'column',
+                                    sm: 'row'
+                                }
+                            }} 
+                            flexDirection='row'
                         >
                             <TextField
-                            required
-                            label='First Name'
-                            placeholder='Enter Your First Name'
-                            variant='outlined'
-                            color='secondary'
-                            margin='dense'
-                            fullWidth
+                                required
+                                label='First Name'
+                                placeholder='Enter Your First Name'
+                                variant='outlined'
+                                color='secondary'
+                                margin='dense'
+                                fullWidth
                             />
                             <TextField
-                            required
-                            label='Last Name'
-                            placeholder='Enter Your Last Name'
-                            variant='outlined'
-                            color='secondary'
-                            margin='dense'
-                            fullWidth
-                            sx={{
-                                marginLeft: {
-                                    xs: 0,
-                                    sm: 2
-                                }
-                            }}
+                                required
+                                label='Last Name'
+                                placeholder='Enter Your Last Name'
+                                variant='outlined'
+                                color='secondary'
+                                margin='dense'
+                                fullWidth
+                                sx={{
+                                    marginLeft: {
+                                        xs: 0,
+                                        sm: 2
+                                    }
+                                }}
                             />
                         </Box>
                         <TextField
