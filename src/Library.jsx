@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {
     Table, TableBody, TableCell, TableContainer,
-    TableHead, TableRow, Paper
+    TableHead, TableRow, Paper, useMediaQuery
 } from '@mui/material';
 import { gameInfo } from './gameInfo';
 import { HeaderAppBar } from './HeaderAppBar';
@@ -10,9 +10,11 @@ import { Footer } from './Footer';
 const gameNames = Object.keys(gameInfo).sort();
 
 export const Library = () => {
+    const isMobileSize = useMediaQuery('(max-width:600px)');
+
     return (
         <>
-            <HeaderAppBar />
+            <HeaderAppBar isMobileSize={isMobileSize} />
             <TableContainer component={Paper} sx={{ mt: 12 }}>
                 <Table 
                 sx={{ 

@@ -8,7 +8,7 @@ export const ContactForm = () => {
 
     return (
         <>
-            <HeaderAppBar />
+            <HeaderAppBar isMobileSize={isMobileSize} />
             <Box
             display='flex'
             flexDirection='column'

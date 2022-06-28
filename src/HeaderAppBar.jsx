@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from "react-router-dom";
-import { AppBar, Container, Toolbar, Box, Button, useMediaQuery } from '@mui/material';
+import { AppBar, Container, Toolbar, Box, Button } from '@mui/material';
 import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 
 const pages = [
@@ -22,9 +22,8 @@ const pages = [
     },
 ];
 
-export const HeaderAppBar = () => {
-    const isMobileSize = useMediaQuery('(max-width:600px)');
-
+export const HeaderAppBar = ({ isMobileSize }) => {
+    
     return (
         <AppBar 
         position='fixed' 
@@ -32,7 +31,7 @@ export const HeaderAppBar = () => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    {isMobileSize ? false : <Link to='/'><GetGamingLogo /></Link>}
+                    {isMobileSize || <Link to='/'><GetGamingLogo /></Link>}
                     {/* <Link to='/'><GetGamingLogo /></Link> */}
                     <Box 
                     sx={{ 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Box, useMediaQuery } from '@mui/material';
 import './App.css';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Splash } from './Splash';
@@ -11,15 +11,18 @@ import { gameInfo } from './gameInfo';
 import { ExtraGamesCard } from './ExtraGamesCard';
 
 export const App = () => {
+    const isMobileSize = useMediaQuery('(max-width:600px)');
+
     const gameOne = gameInfo.fiveTribes;
     const gameTwo = gameInfo.cosmicEncounter;
     const gameThree = gameInfo.callToAdventureStormlight;
 
     return (
       <>
-        <HeaderAppBar />
+        <HeaderAppBar isMobileSize={isMobileSize} />
         <Splash />
         <EventCard 
+        isMobileSize={isMobileSize}
         date='TBD'
         time='TBD'
         location='TBD'

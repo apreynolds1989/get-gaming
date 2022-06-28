@@ -40,7 +40,7 @@ export const Gallery = () => {
 
     return (
         <>
-            <HeaderAppBar />
+            <HeaderAppBar isMobileSize={isMobileSize} />
             <Box
             display='flex'
             flexDirection='column'
@@ -75,7 +75,6 @@ export const Gallery = () => {
                     gap={8}
                     rowHeight={164}
                 >
-                    {/* can't figure out how to hande vertical photos */}
                     {imageNames.map((imageName, index) => (
                         <ImageListItem key={imageName} sx={{ overflowY: 'hidden'}}>
                             <img 
