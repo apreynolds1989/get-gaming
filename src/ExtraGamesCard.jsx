@@ -9,7 +9,7 @@ export const ExtraGamesCard = () => {
     return (
         <Box
         display="flex"
-        flexDirection={'column'}
+        flexDirection='column'
         justifyContent="center"
         alignItems="center"
         mb={5}
@@ -40,10 +40,10 @@ export const ExtraGamesCard = () => {
                     >
                         <Typography 
                         variant='h6'
-                        fontWeight={'bold'} 
+                        fontWeight='bold' 
                         color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'#6B3FA0'}
+                        borderColor='#6B3FA0'
                         marginBottom={1}
                         >
                             Want something simple, quick and fun?
@@ -59,10 +59,10 @@ export const ExtraGamesCard = () => {
                         </Typography>
                         <Typography 
                         variant='h6'
-                        fontWeight={'bold'} 
+                        fontWeight='bold' 
                         color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'#6B3FA0'}
+                        borderColor='#6B3FA0'
                         marginBottom={1}
                         >
                             Extras and Filler Games
@@ -101,16 +101,16 @@ export const ExtraGamesCard = () => {
                         </ul>
                     </Box>
                     <Box 
-                    flexDirection={'column'}
-                    textAlign={'left'} 
+                    flexDirection='column'
+                    textAlign='left' 
                     py={1}
                     >
                         <Typography 
                         variant='h6'
-                        fontWeight={'bold'} 
+                        fontWeight='bold' 
                         color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'#6B3FA0'}
+                        borderColor='#6B3FA0'
                         marginBottom={1}
                         >
                             Have a Favourite of Your Own?

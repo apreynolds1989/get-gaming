@@ -6,7 +6,7 @@ export const GameDisplay = ({ cardToDisplay }) => {
     return (
         <Box
         display="flex"
-        flexDirection={'column'}
+        flexDirection='column'
         alignItems="center"
         marginBottom={1}
         >

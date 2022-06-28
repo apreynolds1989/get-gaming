@@ -35,17 +35,17 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                 <CardContent>
                     <Box 
                     display="flex" 
-                    flexDirection={'row'} 
+                    flexDirection='row' 
                     justifyContent='space-between' 
                     py={1}
                     >
                         <Box 
-                        flexDirection={'column'} 
-                        textAlign={'center'}
+                        flexDirection='column'
+                        textAlign='center'
                         paddingRight={3}
                         >
                             <Typography 
-                            fontWeight={'bold'}
+                            fontWeight='bold'
                             color='#6B3FA0'
                             >
                                 Date
@@ -55,11 +55,11 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                             </Typography>
                         </Box>
                         <Box 
-                        flexDirection={'column'}
+                        flexDirection='column'
                         paddingLeft={3}
                         >
                             <Typography 
-                            fontWeight={'bold'}
+                            fontWeight='bold'
                             color='#6B3FA0'
                             >
                                Time
@@ -70,12 +70,12 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         </Box>
                     </Box>
                     <Box 
-                    flexDirection={'column'} 
-                    textAlign={'center'} 
+                    flexDirection='column' 
+                    textAlign='center' 
                     py={1}
                     >
                         <Typography 
-                        fontWeight={'bold'}
+                        fontWeight='bold'
                         color='#6B3FA0'
                         >
                             Location
@@ -85,12 +85,12 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         </Typography>
                     </Box>
                     <Box 
-                    flexDirection={'column'} 
-                    textAlign={'center'} 
+                    flexDirection='column' 
+                    textAlign='center' 
                     py={1}
                     >
                         <Typography 
-                        fontWeight={'bold'}
+                        fontWeight='bold'
                         color='#6B3FA0'>
                             Open to:
                         </Typography>

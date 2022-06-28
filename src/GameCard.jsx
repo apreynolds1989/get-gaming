@@ -8,7 +8,7 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
     return (
         <Box
         display="flex"
-        flexDirection={'column'}
+        flexDirection='column'
         justifyContent="center"
         alignItems="center"
         mb={5}
@@ -44,22 +44,22 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                         </a>
                     </Box>
                     <Box 
-                    flexDirection={'column'} 
-                    textAlign={'left'}
+                    flexDirection='column' 
+                    textAlign='left'
                     py={1}
                     >
                         <ToggleDesc desc={desc} />
                     </Box>
                     <Box 
-                    flexDirection={'column'}
-                    textAlign={'left'} 
+                    flexDirection='column'
+                    textAlign='left' 
                     py={1}
                     >
                         <Typography 
-                        fontWeight={'bold'} 
+                        fontWeight='bold' 
                         color='#6B3FA0'
                         borderBottom={1} 
-                        borderColor={'#6B3FA0'}
+                        borderColor='#6B3FA0'
                         marginBottom={1}
                         >
                             How to Play?
