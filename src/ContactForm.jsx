@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { useRef } from 'react';
 import { 
     Card, 
     CardContent, 
@@ -11,6 +11,7 @@ import {
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
 import { MailToButton } from './MailToButton'
@@ -20,6 +21,18 @@ import { MailToButton } from './MailToButton'
 // https://www.bezkoder.com/react-hook-form-material-ui-validation/
 export const ContactForm = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
 
     const validationSchema = Yup.object().shape({
         firstName: Yup.string()
@@ -29,6 +42,8 @@ export const ContactForm = () => {
         email: Yup.string()
             .required('Email is required')
             .email('Email is invalid'),
+        subject: Yup.string()
+            .required('Subject is required'),
         message: Yup.string()
             .required('Please enter your message')
     });
@@ -77,109 +92,147 @@ export const ContactForm = () => {
                     }}
                 >
                     <CardContent>
-                        <Box
-                            display='flex'
-                            sx={{
-                                flexDirection: {
-                                    xs: 'column',
-                                    sm: 'row'
-                                }
-                            }} 
-                            flexDirection='row'
-                        >
-                            <TextField
-                                required
-                                id='firstName'
-                                name='firstName'
-                                label='First Name'
-                                placeholder='Enter Your First Name'
-                                variant='outlined'
-                                color='secondary'
-                                margin='dense'
-                                fullWidth
-                                {...register('firstName')}
-                                error={errors.firstName ? true : false}
-                            />
-                            <Typography variant='inherit' color='#6B3FA0'>
-                                {errors.firstName?.message}
-                            </Typography>
-                            <TextField
-                                required
-                                id='lastName'
-                                name='lastName'
-                                label='Last Name'
-                                placeholder='Enter Your Last Name'
-                                variant='outlined'
-                                color='secondary'
-                                margin='dense'
-                                fullWidth
+                        <form ref={form} onSubmit={sendEmail}>
+                            <Box
+                                display='flex'
                                 sx={{
-                                    marginLeft: {
-                                        xs: 0,
-                                        sm: 2
+                                    flexDirection: {
+                                        xs: 'column',
+                                        sm: 'row'
                                     }
-                                }}
-                                {...register('lastName')}
-                                error={errors.lastName ? true : false}
-                            />
-                            <Typography variant='inherit' color='#6B3FA0'>
-                                {errors.lastName?.message}
-                            </Typography>
-                        </Box>
-                        <TextField
-                            required
-                            id='email'
-                            name='email'
-                            label='Email'
-                            placeholder='Enter Your Email'
-                            variant='outlined'
-                            color='secondary'
-                            margin='dense'
-                            fullWidth
-                            {...register('email')}
-                                error={errors.email ? true : false}
+                                }} 
+                                flexDirection='row'
+                            >
+                                <Box
+                                    display='flex'
+                                    flexDirection='column'
+                                    flexGrow={1}
+                                >
+                                    <TextField
+                                        required
+                                        id='firstName'
+                                        name='firstName'
+                                        label='First Name'
+                                        placeholder='Enter Your First Name'
+                                        variant='outlined'
+                                        color='secondary'
+                                        margin='dense'
+                                        fullWidth
+                                        {...register('firstName')}
+                                        error={errors.firstName ? true : false}
+                                    />
+                                    <Typography 
+                                        variant='inherit' 
+                                        color='#6B3FA0'
+                                    >
+                                        {errors.firstName?.message}
+                                    </Typography>
+                                </Box>
+                                <Box
+                                    display='flex'
+                                    flexDirection='column'
+                                    flexGrow={1}
+                                >
+                                    <TextField
+                                        required
+                                        id='lastName'
+                                        name='lastName'
+                                        label='Last Name'
+                                        placeholder='Enter Your Last Name'
+                                        variant='outlined'
+                                        color='secondary'
+                                        margin='dense'
+                                        fullWidth
+                                        sx={{
+                                            marginLeft: {
+                                                xs: 0,
+                                                sm: 2
+                                            }
+                                        }}
+                                        {...register('lastName')}
+                                        error={errors.lastName ? true : false}
+                                    />
+                                    <Typography 
+                                        variant='inherit' 
+                                        color='#6B3FA0'
+                                        textAlign='right'
+                                    >
+                                        {errors.lastName?.message}
+                                    </Typography>
+                                </Box>
+                            </Box>
+                            <TextField
+                                required
+                                id='email'
+                                name='email'
+                                label='Email'
+                                placeholder='Enter Your Email'
+                                variant='outlined'
+                                color='secondary'
+                                margin='dense'
+                                fullWidth
+                                {...register('email')}
+                                    error={errors.email ? true : false}
                             />
                             <Typography variant='inherit' color='#6B3FA0'>
                                 {errors.email?.message}
                             </Typography>
-                        <TextField
-                            multiline
-                            rows={10}
-                            required
-                            id='message'
-                            name='message'
-                            label='Message'
-                            placeholder='Leave us a message'
-                            variant='outlined'
-                            color='secondary'
-                            margin='dense'
-                            fullWidth
-                            {...register('message')}
-                                error={errors.message ? true : false}
+                            <TextField
+                                required
+                                id='subject'
+                                name='subject'
+                                label='Subject'
+                                placeholder='Enter your email subject here'
+                                variant='outlined'
+                                color='secondary'
+                                margin='dense'
+                                fullWidth
+                                {...register('subject')}
+                                    error={errors.subject ? true : false}
+                            />
+                            <Typography variant='inherit' color='#6B3FA0'>
+                                {errors.subject?.message}
+                            </Typography>
+                            <TextField
+                                multiline
+                                rows={10}
+                                required
+                                id='message'
+                                name='message'
+                                label='Message'
+                                placeholder='Leave us a message'
+                                variant='outlined'
+                                color='secondary'
+                                margin='dense'
+                                fullWidth
+                                {...register('message')}
+                                    error={errors.message ? true : false}
                             />
                             <Typography variant='inherit' color='#6B3FA0'>
                                 {errors.message?.message}
                             </Typography>
-                        <Box
-                            paddingTop={2}
-                            display='flex'
-                            justifyContent='center'
-                        >
-                            <Button
-                                variant='contained'
-                                sx={{
-                                    paddingX: 5,
-                                    bgcolor: '#6B3FA0',
-                                    fontWeight: 'bold',
-                                    '&:hover' : {
-                                        bgcolor: 'black',
-                                    }
-                                }}
-                                onClick={handleSubmit(onSubmit)}
+                            <Box
+                                paddingTop={2}
+                                display='flex'
+                                justifyContent='center'
                             >
-                                Submit
-                            </Button>
-                        </Box>
+                                <Button
+                                    variant='contained'
+                                    type='submit'
+                                    sx={{
+                                        paddingX: 5,
+                                        bgcolor: '#6B3FA0',
+                                        fontWeight: 'bold',
+                                        '&:hover' : {
+                                            bgcolor: 'black',
+                                        }
+                                    }}
+                                    onClick={handleSubmit(onSubmit)}
+                                >
+                                    Submit
+                                </Button>
+                            </Box>
+                        </form>
                     </CardContent>
                 </Card>
             </Box>
@@ -189,3 +242,36 @@ export const ContactForm = () => {
         </>
     );
 };
+
+
+
+
+// import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
+
+// export const ContactForm = () => {
+//   const form = useRef();
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+
+//     emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
+
+//   return (
+//     <form ref={form} onSubmit={sendEmail}>
+//       <label>Name</label>
+//       <input type="text" name="firstName" />
+//       <label>Email</label>
+//       <input type="email" name="email" />
+//       <label>Message</label>
+//       <textarea name="message" />
+//       <input type="submit" value="Send" />
+//     </form>
+//   );
+// };
