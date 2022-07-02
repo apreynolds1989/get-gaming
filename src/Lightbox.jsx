@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import FsLightbox from "fslightbox-react";
 
 export const Lightbox = ({images, lightboxController}) => {
