@@ -23,17 +23,6 @@ export const ContactForm = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
     const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
-
     const validationSchema = Yup.object().shape({
         firstName: Yup.string()
             .required('First Name is required'),
@@ -50,12 +39,27 @@ export const ContactForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors }
     } = useForm({
         resolver: yupResolver(validationSchema)
     });
-    const onSubmit = data => {
-        console.log(JSON.stringify(data, null, 2));
+    const sendEmail = (e) => {
+        // EmailJs seems to work with react-hook-form if this is commented out?
+        // e.preventDefault();
+    
+        emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
+        .then((result) => {
+            console.log(result.text);
+            reset();
+        }, (error) => {
+            console.log(error.text);
+        });       
+      };
+
+    const onFormSubmit = data => {
+        sendEmail();
+        // console.log(JSON.stringify(data, null, 2));
     };
 
     return (
@@ -92,7 +96,7 @@ export const ContactForm = () => {
                     }}
                 >
                     <CardContent>
-                        <form ref={form} onSubmit={sendEmail}>
+                        <form ref={form} onSubmit={handleSubmit(onFormSubmit)}>
                             <Box
                                 display='flex'
                                 sx={{
@@ -227,7 +231,6 @@ export const ContactForm = () => {
                                             bgcolor: 'black',
                                         }
                                     }}
-                                    onClick={handleSubmit(onSubmit)}
                                 >
                                     Submit
                                 </Button>
