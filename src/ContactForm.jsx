@@ -14,7 +14,6 @@ import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
-import { MailToButton } from './MailToButton'
 
 // Implemented form and form validation using MUI, react-hook-form and Yup
 // following the tutorial in the following link:
@@ -105,11 +104,12 @@ export const ContactForm = () => {
                                         sm: 'row'
                                     }
                                 }} 
-                                flexDirection='row'
                             >
                                 <Box
                                     display='flex'
                                     flexDirection='column'
+                                    // flexGrow appearsto be causing visual bug
+                                    // text boxes are overflowing the box container
                                     flexGrow={1}
                                 >
                                     <TextField
@@ -176,7 +176,7 @@ export const ContactForm = () => {
                                 margin='dense'
                                 fullWidth
                                 {...register('email')}
-                                    error={errors.email ? true : false}
+                                error={errors.email ? true : false}
                             />
                             <Typography variant='inherit' color='#6B3FA0'>
                                 {errors.email?.message}
@@ -192,7 +192,7 @@ export const ContactForm = () => {
                                 margin='dense'
                                 fullWidth
                                 {...register('subject')}
-                                    error={errors.subject ? true : false}
+                                error={errors.subject ? true : false}
                             />
                             <Typography variant='inherit' color='#6B3FA0'>
                                 {errors.subject?.message}
@@ -210,7 +210,7 @@ export const ContactForm = () => {
                                 margin='dense'
                                 fullWidth
                                 {...register('message')}
-                                    error={errors.message ? true : false}
+                                error={errors.message ? true : false}
                             />
                             <Typography variant='inherit' color='#6B3FA0'>
                                 {errors.message?.message}
@@ -239,8 +239,6 @@ export const ContactForm = () => {
                     </CardContent>
                 </Card>
             </Box>
-            {/* Backup Option */}
-            <MailToButton label="Write me an E-Mail" mailto="mailto:test@gmail.com" />
             <Footer />
         </>
     );
