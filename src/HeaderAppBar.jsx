@@ -31,7 +31,7 @@ export const HeaderAppBar = ({ isMobileSize }) => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    {isMobileSize || <Link to='/'><GetGamingLogo /></Link>}
+                    {!isMobileSize && <Link to='/'><GetGamingLogo /></Link>}
                     {/* <Link to='/'><GetGamingLogo /></Link> */}
                     <Box 
                         sx={{ 
