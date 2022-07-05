@@ -98,6 +98,7 @@ export const ContactForm = () => {
                         <form ref={form} onSubmit={handleSubmit(onFormSubmit)}>
                             <Box
                                 display='flex'
+                                minWidth={1}
                                 sx={{
                                     flexDirection: {
                                         xs: 'column',
@@ -110,7 +111,8 @@ export const ContactForm = () => {
                                     flexDirection='column'
                                     // flexGrow appearsto be causing visual bug
                                     // text boxes are overflowing the box container
-                                    flexGrow={1}
+                                    // flexGrow={1}
+                                    minWidth={'49.3%'}
                                 >
                                     <TextField
                                         required
@@ -135,7 +137,8 @@ export const ContactForm = () => {
                                 <Box
                                     display='flex'
                                     flexDirection='column'
-                                    flexGrow={1}
+                                    // flexGrow={1}
+                                    minWidth={'49.3%'}
                                 >
                                     <TextField
                                         required
@@ -150,7 +153,7 @@ export const ContactForm = () => {
                                         sx={{
                                             marginLeft: {
                                                 xs: 0,
-                                                sm: 2
+                                                sm: 1
                                             }
                                         }}
                                         {...register('lastName')}
