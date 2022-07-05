@@ -98,7 +98,6 @@ export const ContactForm = () => {
                         <form ref={form} onSubmit={handleSubmit(onFormSubmit)}>
                             <Box
                                 display='flex'
-                                minWidth={1}
                                 sx={{
                                     flexDirection: {
                                         xs: 'column',
@@ -109,9 +108,6 @@ export const ContactForm = () => {
                                 <Box
                                     display='flex'
                                     flexDirection='column'
-                                    // flexGrow appearsto be causing visual bug
-                                    // text boxes are overflowing the box container
-                                    // flexGrow={1}
                                     minWidth={'49.3%'}
                                 >
                                     <TextField
@@ -137,7 +133,6 @@ export const ContactForm = () => {
                                 <Box
                                     display='flex'
                                     flexDirection='column'
-                                    // flexGrow={1}
                                     minWidth={'49.3%'}
                                 >
                                     <TextField
@@ -246,36 +241,3 @@ export const ContactForm = () => {
         </>
     );
 };
-
-
-
-
-// import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
-
-// export const ContactForm = () => {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
-
-//   return (
-//     <form ref={form} onSubmit={sendEmail}>
-//       <label>Name</label>
-//       <input type="text" name="firstName" />
-//       <label>Email</label>
-//       <input type="email" name="email" />
-//       <label>Message</label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   );
-// };
