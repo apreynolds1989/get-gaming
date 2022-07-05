@@ -18,7 +18,7 @@ export const Library = () => {
             <TableContainer component={Paper} sx={{ mt: 12 }}>
                 <Table 
                     sx={{ 
-                        maxWidth: 750, 
+                        maxWidth: '750px', 
                         margin: 'auto', 
                         marginBottom: 5
                     }} 
@@ -29,7 +29,7 @@ export const Library = () => {
                             <TableCell 
                                 sx={{
                                     fontWeight: 'bold',
-                                    fontSize: 25,
+                                    fontSize: '25px',
                                     bgcolor: '#F0ECF6',
                                     color: '#6B3FA0',
                                     borderTopLeftRadius: 10,

@@ -20,7 +20,7 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                 sx={{ 
                     fontSize: variantSize,
                     fontWeight: 'bold',
-                    maxWidth: 550 
+                    maxWidth: '550px' 
                 }}
             >
                 <a href={gameSiteURL} style={{ textDecoration: 'none' }}>
@@ -30,9 +30,9 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
             <Card 
                 sx={{ 
                     borderRadius: 5,
-                    minWidth: 150, 
-                    maxWidth: 500,
-                    minHeight: 900, 
+                    minWidth: '150px', 
+                    maxWidth: '500px',
+                    minHeight: '900px', 
                     px: 3,
                     mx: 5, 
                     mt: 1, 

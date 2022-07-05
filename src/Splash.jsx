@@ -22,11 +22,11 @@ export const Splash = () => {
                     // backgroundPosition: 'center', 
                     backgroundSize: 'cover', 
                     height: {
-                        xs: 200,
-                        sm: 250,
-                        md: 325,
-                        lg: 400,
-                        xl: 450,
+                        xs: '200px',
+                        sm: '250px',
+                        md: '325px',
+                        lg: '400px',
+                        xl: '450px',
                     }, 
                     // width: 'fit' 
                 }}

@@ -52,8 +52,8 @@ export const HeaderAppBar = ({ isMobileSize }) => {
                                 key={page.title}
                                 sx={{
                                     fontSize: {
-                                        xs: 14,
-                                        sm: 18,
+                                        xs: '14px',
+                                        sm: '18px',
                                     },
                                 }}
                             >

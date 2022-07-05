@@ -44,7 +44,7 @@ export const Gallery = () => {
             <Box
                 display='flex'
                 flexDirection='column'
-                maxWidth={700}
+                maxWidth='700px'
                 mx='auto'
                 sx={{
                     marginTop: 12,
@@ -66,8 +66,8 @@ export const Gallery = () => {
                     sx={{
                         alignSelf: 'center',
                         width: {
-                            xs: 164,
-                            sm: 500,
+                            xs: '164px',
+                            sm: '500px',
                         },
                         // height: 450,
                     }}

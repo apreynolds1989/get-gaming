@@ -67,7 +67,7 @@ export const ContactForm = () => {
             <Box
                 display='flex'
                 flexDirection='column'
-                maxWidth={700}
+                maxWidth='700px'
                 mx='auto'
                 sx={{
                     marginTop: 12,
@@ -88,7 +88,7 @@ export const ContactForm = () => {
                 <Card 
                     sx={{ 
                         borderRadius: 5,
-                        minWidth: 200, 
+                        minWidth: '200px', 
                         px: 7, 
                         mt: 1, 
                         bgcolor: '#F0ECF6' 
@@ -224,7 +224,7 @@ export const ContactForm = () => {
                                     variant='contained'
                                     type='submit'
                                     sx={{
-                                        paddingX: 5,
+                                        px: 5,
                                         bgcolor: '#6B3FA0',
                                         fontWeight: 'bold',
                                         '&:hover' : {

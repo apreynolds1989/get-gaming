@@ -101,7 +101,7 @@ export const Footer = () => {
                                     sx={{ 
                                         my: 2,
                                         display: 'block',
-                                        fontSize: 14, 
+                                        fontSize: '14px', 
                                         borderRight: borderSize, 
                                         borderColor: 'white', 
                                         borderRadius: 0 

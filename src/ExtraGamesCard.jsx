@@ -24,9 +24,9 @@ export const ExtraGamesCard = () => {
             <Card 
                 sx={{ 
                     borderRadius: 5,
-                    minWidth: 150, 
-                    maxWidth: 500, 
-                    minHeight: 900, 
+                    minWidth: '150px', 
+                    maxWidth: '500px', 
+                    minHeight: '900px', 
                     px: 3,
                     mx: 5, 
                     mt: 1, 

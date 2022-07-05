@@ -26,7 +26,7 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
             <Card 
                 sx={{ 
                     borderRadius: 5,
-                    minWidth: 200, 
+                    minWidth: '200px', 
                     px: 7, 
                     mt: 1, 
                     bgcolor: '#F0ECF6' 
