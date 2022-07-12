@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: main
+    branches: master
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16"
+          node-version: '16'
 
       - name: Install dependencies
         run: cd my-app && npm install
