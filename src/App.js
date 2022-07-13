@@ -11,6 +11,7 @@ import { gameInfo } from './gameInfo';
 import { ExtraGamesCard } from './ExtraGamesCard';
 
 export const App = () => {
+    // Testing deployment
     const isMobileSize = useMediaQuery('(max-width:600px)');
 
     const gameOne = gameInfo.fiveTribes;
