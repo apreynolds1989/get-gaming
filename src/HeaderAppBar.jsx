@@ -6,19 +6,19 @@ import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 const pages = [
     {
         title: 'Home',
-        route: '/get-gaming/',
+        route: '',
     },
     {
         title: 'Library',
-        route: '/get-gaming/Library',
+        route: 'Library',
     },
     {
         title: 'Gallery',
-        route: '/get-gaming/Gallery',
+        route: 'Gallery',
     },
     {
         title: 'Contact',
-        route: '/get-gaming/ContactForm'
+        route: 'ContactForm'
     },
 ];
 
