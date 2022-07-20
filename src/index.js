@@ -16,10 +16,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="Library" element={<Library />} />
-            <Route path="Gallery" element={<Gallery />} />
-            <Route path="ContactForm" element={<ContactForm />} />
+            <Route path="/get-gaming/" element={<App />} />
+            <Route path="/get-gaming/Library" element={<Library />} />
+            <Route path="/get-gaming/Gallery" element={<Gallery />} />
+            <Route path="/get-gaming/ContactForm" element={<ContactForm />} />
             <Route
                 path="*"
                 element={
