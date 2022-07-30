@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Get Gaming
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Please note that this program is still under development and may not work as expected*<br>
+[Get Gaming](https://apreynolds1989.github.io/get-gaming/)
 
-## Available Scripts
+### What is it?
+---
+Get Gaming serves as an information page for Board Game nights to be hosted in partnership with Get Coding for Networking events. It provides information for an Upcoming Event, showcasing the games that will be featured at the event. It also provides a Library of Games available for future events, a Gallery of images from past events and a Contact Form to ask questions/get more detailed information.
 
-In the project directory, you can run:
+### Why Make it?
+---
+As an avid Board Gamer, I thought Board Game Nights would make for great Networking opportunities for myself (and my fellow students) as I make the transition into the Tech sector. It provided me with an opportunity to practice with React and gave me a platform I could use to display the relevant information for Get Gaming events.
 
-### `npm start`
+### What's Next?
+---
+As this is mostly a platform to simply display information for Get Gaming events, it can be considered mostly complete. The Library can continue to be upated as my Board Game collection changes. New photos can be added to the Gallery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Features I may consider in the future include:
+- Multiple Galleries that would strictly include photos from specific events
+- User database which would allow users to internally rate games to give an idea of how the local community feels about each game
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Built With
+---
+[create-react-app](https://create-react-app.dev/)
+[MUI](https://mui.com/)
+[fslightbox.js](https://fslightbox.com/)
+[react router](https://v5.reactrouter.com/web/guides/quick-start)
+[react-hook-form](https://react-hook-form.com/)
