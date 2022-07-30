@@ -6,7 +6,7 @@ import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 const pages = [
     {
         title: 'Home',
-        route: '/get-gaming/',
+        route: 'get-gaming',
     },
     {
         title: 'Library',

@@ -7,7 +7,7 @@ import { ReactComponent as WhiteGetGaming } from './img/WhiteGetGaming.svg';
 const pages = [
     {
         title: 'Home',
-        route: '/get-gaming/',
+        route: 'get-gaming',
     },
     {
         title: 'Library',
