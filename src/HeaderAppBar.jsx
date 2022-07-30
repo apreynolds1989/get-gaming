@@ -6,7 +6,7 @@ import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 const pages = [
     {
         title: 'Home',
-        route: '',
+        route: '/get-gaming/',
     },
     {
         title: 'Library',
@@ -31,7 +31,7 @@ export const HeaderAppBar = ({ isMobileSize }) => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    {!isMobileSize && <Link to='/'><GetGamingLogo /></Link>}
+                    {!isMobileSize && <Link to='/get-gaming/'><GetGamingLogo /></Link>}
                     {/* <Link to='/'><GetGamingLogo /></Link> */}
                     <Box 
                         sx={{ 

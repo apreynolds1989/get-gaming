@@ -7,7 +7,7 @@ import { ReactComponent as WhiteGetGaming } from './img/WhiteGetGaming.svg';
 const pages = [
     {
         title: 'Home',
-        route: '',
+        route: '/get-gaming/',
     },
     {
         title: 'Library',
@@ -56,7 +56,7 @@ export const Footer = () => {
                         justifyContent="center"
                         alignItems="center"
                     >
-                        <Link to='/'><WhiteGetGaming /></Link>
+                        <Link to='/get-gaming/'><WhiteGetGaming /></Link>
                         <Box 
                             borderTop={1} 
                             borderColor='white' 
