@@ -22,8 +22,8 @@ Features I may consider in the future include:
 
 ### Built With
 ---
--[create-react-app](https://create-react-app.dev/)
--[MUI](https://mui.com/)
--[fslightbox.js](https://fslightbox.com/)
--[react router](https://v5.reactrouter.com/web/guides/quick-start)
--[react-hook-form](https://react-hook-form.com/)
+- [create-react-app](https://create-react-app.dev/)
+- [MUI](https://mui.com/)
+- [fslightbox.js](https://fslightbox.com/)
+- [react router](https://v5.reactrouter.com/web/guides/quick-start)
+- [react-hook-form](https://react-hook-form.com/)
