@@ -64,7 +64,7 @@ export const Footer = () => {
                             <small>
                                 Events in partnership with&nbsp; 
                                 <a style={{ color: 'white' }}
-                                   href="http://https://www.getcoding.ca/">
+                                   href="https://www.getcoding.ca/">
                                        Get Coding
                                 </a>
                             </small>
