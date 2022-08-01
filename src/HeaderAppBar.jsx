@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Link } from "react-router-dom";
 import { AppBar, Container, Toolbar, Box, Button } from '@mui/material';
 import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
+import GetGamingPNG from './img/GetGaming.png'
 
 const pages = [
     {
@@ -31,7 +32,8 @@ export const HeaderAppBar = ({ isMobileSize }) => {
         >
             <Container maxWidth='xl'>
                 <Toolbar disableGutters>
-                    {!isMobileSize && <Link to='/get-gaming/'><GetGamingLogo /></Link>}
+                    {/* {!isMobileSize && <Link to='/get-gaming/'><GetGamingLogo /></Link>} */}
+                    {!isMobileSize && <a href='/get-gaming/'><img src={GetGamingPNG} alt='Get Gaming Logo' width={150} /></a>}
                     <Box 
                         sx={{ 
                             flexGrow: 1, 
