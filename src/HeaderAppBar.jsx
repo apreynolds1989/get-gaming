@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AppBar, Container, Toolbar, Box, Button } from '@mui/material';
-import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
+// import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
 import GetGamingPNG from './img/GetGaming.png'
 
 const pages = [
