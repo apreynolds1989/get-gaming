@@ -1,7 +1,8 @@
 import React from 'react';
 import background from './img/Root-bg.jpeg';
 import { Box, Container } from '@mui/material';
-import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
+// import { ReactComponent as GetGamingLogo } from './img/GetGamingLogo.svg';
+import GetGamingPNG from './img/GetGaming.png'
 
 export const Splash = () => {
     return (
@@ -41,7 +42,8 @@ export const Splash = () => {
                     justifyContent: 'center'
                 }}
             >
-                <GetGamingLogo />
+                {/* <GetGamingLogo /> */}
+                <a href='/get-gaming/'><img src={GetGamingPNG} alt='Get Gaming Logo' width={150} /></a>
             </Box>
         </>
     )

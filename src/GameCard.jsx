@@ -23,7 +23,7 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                     maxWidth: '550px' 
                 }}
             >
-                <a href={gameSiteURL} style={{ textDecoration: 'none' }}>
+                <a href={gameSiteURL} style={{ textDecoration: 'none', color: '#6B3FA0'}}>
                     {gameName}
                 </a>
             </Typography>
