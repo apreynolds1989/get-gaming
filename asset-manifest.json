@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/get-gaming/static/css/main.f37a0ece.css",
-    "main.js": "/get-gaming/static/js/main.8214839a.js",
+    "main.js": "/get-gaming/static/js/main.09f0e937.js",
     "static/js/787.429bdbde.chunk.js": "/get-gaming/static/js/787.429bdbde.chunk.js",
     "static/media/IMG_1423.jpeg": "/get-gaming/static/media/IMG_1423.0c24616cec9aa1b843ae.jpeg",
     "static/media/IMG_1362.jpeg": "/get-gaming/static/media/IMG_1362.a210208854bf58799387.jpeg",
@@ -15,11 +15,11 @@
     "static/media/WhiteGetGaming.svg": "/get-gaming/static/media/WhiteGetGaming.61de2b042f60c30d369bda9e4250dc40.svg",
     "index.html": "/get-gaming/index.html",
     "main.f37a0ece.css.map": "/get-gaming/static/css/main.f37a0ece.css.map",
-    "main.8214839a.js.map": "/get-gaming/static/js/main.8214839a.js.map",
+    "main.09f0e937.js.map": "/get-gaming/static/js/main.09f0e937.js.map",
     "787.429bdbde.chunk.js.map": "/get-gaming/static/js/787.429bdbde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f37a0ece.css",
-    "static/js/main.8214839a.js"
+    "static/js/main.09f0e937.js"
   ]
 }
