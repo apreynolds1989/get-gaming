@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, CardContent, Typography, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box, Link } from '@mui/material';
+import mapIcon from './img/mapIcon.png'
 
-export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
+export const EventCard = ({ isMobileSize, date, time, address, location, openTo }) => {
 
     return (
         <Box
@@ -12,6 +13,7 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
             mb={5}
             sx={{
                 marginTop: 5,
+                marginX: isMobileSize ? 0 : 'auto',
             }}
         >
             <Typography
@@ -25,8 +27,8 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
             </Typography>
             <Card 
                 sx={{ 
-                    borderRadius: 5,
-                    minWidth: '200px', 
+                    borderRadius: isMobileSize ? 0 : 5,
+                    minWidth: isMobileSize ? '100VW' : '200px', 
                     px: 7, 
                     mt: 1, 
                     bgcolor: '#F0ECF6' 
@@ -50,7 +52,7 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                             >
                                 Date
                             </Typography>
-                            <Typography color='#201C77'>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
                                 {date}
                             </Typography>
                         </Box>
@@ -64,7 +66,7 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                             >
                                Time
                             </Typography>
-                            <Typography color='#201C77'>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
                                 {time}
                             </Typography>
                         </Box>
@@ -80,9 +82,25 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         >
                             Location
                         </Typography>
-                        <Typography color='#201C77'>
+                        <Link href={address} sx={{textDecoration: 'none', color: '#201C77'}}>
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'center'
+                                }}
+                            >
+                                <img src={mapIcon} alt='Google Map Icon' height={30} />
+                                <Box
+                                    sx={{
+                                        paddingTop: 0.7
+                                    }}
+                                >{location}</Box>
+                            </Box>
+                        </Link>
+                        {/* <Typography color='#201C77'>
                             {location}
-                        </Typography>
+                        </Typography> */}
                     </Box>
                     <Box 
                         flexDirection='column' 
@@ -95,7 +113,7 @@ export const EventCard = ({ isMobileSize, date, time, location, openTo }) => {
                         >
                             Open to:
                         </Typography>
-                        <Typography color='#201C77'>
+                        <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
                             {openTo}
                         </Typography>
                     </Box>

@@ -20,7 +20,9 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                 sx={{ 
                     fontSize: variantSize,
                     fontWeight: 'bold',
-                    maxWidth: '550px' 
+                    maxWidth: '550px', 
+                    marginX: 2,
+                    textAlign: 'center',
                 }}
             >
                 <a href={gameSiteURL} style={{ textDecoration: 'none', color: '#6B3FA0'}}>

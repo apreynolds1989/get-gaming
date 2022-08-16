@@ -9,6 +9,7 @@ import { GameCard } from './GameCard';
 import { Footer } from './Footer';
 import { gameInfo } from './gameInfo';
 import { ExtraGamesCard } from './ExtraGamesCard';
+import { FeaturedGamesBanner } from './FeaturedGamesBanner';
 
 export const App = () => {
     // Testing deployment
@@ -24,11 +25,13 @@ export const App = () => {
         <Splash />
         <EventCard 
         isMobileSize={isMobileSize}
-        date='TBD'
-        time='TBD'
-        location='TBD'
-        openTo='TBD'
+        date='Friday - August 26, 2022'
+        time='7:00PM - 9:30PM'
+        address='https://g.page/get-coding-st-johns?share'
+        location='Get Coding Office'
+        openTo='Get Coding'
         />
+        <FeaturedGamesBanner isMobileSize={isMobileSize} />
         <Box
         display='flex'
         sx={{ 
