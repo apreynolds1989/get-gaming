@@ -14,11 +14,14 @@ import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
+import { useState } from 'react';
 
 // Implemented form and form validation using MUI, react-hook-form and Yup
 // following the tutorial in the following link:
 // https://www.bezkoder.com/react-hook-form-material-ui-validation/
 export const ContactForm = () => {
+    const [isEmailSent, setIsEmailSent] = useState(false);
+
     const isMobileSize = useMediaQuery('(max-width:600px)');
     const form = useRef();
 
@@ -50,6 +53,7 @@ export const ContactForm = () => {
         emailjs.sendForm('service_ae1ledj', 'template_58pmr9q', form.current, 'GS7Vrdt8sIYVZCl0L')
         .then((result) => {
             console.log(result.text);
+            setIsEmailSent(true);
             reset();
         }, (error) => {
             console.log(error.text);
@@ -64,6 +68,7 @@ export const ContactForm = () => {
     return (
         <>
             <HeaderAppBar isMobileSize={isMobileSize} />
+            {isEmailSent && <EmailSentModal setIsEmailSent={setIsEmailSent} />}
             <Box
                 display='flex'
                 flexDirection='column'
@@ -241,3 +246,57 @@ export const ContactForm = () => {
         </>
     );
 };
+
+const EmailSentModal = ({setIsEmailSent}) => {
+    return (
+        <Card
+            
+        >
+            <CardContent
+                sx={{ 
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    borderRadius: 5,
+                    border: '1px solid black',
+                    bgcolor: 'white',
+                    position: 'absolute',
+                    top: '25vh',
+                    right: '45vw', 
+                    zIndex: 'modal',
+                }}
+            >
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            paddingLeft: 5,
+                            paddingRight: 4,
+                        }}
+                    >
+                        Email Sent!
+                    </Typography>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                    }}
+                >
+                    <Button onClick={() => setIsEmailSent(false)} sx={{ 
+                        minHeight: 0, 
+                        minWidth: 0, 
+                        padding: 0 
+                        }}
+                    >
+                        X
+                    </Button>
+                </Box>
+            </CardContent>
+        </Card>
+    );
+}
