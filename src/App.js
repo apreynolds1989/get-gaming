@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, useMediaQuery } from '@mui/material';
+import { Box, Paper, useMediaQuery } from '@mui/material';
 import './App.css';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Splash } from './Splash';
@@ -14,13 +14,14 @@ import { FeaturedGamesBanner } from './FeaturedGamesBanner';
 export const App = () => {
     // Testing deployment
     const isMobileSize = useMediaQuery('(max-width:600px)');
+    const isLargeScreen = useMediaQuery('(min-width:1250px)');
 
     const gameOne = gameInfo.fiveTribes;
     const gameTwo = gameInfo.callToAdventureStormlight;
     const gameThree = gameInfo.mysterium;
 
     return (
-      <>
+      <Paper sx={{maxWidth: '100vw', overflow: 'hidden'}}>
         <HeaderAppBar isMobileSize={isMobileSize} />
         <Splash />
         <EventCard 
@@ -35,20 +36,15 @@ export const App = () => {
         <Box
         display='flex'
         sx={{ 
-          flexDirection: {
-            xs: 'column',
-            lg: 'row'
-          },
-          alignItems: {
-            xs: 'center',
-            lg: 'flex-start'
-          } 
+          flexDirection: isLargeScreen ? 'row' : 'column',
+          alignItems: isLargeScreen ? 'flex-start' : 'center',
         }}
         justifyContent='space-around'
         >
             <GameDisplay
                 cardToDisplay={
                     <GameCard
+                        isMobileSize={isMobileSize}
                         gameImgURL={gameOne.gameImgURL}
                         alt={gameOne.alt}
                         gameSiteURL={gameOne.gameSiteURL}
@@ -61,6 +57,7 @@ export const App = () => {
             <GameDisplay
                 cardToDisplay={
                     <GameCard
+                        isMobileSize={isMobileSize}
                         gameImgURL={gameTwo.gameImgURL}
                         alt={gameTwo.alt}
                         gameSiteURL={gameTwo.gameSiteURL}
@@ -74,20 +71,15 @@ export const App = () => {
         <Box
             display='flex'
             sx={{ 
-              flexDirection: {
-                xs: 'column',
-                lg: 'row'
-              },
-              alignItems: {
-                xs: 'center',
-                lg: 'flex-start'
-              } 
+              flexDirection: isLargeScreen ? 'row' : 'column',
+              alignItems: isLargeScreen ? 'flex-start' : 'center',
             }}
             justifyContent='space-around'
         >
             <GameDisplay
                 cardToDisplay={
                     <GameCard
+                        isMobileSize={isMobileSize}
                         gameImgURL={gameThree.gameImgURL}
                         alt={gameThree.alt}
                         gameSiteURL={gameThree.gameSiteURL}
@@ -99,11 +91,11 @@ export const App = () => {
             />
               <GameDisplay
                   cardToDisplay={
-                      <ExtraGamesCard /> 
+                      <ExtraGamesCard isMobileSize={isMobileSize} /> 
                   } 
               />
         </Box>
         <Footer />  
-      </>
+      </Paper>
     );
 }

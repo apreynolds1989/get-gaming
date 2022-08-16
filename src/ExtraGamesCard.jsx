@@ -4,7 +4,7 @@ import { smallGameInfo } from './gameInfo';
 
 const smallGameNames = Object.keys(smallGameInfo).sort();
 
-export const ExtraGamesCard = () => {
+export const ExtraGamesCard = ({isMobileSize}) => {
 
     return (
         <Box
@@ -12,7 +12,9 @@ export const ExtraGamesCard = () => {
             flexDirection='column'
             justifyContent="center"
             alignItems="center"
-            mb={5}
+            sx={{
+                marginBottom: isMobileSize ? 0 : 5,
+            }}
         >
             <Typography 
                 variant='h4' 
@@ -23,8 +25,8 @@ export const ExtraGamesCard = () => {
             </Typography>
             <Card 
                 sx={{ 
-                    borderRadius: 5,
-                    minWidth: '150px', 
+                    borderRadius: isMobileSize ? 0 : 5,
+                    minWidth: isMobileSize ? '100vw' : '150px',  
                     maxWidth: '500px', 
                     minHeight: '900px', 
                     px: 3,

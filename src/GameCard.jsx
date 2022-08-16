@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Box } from '@mui/material';
 import { ToggleDesc } from './ToggleDesc';
 import { EmbedVideo } from './EmbedVideo';
 
-export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
+export const GameCard = ({ isMobileSize, gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
     const variantSize = gameName.length < 31 ? 35 : 27
     const variantMarginBottom = gameName.length < 31 ? 0 : 1
 
@@ -22,7 +22,7 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                     fontSize: variantSize,
                     fontWeight: 'bold',
                     maxWidth: '550px', 
-                    marginX: 2,
+                    marginX: 5,
                     marginBottom: variantMarginBottom,
                     textAlign: 'center',
                 }}
@@ -33,8 +33,8 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
             </Typography>
             <Card 
                 sx={{ 
-                    borderRadius: 5,
-                    minWidth: '150px', 
+                    borderRadius: isMobileSize ? 0 : 5,
+                    minWidth: isMobileSize ? '100vw' : '150px', 
                     maxWidth: '500px',
                     minHeight: '900px', 
                     px: 3,

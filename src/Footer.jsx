@@ -26,8 +26,9 @@ const pages = [
 export const Footer = () => {
     return (
         <Box 
-            mx={0} 
+
             sx={{ 
+                minWidth: '100vw',
                 backgroundColor: 'black', 
                 color: 'white',
             }}
