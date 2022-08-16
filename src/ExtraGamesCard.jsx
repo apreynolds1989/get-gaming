@@ -17,7 +17,7 @@ export const ExtraGamesCard = () => {
             <Typography 
                 variant='h4' 
                 color='#6B3FA0' 
-                sx={{ fontWeight: 'bold' }}
+                sx={{ marginBottom: 2, fontWeight: 'bold' }}
             >
                 What Else?
             </Typography>

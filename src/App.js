@@ -16,8 +16,8 @@ export const App = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
 
     const gameOne = gameInfo.fiveTribes;
-    const gameTwo = gameInfo.cosmicEncounter;
-    const gameThree = gameInfo.callToAdventureStormlight;
+    const gameTwo = gameInfo.callToAdventureStormlight;
+    const gameThree = gameInfo.mysterium;
 
     return (
       <>

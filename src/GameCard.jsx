@@ -5,6 +5,7 @@ import { EmbedVideo } from './EmbedVideo';
 
 export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
     const variantSize = gameName.length < 31 ? 35 : 27
+    const variantMarginBottom = gameName.length < 31 ? 0 : 1
 
     return (
         <Box
@@ -22,6 +23,7 @@ export const GameCard = ({ gameImgURL, alt, gameSiteURL, gameName, desc, embedId
                     fontWeight: 'bold',
                     maxWidth: '550px', 
                     marginX: 2,
+                    marginBottom: variantMarginBottom,
                     textAlign: 'center',
                 }}
             >
