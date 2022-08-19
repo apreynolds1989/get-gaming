@@ -18,7 +18,7 @@ export const App = () => {
 
     const gameOne = gameInfo.fiveTribes;
     const gameTwo = gameInfo.callToAdventureStormlight;
-    const gameThree = gameInfo.mysterium;
+    const gameThree = gameInfo.cosmicEncounter;
 
     return (
       <Paper sx={{maxWidth: '100vw', overflow: 'hidden'}}>

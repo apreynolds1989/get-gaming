@@ -611,4 +611,18 @@ export const smallGameInfo = {
         embedId: 'K1KgvZwwJqo',
         desc: `In this classic word game, players use their seven drawn letter-tiles to form words on the gameboard. Each word laid out earns points based on the commonality of the letters used, with certain board spaces giving bonuses. But a word can only be played if it uses at least one already-played tile or adds to an already-played word. This leads to slightly tactical play, as potential words are rejected because they would give an opponent too much access to the better bonus spaces.`,
     },
+    tsuro: {
+        name: 'Tsuro',
+        gameImgURL: 'https://cf.geekdo-images.com/2V3d4ryhxkS3RoPtDrvpUw__itemrep/img/csUMnSfGhuxa8ga0gvo77dEQYC0=/fit-in/246x300/filters:strip_icc()/pic875761.jpg',
+        alt: 'Tsuro game',
+        gameSiteURL: 'https://boardgamegeek.com/boardgame/16992/tsuro',
+        embedId: 'cxpQDmkdEQY',
+        desc: `From the publisher:
+        A beautiful and beautifully simple game of laying a tile before your own token to continue its path on each turn. The goal is to keep your token on the board longer than anyone else's, but as the board fills up this becomes harder because there are fewer empty spaces left... and another player's tile may also extend your own path in a direction you'd rather not go. Easy to introduce to new players, Tsuro lasts a mere 15 minutes and actually does work for any number from 2 to 8.      
+        Theme:       
+        Tsuro has an Asian spiritual theme - the lines representing the "many roads that lead to divine wisdom", and the game as a whole representing "the classic quest for enlightenment".       
+        This theme is very light and the game essentially plays as an abstract.       
+        Gameplay:        
+        The game consists of tiles with twisting lines on them, a 6x6 grid on which to lay these tiles and a token for each player. Each player has a hand of tiles. On your turn you do two things: place a tile from your hand onto the board next to your token and move your token as far as it can go along the line it is currently on, until it is stopped by an empty space with no tile in (yet), the edge of the board or colliding with another player's token. If your token reaches the edge of the board or collides with another player's token, you are out of the game. The aim of the game is to be the last player left with a token on the board. Strategy therefore consists of trying to drive your opponents either into each other or off the board whilst extending your own route in directions that will make it difficult for your opponents to do the same.`,
+    },
 };
