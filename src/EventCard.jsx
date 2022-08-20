@@ -1,8 +1,9 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box, Link } from '@mui/material';
 import mapIcon from './img/mapIcon.png'
+import linkedInIcon from './img/linkedInIcon.png'
 
-export const EventCard = ({ isMobileSize, date, time, address, location, openTo }) => {
+export const EventCard = ({ isMobileSize, date, time, address, location, openTo, linkedIn, host }) => {
 
     return (
         <Box
@@ -38,13 +39,16 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo 
                     <Box 
                         display="flex" 
                         flexDirection='row' 
-                        justifyContent='space-between' 
+                        justifyContent='space-around' 
                         py={1}
                     >
-                        <Box 
-                            flexDirection='column'
-                            textAlign='center'
-                            paddingRight={3}
+                        <Box
+                            sx={{
+                                flexDirection: 'column',
+                                marginLeft: isMobileSize ? 7 : 3,
+                                paddingRight: isMobileSize ? 1 : 3,
+                                minWidth: '175px',
+                            }}
                         >
                             <Typography 
                                 fontWeight='bold'
@@ -59,6 +63,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo 
                         <Box 
                             flexDirection='column'
                             paddingLeft={3}
+                            minWidth={175}
                         >
                             <Typography 
                                 fontWeight='bold'
@@ -72,35 +77,62 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo 
                         </Box>
                     </Box>
                     <Box 
-                        flexDirection='column' 
-                        textAlign='center' 
+                        display="flex" 
+                        flexDirection='row' 
+                        justifyContent='space-around' 
                         py={1}
                     >
-                        <Typography 
-                            fontWeight='bold'
-                            color='#6B3FA0'
+                        <Box 
+                            sx={{
+                                flexDirection: 'column',
+                                marginLeft: isMobileSize ? 7 : 3,
+                                paddingRight: isMobileSize ? 1 : 3,
+                                minWidth: '175px',
+                            }}
                         >
-                            Location
-                        </Typography>
-                        <Link href={address} sx={{textDecoration: 'none', color: '#201C77'}}>
+                            <Typography 
+                                fontWeight='bold'
+                                color='#6B3FA0'
+                            >
+                                Location
+                            </Typography> 
                             <Box
                                 sx={{
                                     display: 'flex',
-                                    flexDirection: 'row',
-                                    justifyContent: 'center'
+                                    flexDirection: 'row',   
                                 }}
                             >
-                                <img src={mapIcon} alt='Google Map Icon' height={30} />
-                                <Box
-                                    sx={{
-                                        paddingTop: 0.7
-                                    }}
-                                >{location}</Box>
-                            </Box>
-                        </Link>
-                        {/* <Typography color='#201C77'>
-                            {location}
-                        </Typography> */}
+                                <Link href={address} sx={{textDecoration: 'none', color: '#201C77'}}>
+                                    <Box
+                                        sx={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            
+                                        }}
+                                    >
+                                        <img src={mapIcon} alt='Google Map Icon' height={30} />
+                                        <Typography color='#201C77' sx={{ paddingTop: 0.7, paddingLeft: 1 }}>
+                                            {location}
+                                        </Typography>
+                                    </Box>
+                                </Link>
+                            </Box>                        
+                        </Box>
+                        <Box 
+                            flexDirection='column'
+                            paddingLeft={3}
+                            minWidth={175}
+                        >
+                            <Typography 
+                                fontWeight='bold'
+                                color='#6B3FA0'
+                            >
+                                Open to:
+                            </Typography>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                                {openTo}
+                            </Typography>
+                        </Box>
                     </Box>
                     <Box 
                         flexDirection='column' 
@@ -111,11 +143,30 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo 
                             fontWeight='bold'
                             color='#6B3FA0'
                         >
-                            Open to:
+                            Hosted by:
                         </Typography>
-                        <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
-                            {openTo}
-                        </Typography>
+                        <Box
+                                sx={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'center',   
+                                }}
+                            >
+                                <Link href={linkedIn} sx={{textDecoration: 'none', color: '#201C77'}}>
+                                    <Box
+                                        sx={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            
+                                        }}
+                                    >
+                                        <img src={linkedInIcon} alt='Google Map Icon' height={30} />
+                                        <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                                            {host}
+                                        </Typography>
+                                    </Box>
+                                </Link>
+                            </Box>             
                     </Box>
                 </CardContent>
             </Card>

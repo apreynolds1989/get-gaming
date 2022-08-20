@@ -31,6 +31,8 @@ export const App = () => {
         address='https://g.page/get-coding-st-johns?share'
         location='Get Coding Office'
         openTo='Get Coding'
+        linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
+        host={'Andrew Reynolds'}
         />
         <FeaturedGamesBanner isMobileSize={isMobileSize} />
         <Box
