@@ -56,7 +56,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                             >
                                 Date
                             </Typography>
-                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
                                 {date}
                             </Typography>
                         </Box>
@@ -71,7 +71,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                             >
                                Time
                             </Typography>
-                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
                                 {time}
                             </Typography>
                         </Box>
@@ -111,7 +111,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                                         }}
                                     >
                                         <img src={mapIcon} alt='Google Map Icon' height={30} />
-                                        <Typography color='#201C77' sx={{ paddingTop: 0.7, paddingLeft: 1 }}>
+                                        <Typography color='#201C77' sx={{ paddingTop: 0.7, paddingLeft: 1, fontSize: isMobileSize ? '14px' : '16px' }}>
                                             {location}
                                         </Typography>
                                     </Box>
@@ -129,7 +129,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                             >
                                 Open to:
                             </Typography>
-                            <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                            <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
                                 {openTo}
                             </Typography>
                         </Box>
@@ -161,7 +161,7 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                                         }}
                                     >
                                         <img src={linkedInIcon} alt='Google Map Icon' height={30} />
-                                        <Typography color='#201C77' sx={{ paddingTop: 0.7 }}>
+                                        <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
                                             {host}
                                         </Typography>
                                     </Box>
