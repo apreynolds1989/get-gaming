@@ -12,7 +12,6 @@ import { ExtraGamesCard } from './ExtraGamesCard';
 import { FeaturedGamesBanner } from './FeaturedGamesBanner';
 
 export const App = () => {
-    // Testing deployment
     const isMobileSize = useMediaQuery('(max-width:600px)');
     const isLargeScreen = useMediaQuery('(min-width:1250px)');
 
