@@ -34,6 +34,7 @@ export const Galleries = () => {
                     borderColor='#6B3FA0' 
                     sx={{ 
                         fontWeight: 'bold',
+                        textAlign: isMobileSize ? 'center' : 'left',
                     }}
                 >
                     Event Galleries

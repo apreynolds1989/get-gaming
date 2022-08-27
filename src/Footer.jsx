@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { ReactComponent as WhiteGetGaming } from './img/WhiteGetGaming.svg';
+import { Typography } from '@mui/material';
 
 const pages = [
     {
@@ -61,13 +62,17 @@ export const Footer = ({ isMobileSize }) => {
                             borderTop={1} 
                             borderColor='white' 
                         >
-                            <small>
+                            <Typography
+                                sx={{
+                                    fontSize: isMobileSize ? '10px' : '12px',
+                                }}
+                            >
                                 Events in partnership with&nbsp; 
                                 <a style={{ color: 'white' }}
                                    href="https://www.getcoding.ca/">
                                        Get Coding
                                 </a>
-                            </small>
+                            </Typography>
                         </Box>
                     </Box>
                     <Box
@@ -124,7 +129,13 @@ export const Footer = ({ isMobileSize }) => {
                     alignItems="center"
                     mb={5}
                 >
-                    <small>Copyright &copy; 2022 - Get Gaming</small>
+                    <Typography
+                        sx={{
+                            fontSize: isMobileSize ? '10px' : '12px',
+                        }}
+                    >
+                        Copyright &copy; 2022 - Get Gaming
+                    </Typography>
                 </Box>     
             </Box>
         </Box>

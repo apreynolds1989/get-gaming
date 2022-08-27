@@ -38,12 +38,13 @@ export const Gallery = ({ header, images, imageNames }) => {
                 }}
             >
                 <Typography 
-                    variant={isMobileSize ? 'h4' : 'h3'} 
+                    variant={isMobileSize ? 'h5' : 'h3'} 
                     color='#6B3FA0'
                     borderBottom={1}
                     borderColor='#6B3FA0' 
                     sx={{ 
                         fontWeight: 'bold',
+                        textAlign: isMobileSize ? 'center' : 'left',
                     }}
                 >
                     {header}
