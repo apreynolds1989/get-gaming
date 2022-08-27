@@ -23,11 +23,10 @@ const pages = [
     },
 ];
 
-export const Footer = () => {
+export const Footer = ({ isMobileSize }) => {
     return (
         <Box 
-
-            sx={{ 
+            sx={{
                 minWidth: '100vw',
                 backgroundColor: 'black', 
                 color: 'white',

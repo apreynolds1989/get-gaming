@@ -15,7 +15,7 @@ export const Library = () => {
     return (
         <>
             <HeaderAppBar isMobileSize={isMobileSize} />
-            <TableContainer component={Paper} sx={{ mt: 12 }}>
+            <TableContainer component={Paper} sx={{ marginTop: isMobileSize ? 10 : 15, }}>
                 <Table 
                     sx={{ 
                         maxWidth: '750px', 
@@ -73,7 +73,7 @@ export const Library = () => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Footer />
+            <Footer isMobileSize={isMobileSize} />
         </>
     );
 }

@@ -24,23 +24,23 @@ export const App = () => {
         <HeaderAppBar isMobileSize={isMobileSize} />
         <Splash />
         <EventCard 
-        isMobileSize={isMobileSize}
-        date='Friday - August 26, 2022'
-        time='7:00PM - 9:30PM'
-        address='https://g.page/get-coding-st-johns?share'
-        location='Get Coding Office'
-        openTo='Get Coding'
-        linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
-        host={'Andrew Reynolds'}
+            isMobileSize={isMobileSize}
+            date='TBD'
+            time='TBD'
+            address=''
+            location='TBD'
+            openTo='TBD'
+            linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
+            host={'Andrew Reynolds'}
         />
         <FeaturedGamesBanner isMobileSize={isMobileSize} />
         <Box
-        display='flex'
-        sx={{ 
-          flexDirection: isLargeScreen ? 'row' : 'column',
-          alignItems: isLargeScreen ? 'flex-start' : 'center',
-        }}
-        justifyContent='space-around'
+            display='flex'
+            sx={{ 
+            flexDirection: isLargeScreen ? 'row' : 'column',
+            alignItems: isLargeScreen ? 'flex-start' : 'center',
+            }}
+            justifyContent='space-around'
         >
             <GameDisplay
                 cardToDisplay={
@@ -96,7 +96,7 @@ export const App = () => {
                   } 
               />
         </Box>
-        <Footer />  
+        <Footer isMobileSize={isMobileSize} />  
       </Paper>
     );
 }

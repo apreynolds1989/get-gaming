@@ -4,23 +4,9 @@ import { Lightbox } from './Lightbox';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
 
-// importAll() and require.context was found by searching how to import all photos
-// from a file in React. I followed this information:
-// https://shaquillegalimba.medium.com/how-to-import-multiple-images-in-react-1936efeeae7b
-const importAll = (arrayOfFiles) => {
-    let images = {};
-    arrayOfFiles.keys().forEach((item, index) => {
-        images[item.replace('./', '')] = arrayOfFiles(item);
-    });
-    return images;
-};
-
-const images = importAll(require.context('./photos', false, /\.(png|jpe?g|svg)$/));
-const imageNames = Object.keys(images);
-
 // Utilizing fslightbox-react
 // https://fslightbox.com/react/documentation
-export const Gallery = () => {
+export const Gallery = ({ header, images, imageNames }) => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
 
     // State to control opening Lightbox on clicked image (slide)
@@ -47,7 +33,7 @@ export const Gallery = () => {
                 maxWidth='700px'
                 mx='auto'
                 sx={{
-                    marginTop: 12,
+                    marginTop: 15,
                     marginBottom: 10,
                 }}
             >
@@ -60,7 +46,7 @@ export const Gallery = () => {
                         fontWeight: 'bold',
                     }}
                 >
-                    Gallery
+                    {header}
                 </Typography>
                 <ImageList
                     sx={{

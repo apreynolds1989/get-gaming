@@ -75,7 +75,7 @@ export const ContactForm = () => {
                 maxWidth='700px'
                 mx='auto'
                 sx={{
-                    marginTop: 12,
+                    marginTop: isMobileSize ? 10 : 15,
                     marginBottom: 10,
                 }}
             >
@@ -242,7 +242,7 @@ export const ContactForm = () => {
                     </CardContent>
                 </Card>
             </Box>
-            <Footer />
+            <Footer isMobileSize={isMobileSize} />
         </>
     );
 };
