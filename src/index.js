@@ -13,6 +13,7 @@ import { Gallery } from './Gallery';
 import { ContactForm } from './ContactForm';
 import { Galleries } from './Galleries';
 import { EventOneImages, EventOneImageNames } from './imageFiles';
+import { gameInfo } from './gameInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,10 @@ root.render(
                         header='Get Coding - August 26 2022' 
                         images={EventOneImages} 
                         imageNames={EventOneImageNames} 
+                        gameName={gameInfo.cosmicEncounter.name}
+                        gameSiteURL={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURL={gameInfo.cosmicEncounter.gameImgURL}
+                        alt={gameInfo.cosmicEncounter.alt}
                     />} 
             />
             <Route path="get-gaming/ContactForm" element={<ContactForm />} />

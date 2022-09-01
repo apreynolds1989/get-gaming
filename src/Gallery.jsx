@@ -3,10 +3,11 @@ import { Box, Typography, ImageList, ImageListItem, useMediaQuery } from '@mui/m
 import { Lightbox } from './Lightbox';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
+import { EventFavoriteGame } from './EventFavoriteGame';
 
 // Utilizing fslightbox-react
 // https://fslightbox.com/react/documentation
-export const Gallery = ({ header, images, imageNames }) => {
+export const Gallery = ({ header, images, imageNames, gameName, gameSiteURL, gameImgURL, alt }) => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
 
     // State to control opening Lightbox on clicked image (slide)
@@ -30,7 +31,7 @@ export const Gallery = ({ header, images, imageNames }) => {
             <Box
                 display='flex'
                 flexDirection='column'
-                maxWidth='700px'
+                // maxWidth='700px'
                 mx='auto'
                 sx={{
                     marginTop: 15,
@@ -43,36 +44,83 @@ export const Gallery = ({ header, images, imageNames }) => {
                     borderBottom={1}
                     borderColor='#6B3FA0' 
                     sx={{ 
+                        maxWidth: '700px',
+                        alignSelf: 'center',
                         fontWeight: 'bold',
                         textAlign: isMobileSize ? 'center' : 'left',
                     }}
                 >
                     {header}
                 </Typography>
-                <ImageList
+                <Box
                     sx={{
-                        alignSelf: 'center',
-                        width: {
-                            xs: '164px',
-                            sm: '500px',
+                        marginX: 'auto',
+                        display: 'flex',
+                        flexDirection: {
+                            xs: 'column',
+                            lg: 'row'
                         },
-                        // height: 450,
+                        marginTop: {
+                            lg: 5
+                        }
                     }}
-                    cols={isMobileSize ? 1 : 3}
-                    gap={8}
-                    rowHeight={164}
                 >
-                    {imageNames.map((imageName, index) => (
-                        <ImageListItem key={imageName} sx={{ overflowY: 'hidden'}}>
-                            <img 
-                                src={images[imageName]}
-                                alt={images[imageName]}
-                                onClick={() => openLightboxOnSlide(index + 1)}
-                                loading='lazy'
-                            />
-                        </ImageListItem>
-                    ))}
-                </ImageList>
+                    <EventFavoriteGame 
+                        isMobileSize={isMobileSize} 
+                        gameName={gameName}
+                        gameSiteURL={gameSiteURL}
+                        gameImgURL={gameImgURL}
+                        alt={alt}
+                    />
+                    <Box
+                        sx={{
+                            flexDirection: 'column',
+                            alignSelf: 'center',
+                            paddingLeft: {
+                                lg: 15
+                            }
+                        }}
+                    >
+                        <Typography 
+                            variant={isMobileSize ? 'h5' : 'h4'} 
+                            color='#6B3FA0'
+                            borderBottom={1}
+                            borderColor='#6B3FA0' 
+                            sx={{ 
+                                marginX: 'auto',
+                                fontWeight: 'bold',
+                                textAlign: 'center',
+                                width: '200px'
+                            }}
+                        >
+                            Gallery
+                        </Typography>
+                        <ImageList
+                            sx={{
+                                alignSelf: 'center',
+                                width: {
+                                    xs: '164px',
+                                    sm: '500px',
+                                },
+                                // height: 450,
+                            }}
+                            cols={isMobileSize ? 1 : 3}
+                            gap={8}
+                            rowHeight={164}
+                        >
+                            {imageNames.map((imageName, index) => (
+                                <ImageListItem key={imageName} sx={{ overflowY: 'hidden'}}>
+                                    <img 
+                                        src={images[imageName]}
+                                        alt={images[imageName]}
+                                        onClick={() => openLightboxOnSlide(index + 1)}
+                                        loading='lazy'
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Box>    
+                </Box>
             </Box>
             <Lightbox
                 images={images} 
