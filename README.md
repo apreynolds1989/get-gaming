@@ -17,7 +17,7 @@ As an avid Board Gamer, I thought Board Game Nights would make for great Network
 As this is mostly a platform to simply display information for Get Gaming events, it can be considered mostly complete. The Library can continue to be upated as my Board Game collection changes. New photos can be added to the Gallery.
 
 Features I may consider in the future include:
-- Multiple Galleries that would strictly include photos from specific events
+- As this was the first project I have built with React the code is a little messy and unorganzied, I plan to take the time to clean up the code base
 - User database which would allow users to internally rate games to give an idea of how the local community feels about each game
 
 ### Built With
