@@ -1,9 +1,11 @@
 import * as React from 'react';
 import {
     Table, TableBody, TableCell, TableContainer,
-    TableHead, TableRow, Paper, useMediaQuery
+    TableHead, TableRow, Paper, useMediaQuery, Box
 } from '@mui/material';
 import { gameInfo } from './gameInfo';
+import videoPlayerIcon from './img/videoPlayerIcon.png';
+import bggLogo from './img/bggLogo.png';
 import { HeaderAppBar } from './HeaderAppBar';
 import { Footer } from './Footer';
 
@@ -53,20 +55,65 @@ export const Library = () => {
                                     component="th" 
                                     scope="row"
                                     sx={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
                                         color: '#201C77',
                                         borderBottom: 2,
                                         borderColor: '#6B3FA0',
                                     }}
                                 >
-                                    <a 
-                                        href={`${gameInfo[name].gameSiteURL}`}
-                                        style={{
-                                            color: '#201C77',
-                                            textDecoration: 'none',
+                                    <Box>
+                                        <a 
+                                            href={`${gameInfo[name].gameSiteURL}`}
+                                            style={{
+                                                color: '#201C77',
+                                                textDecoration: 'none',
+                                            }}
+                                        >
+                                            {gameInfo[name].name}
+                                        </a>
+                                    </Box>
+                                    <Box
+                                        sx={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
                                         }}
                                     >
-                                        {gameInfo[name].name}
-                                    </a>
+                                        <a 
+                                            href={`${gameInfo[name].gameSiteURL}`}
+                                            style={{
+                                                color: '#201C77',
+                                                textDecoration: 'none',
+                                            }}
+                                        >
+                                            <Box
+                                                sx={{
+                                                    border: '1px solid #6B3FA0',
+                                                    borderRadius: 2,
+                                                    paddingX: 0.5,
+                                                    marginX: 1,
+                                                    maxHeight: '23px'
+                                                }}
+                                            >
+                                                <img src={bggLogo} width='20px' alt='Play Button' />
+                                            </Box>
+                                        </a>
+                                        <a 
+                                            href={`https://www.youtube.com/watch?v=${gameInfo[name].embedId}`}
+                                            style={{
+                                                color: '#201C77',
+                                                textDecoration: 'none',
+                                            }}
+                                        >
+                                            <Box
+                                                sx={{
+                                                    maxHeight: '23px'
+                                                }}
+                                            >
+                                                <img src={videoPlayerIcon} width='20px' alt='Play Button' />
+                                            </Box>
+                                        </a>
+                                    </Box>
                                 </TableCell>
                             </TableRow>
                         ))}
