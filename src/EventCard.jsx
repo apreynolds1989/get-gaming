@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Box, Link } from '@mui/material';
 import mapIcon from './img/mapIcon.png'
 import linkedInIcon from './img/linkedInIcon.png'
 
-export const EventCard = ({ isMobileSize, date, time, address, location, openTo, linkedIn, host }) => {
+export const EventCard = ({ isMobileSize, date, time, address, location, openToWebsite, openTo, linkedIn, host }) => {
 
     return (
         <Box
@@ -129,9 +129,16 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openTo,
                             >
                                 Open to:
                             </Typography>
-                            <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
-                                {openTo}
-                            </Typography>
+                            <Box
+                                flexDirection='column'
+                            >
+                                <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
+                                    <Link href='https://www.getcoding.ca/' sx={{ color: '#201C77'}}>Get Coding</Link> &amp;
+                                </Typography>
+                                <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
+                                    <Link href={openToWebsite} sx={{ color: '#201C77'}}>{openTo}</Link>
+                                </Typography>
+                            </Box>
                         </Box>
                     </Box>
                     <Box 
