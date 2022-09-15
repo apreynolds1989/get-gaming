@@ -9,6 +9,12 @@ const importAll = (arrayOfFiles) => {
     return images;
 };
 
-export const EventOneImages = importAll(require.context('./photos/Aug26-2022', false, /\.(png|jpe?g|svg)$/), 'lazy');
+// Event #1 - Hosted for Get Coding on August 26, 2022
+export const EventOneImages = importAll(require.context('./photos/GetCodingAug26-2022', false, /\.(png|jpe?g|svg)$/), 'lazy');
 
 export const EventOneImageNames = Object.keys(EventOneImages);
+
+// Event #2 - Hosted for NetBenefit & Get Coding on Sept 14, 2022
+export const EventTwoImages = importAll(require.context('./photos/NetBenefit-Sept-14-2022', false, /\.(png|jpe?g|svg)$/), 'lazy');
+
+export const EventTwoImageNames = Object.keys(EventTwoImages);

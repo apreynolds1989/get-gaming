@@ -14,10 +14,10 @@ export const EventGallery = ({ coverImg, attendees, date }) => {
         <Box
             component='img'
             sx={{
-                height: 233,
-                width: 350,
-                maxHeight: { xs: 167, md: 233 },
-                maxWidth: { xs: 250, md: 350 },
+                // height: 233,
+                // width: 350,
+                maxHeight: { xs: 167, lg: 233 },
+                maxWidth: { xs: 250, lg: 350 },
             }}
             alt='Event display'
             src={coverImg}

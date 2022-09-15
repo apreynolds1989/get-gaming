@@ -44,7 +44,7 @@ export const Gallery = ({ header, images, imageNames, gameName, gameSiteURL, gam
                     borderBottom={1}
                     borderColor='#6B3FA0' 
                     sx={{ 
-                        maxWidth: '700px',
+                        maxWidth: '1000px',
                         alignSelf: 'center',
                         fontWeight: 'bold',
                         textAlign: isMobileSize ? 'center' : 'left',

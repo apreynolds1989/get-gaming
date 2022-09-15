@@ -25,12 +25,12 @@ export const App = () => {
         <Splash />
         <EventCard 
             isMobileSize={isMobileSize}
-            date='Sept. 14, 2022'
-            time='6:30PM - 9:30PM'
-            address='https://www.google.com/maps/place/Get+Coding/@47.562575,-52.7083885,17z/data=!3m1!4b1!4m5!3m4!1s0x4b0ca3ac0a3064ab:0x9f7aae1304759de1!8m2!3d47.562575!4d-52.7083885'
-            location='Get Coding'
-            openToWebsite='https://netbenefitsoftware.com/'
-            openTo='NetBenefit Software'
+            date='TBD'
+            time='TBD'
+            address='TBD'
+            location='TBD'
+            openToWebsite=''
+            openTo='TBD'
             linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
             host={'Andrew Reynolds'}
         />

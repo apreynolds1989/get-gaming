@@ -12,7 +12,7 @@ import { Library } from './Library';
 import { Gallery } from './Gallery';
 import { ContactForm } from './ContactForm';
 import { Galleries } from './Galleries';
-import { EventOneImages, EventOneImageNames } from './imageFiles';
+import { EventOneImages, EventOneImageNames, EventTwoImages, EventTwoImageNames } from './imageFiles';
 import { gameInfo } from './gameInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,6 +29,19 @@ root.render(
                         header='Get Coding - August 26 2022' 
                         images={EventOneImages} 
                         imageNames={EventOneImageNames} 
+                        gameName={gameInfo.cosmicEncounter.name}
+                        gameSiteURL={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURL={gameInfo.cosmicEncounter.gameImgURL}
+                        alt={gameInfo.cosmicEncounter.alt}
+                    />} 
+            />
+            <Route 
+                path="/Sept14-2022-Gallery" 
+                element={
+                    <Gallery 
+                        header='NetBenefit &amp; Get Coding - August 26 2022' 
+                        images={EventTwoImages} 
+                        imageNames={EventTwoImageNames} 
                         gameName={gameInfo.cosmicEncounter.name}
                         gameSiteURL={gameInfo.cosmicEncounter.gameSiteURL}
                         gameImgURL={gameInfo.cosmicEncounter.gameImgURL}
