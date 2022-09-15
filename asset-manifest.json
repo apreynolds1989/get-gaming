@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/get-gaming/static/css/main.f37a0ece.css",
-    "main.js": "/get-gaming/static/js/main.6839f054.js",
+    "main.js": "/get-gaming/static/js/main.89159181.js",
     "static/js/787.429bdbde.chunk.js": "/get-gaming/static/js/787.429bdbde.chunk.js",
+    "static/media/IMG_2675.jpeg": "/get-gaming/static/media/IMG_2675.a9c0a8a6d454b948c827.jpeg",
     "static/media/Root-bg.jpeg": "/get-gaming/static/media/Root-bg.e3e120f3d79c58d83a36.jpeg",
     "static/media/IMG_2632.jpeg": "/get-gaming/static/media/IMG_2632.148da10742159884891f.jpeg",
+    "static/media/IMG_2676.jpeg": "/get-gaming/static/media/IMG_2676.7fdd727f831cb8f4f4d7.jpeg",
     "static/media/IMG_2630.jpeg": "/get-gaming/static/media/IMG_2630.ec9b5b8a7dd74852ca3c.jpeg",
     "static/media/IMG_2629.jpeg": "/get-gaming/static/media/IMG_2629.3d6d2370f8eb4b0e2238.jpeg",
     "static/media/IMG_2631.jpeg": "/get-gaming/static/media/IMG_2631.81ab5f1d45560f529b64.jpeg",
+    "static/media/IMG_2678.jpeg": "/get-gaming/static/media/IMG_2678.64da6908091e99e49c96.jpeg",
     "static/media/IMG_2633.jpeg": "/get-gaming/static/media/IMG_2633.5b2cf687103aebe8e652.jpeg",
+    "static/media/IMG_2677.jpeg": "/get-gaming/static/media/IMG_2677.473a74f6dce4d466fee2.jpeg",
     "static/media/linkedInIcon.png": "/get-gaming/static/media/linkedInIcon.144a468e8db1d18941d9.png",
     "static/media/GetGaming.png": "/get-gaming/static/media/GetGaming.7a862853b058e3c93a4a.png",
     "static/media/WhiteGetGaming.svg": "/get-gaming/static/media/WhiteGetGaming.61de2b042f60c30d369bda9e4250dc40.svg",
@@ -16,11 +20,11 @@
     "static/media/bggLogo.png": "/get-gaming/static/media/bggLogo.64b0f3be20b70912a4c3.png",
     "index.html": "/get-gaming/index.html",
     "main.f37a0ece.css.map": "/get-gaming/static/css/main.f37a0ece.css.map",
-    "main.6839f054.js.map": "/get-gaming/static/js/main.6839f054.js.map",
+    "main.89159181.js.map": "/get-gaming/static/js/main.89159181.js.map",
     "787.429bdbde.chunk.js.map": "/get-gaming/static/js/787.429bdbde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f37a0ece.css",
-    "static/js/main.6839f054.js"
+    "static/js/main.89159181.js"
   ]
 }
