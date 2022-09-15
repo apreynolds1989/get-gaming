@@ -9,7 +9,6 @@ import Event2Cover from './photos/NetBenefit-Sept-14-2022/IMG_2676.jpeg';
 
 export const Galleries = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
-    const isLargeScreen = useMediaQuery('(min-width:900px)');
 
     return (
         <>
