@@ -16,8 +16,8 @@ export const App = () => {
     const isLargeScreen = useMediaQuery('(min-width:1250px)');
 
     const gameOne = gameInfo.cosmicEncounter;
-    const gameTwo = smallGameInfo.theResistance;
-    const gameThree = gameInfo.mysterium;
+    const gameTwo = gameInfo.androidNetrunner;
+    const gameThree = smallGameInfo.theResistance;
 
     return (
       <Paper sx={{maxWidth: '100vw', overflow: 'hidden'}}>
@@ -25,14 +25,16 @@ export const App = () => {
         <Splash />
         <EventCard 
             isMobileSize={isMobileSize}
-            date='TBD'
-            time='TBD'
-            address='TBD'
-            location='TBD'
-            openToWebsite=''
-            openTo='TBD'
+            date='Oct. 13, 2022'
+            time='6:00PM - 10:00PM'
+            address='https://g.page/mysa---smart-thermostats-nl?share'
+            location='Mysa'
+            openToWebsite='https://getmysa.com/'
+            openTo='Mysa'
             linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
             host={'Andrew Reynolds'}
+            coHostLinkedIn={'https://www.linkedin.com/in/devin-marsh/'}
+            coHost={'Devin Marsh'}
         />
         <FeaturedGamesBanner isMobileSize={isMobileSize} />
         <Box

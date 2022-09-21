@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Box, Link } from '@mui/material';
 import mapIcon from './img/mapIcon.png'
 import linkedInIcon from './img/linkedInIcon.png'
 
-export const EventCard = ({ isMobileSize, date, time, address, location, openToWebsite, openTo, linkedIn, host }) => {
+export const EventCard = ({ isMobileSize, date, time, address, location, openToWebsite, openTo, linkedIn, host, coHostLinkedIn, coHost }) => {
 
     return (
         <Box
@@ -142,9 +142,12 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openToW
                         </Box>
                     </Box>
                     <Box 
-                        flexDirection='column' 
-                        textAlign='center' 
-                        py={1}
+                        sx={{
+                            flexDirection: 'column',
+                            textAlign: 'center',
+                            paddingY: 1,
+                            marginX: 'auto',
+                        }}
                     >
                         <Typography 
                             fontWeight='bold'
@@ -153,6 +156,15 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openToW
                             Hosted by:
                         </Typography>
                         <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'flex-start',
+                                maxWidth: 'fit-content',
+                                marginX: 'auto',
+                            }}
+                        >
+                            <Box
                                 sx={{
                                     display: 'flex',
                                     flexDirection: 'row',
@@ -173,7 +185,46 @@ export const EventCard = ({ isMobileSize, date, time, address, location, openToW
                                         </Typography>
                                     </Box>
                                 </Link>
-                            </Box>             
+                            </Box> 
+                            {
+                                coHost &&
+                                <Typography 
+                                    color='#201C77' 
+                                    sx={{
+                                        marginX: 'auto', 
+                                        paddingTop: 0.7, 
+                                        fontSize: isMobileSize ? '14px' : '16px' 
+                                    }}
+                                >
+                                    &amp;
+                                </Typography>
+                            }
+                            {
+                                coHost && 
+                                <Box
+                                    sx={{
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                        justifyContent: 'center',   
+                                    }}
+                                >
+                                    <Link href={coHostLinkedIn} sx={{textDecoration: 'none', color: '#201C77'}}>
+                                        <Box
+                                            sx={{
+                                                display: 'flex',
+                                                flexDirection: 'row',
+                                                
+                                            }}
+                                        >
+                                            <img src={linkedInIcon} alt='Google Map Icon' height={30} />
+                                            <Typography color='#201C77' sx={{ paddingTop: 0.7, fontSize: isMobileSize ? '14px' : '16px' }}>
+                                                {coHost}
+                                            </Typography>
+                                        </Box>
+                                    </Link>
+                                </Box>  
+                            } 
+                        </Box>           
                     </Box>
                 </CardContent>
             </Card>
