@@ -20,8 +20,8 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route path="/get-gaming/" element={<App />} />
-            <Route path="get-gaming/Library" element={<Library />} />
-            <Route path="get-gaming/Gallery" element={<Galleries />} />
+            <Route path="/get-gaming/Library" element={<Library />} />
+            <Route path="/get-gaming/Gallery" element={<Galleries />} />
             <Route 
                 path="/Aug26-2022-Gallery" 
                 element={
@@ -48,7 +48,7 @@ root.render(
                         alt={gameInfo.cosmicEncounter.alt}
                     />} 
             />
-            <Route path="get-gaming/ContactForm" element={<ContactForm />} />
+            <Route path="/get-gaming/ContactForm" element={<ContactForm />} />
             <Route
                 path="*"
                 element={
