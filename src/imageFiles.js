@@ -18,3 +18,7 @@ export const EventOneImageNames = Object.keys(EventOneImages);
 export const EventTwoImages = importAll(require.context('./photos/NetBenefit-Sept-14-2022', false, /\.(png|jpe?g|svg)$/), 'lazy');
 
 export const EventTwoImageNames = Object.keys(EventTwoImages);
+
+export const EventThreeImages = importAll(require.context('./photos/Mysa-Oct-13-2022', false, /\.(png|jpe?g|svg)$/), 'lazy');
+
+export const EventThreeImageNames = Object.keys(EventThreeImages);

@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import React from 'react'
 
-export const EventFavoriteGame = ({ isMobileSize, gameName, gameSiteURL, gameImgURL, alt }) => {
+export const EventFavoriteGame = ({ isMobileSize, gameSiteURLOne, gameImgURLOne, altOne, gameSiteURLTwo, gameImgURLTwo, altTwo }) => {
   return (
     <Card 
         sx={{ 
@@ -30,18 +30,38 @@ export const EventFavoriteGame = ({ isMobileSize, gameName, gameSiteURL, gameImg
                         textAlign: isMobileSize ? 'center' : 'center',
                     }}
                 >
-                    People's Choice 
+                    Featured Games 
                 </Typography>
-                <Box 
+                <Box
                     sx={{
                         display: 'flex',
-                        justifyContent: 'center',
-                        paddingTop: 2
+                        flexDirection: 'column',
+                        alignContent: 'space-between',
                     }}
                 >
-                    <a href={gameSiteURL}>
-                        <img src={gameImgURL} alt={alt} height={200} />
-                    </a>
+                    <Box 
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            paddingTop: 2
+                        }}
+                    >
+                        <a href={gameSiteURLOne}>
+                            <img src={gameImgURLOne} alt={altOne} height={200} />
+                        </a>
+                    </Box>
+                    {gameSiteURLTwo && 
+                    <Box 
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            paddingTop: 2
+                        }}
+                    >
+                        <a href={gameSiteURLTwo}>
+                            <img src={gameImgURLTwo} alt={altTwo} height={200} />
+                        </a>
+                    </Box>}
                 </Box>
             </Box>
         </CardContent>

@@ -25,16 +25,16 @@ export const App = () => {
         <Splash />
         <EventCard 
             isMobileSize={isMobileSize}
-            date='Oct. 13, 2022'
-            time='6:00PM - 10:00PM'
-            address='https://g.page/mysa---smart-thermostats-nl?share'
-            location='Mysa'
-            openToWebsite='https://getmysa.com/'
-            openTo='Mysa'
+            date='TBD'
+            time='TBD'
+            address=''
+            location='TBD'
+            openToWebsite=''
+            openTo='TBD'
             linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
             host={'Andrew Reynolds'}
-            coHostLinkedIn={'https://www.linkedin.com/in/devin-marsh/'}
-            coHost={'Devin Marsh'}
+            // coHostLinkedIn={'https://www.linkedin.com/in/devin-marsh/'}
+            // coHost={'Devin Marsh'}
         />
         <FeaturedGamesBanner isMobileSize={isMobileSize} />
         <Box

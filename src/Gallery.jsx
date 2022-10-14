@@ -7,7 +7,7 @@ import { EventFavoriteGame } from './EventFavoriteGame';
 
 // Utilizing fslightbox-react
 // https://fslightbox.com/react/documentation
-export const Gallery = ({ header, images, imageNames, gameName, gameSiteURL, gameImgURL, alt }) => {
+export const Gallery = ({ header, images, imageNames, gameSiteURLOne, gameImgURLOne, altOne, gameSiteURLTwo, gameImgURLTwo, altTwo }) => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
 
     // State to control opening Lightbox on clicked image (slide)
@@ -65,13 +65,17 @@ export const Gallery = ({ header, images, imageNames, gameName, gameSiteURL, gam
                         }
                     }}
                 >
-                    <EventFavoriteGame 
-                        isMobileSize={isMobileSize} 
-                        gameName={gameName}
-                        gameSiteURL={gameSiteURL}
-                        gameImgURL={gameImgURL}
-                        alt={alt}
-                    />
+                    <Box>
+                        <EventFavoriteGame 
+                            isMobileSize={isMobileSize} 
+                            gameSiteURLOne={gameSiteURLOne}
+                            gameImgURLOne={gameImgURLOne}
+                            altOne={altOne}
+                            gameSiteURLTwo={gameSiteURLTwo}
+                            gameImgURLTwo={gameImgURLTwo}
+                            altTwo={altTwo}
+                        />
+                    </Box>
                     <Box
                         sx={{
                             flexDirection: 'column',

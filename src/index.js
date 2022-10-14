@@ -12,8 +12,8 @@ import { Library } from './Library';
 import { Gallery } from './Gallery';
 import { ContactForm } from './ContactForm';
 import { Galleries } from './Galleries';
-import { EventOneImages, EventOneImageNames, EventTwoImages, EventTwoImageNames } from './imageFiles';
-import { gameInfo } from './gameInfo';
+import { EventOneImages, EventOneImageNames, EventTwoImages, EventTwoImageNames, EventThreeImages, EventThreeImageNames } from './imageFiles';
+import { gameInfo, smallGameInfo } from './gameInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,23 +29,36 @@ root.render(
                         header='Get Coding - August 26 2022' 
                         images={EventOneImages} 
                         imageNames={EventOneImageNames} 
-                        gameName={gameInfo.cosmicEncounter.name}
-                        gameSiteURL={gameInfo.cosmicEncounter.gameSiteURL}
-                        gameImgURL={gameInfo.cosmicEncounter.gameImgURL}
-                        alt={gameInfo.cosmicEncounter.alt}
+                        gameSiteURLOne={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURLOne={gameInfo.cosmicEncounter.gameImgURL}
+                        altOne={gameInfo.cosmicEncounter.alt}
                     />} 
             />
             <Route 
                 path="/Sept14-2022-Gallery" 
                 element={
                     <Gallery 
-                        header='NetBenefit &amp; Get Coding - August 26 2022' 
+                        header='NetBenefit &amp; Get Coding - Sept 14 2022' 
                         images={EventTwoImages} 
                         imageNames={EventTwoImageNames} 
-                        gameName={gameInfo.cosmicEncounter.name}
-                        gameSiteURL={gameInfo.cosmicEncounter.gameSiteURL}
-                        gameImgURL={gameInfo.cosmicEncounter.gameImgURL}
-                        alt={gameInfo.cosmicEncounter.alt}
+                        gameSiteURLOne={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURLOne={gameInfo.cosmicEncounter.gameImgURL}
+                        altOne={gameInfo.cosmicEncounter.alt}
+                    />} 
+            />
+                        <Route 
+                path="/Oct13-2022-Gallery" 
+                element={
+                    <Gallery 
+                        header='Mysa &amp; Get Coding - Oct 13 2022' 
+                        images={EventThreeImages} 
+                        imageNames={EventThreeImageNames} 
+                        gameSiteURLOne={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURLOne={gameInfo.cosmicEncounter.gameImgURL}
+                        altOne={gameInfo.cosmicEncounter.alt}
+                        gameSiteURLTwo={smallGameInfo.theResistance.gameSiteURL}
+                        gameImgURLTwo={smallGameInfo.theResistance.gameImgURL}
+                        altTwo={smallGameInfo.theResistance.alt}
                     />} 
             />
             <Route path="/get-gaming/ContactForm" element={<ContactForm />} />
