@@ -4,6 +4,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/dmo-WD6HZHVUPrbVHunaTw__itemrep/img/4RfYsuXBO2FrnJynkXV5zTj7PU4=/fit-in/246x300/filters:strip_icc()/pic2055255.jpg',
         alt: 'Five Tribes game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/157354/five-tribes',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 80,
+        complexityRating: 2.85,
         embedId: 'hfvDro2ecFw',
         desc: `Crossing into the Land of 1001 Nights, your caravan arrives at the fabled Sultanate of Naqala. The old sultan just died and control of Naqala is up for grabs! The oracles foretold of strangers who would maneuver the Five Tribes to gain influence over the legendary city-state. Will you fulfill the prophecy? Invoke the old Djinns and move the Tribes into position at the right time, and the Sultanate may become yours!
         Designed by Bruno Cathala, Five Tribes builds on a long tradition of German-style games that feature wooden meeples. Here, in a unique twist on the now-standard "worker placement" genre, the game begins with the meeples already in place – and players must cleverly maneuver them over the villages, markets, oases, and sacred places tiles that make up Naqala. How, when, and where you dis-place these Five Tribes of Assassins, Elders, Builders, Merchants, and Viziers determine your victory or failure.
@@ -14,6 +18,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/S8cE-Ld7XP5sVz-upKJ-Bg__itemrep/img/1jghBEL53dxF3twlsYyNTNWTPp0=/fit-in/246x300/filters:strip_icc()/pic1521633.jpg',
         alt: 'Cosmic Encounter game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/39463/cosmic-encounter',
+        minPlayers: 3,
+        maxPlayers: 8,
+        playTime: 120,
+        complexityRating: 2.58,
         embedId: 'hIwsQ774Yi8',
         desc: `Build a galactic empire... In the depths of space, the alien races of the Cosmos vie with each other for control of the universe. Alliances form and shift from moment to moment, while cataclysmic battles send starships screaming into the warp.  
         This classic game of alien politics returns from the warp once more! In Cosmic Encounter, each player becomes the leader of one of dozens of alien races, each with its own unique power. On a player's turn, he or she becomes the offense. The offense encounters another player on a planet by moving a group of his or her ships through the hyperspace gate to that planet. Both sides can invite allies and play cards to try and tip the encounter in their favor.
@@ -24,6 +32,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/AZFSmsj-ACtob63KPcKCtg__itemrep/img/O7JvkU9CPjxmEYJcpvrHaqoUtOI=/fit-in/246x300/filters:strip_icc()/pic5532947.png',
         alt: 'Call to Adventure The Stormlight Archive game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/266993/call-adventure-stormlight-archive',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 60,
+        complexityRating: 1.92,
         embedId: 'SG8sIczWVD4',
         desc: `Call to Adventure: Stormlight is a 120-card standalone game containing everything you need to play. Based on the works of Brandon Sanderson, this expansion, and others to follow, add new challenges, new destinies, and new paths to follow.
         Call to Adventure is a hero-crafting game that combines strategy and storytelling. It's similar to some "tableau-building" games in which you're creating a kingdom or civilization, but in this game you're building a character. Each player begins with cards that define your hero's origin, motivation, and destiny. Over the course of the game, you overcome challenges and gain traits. It's a game with points and a clear winner, but the highlight of every game is telling your hero's story at the end.`,
@@ -33,6 +45,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/l_PRU2lVlX9seScRFcvFlA__itemrep/img/rfRBuKUlSgnnNpbRfy_osB9xrsM=/fit-in/246x300/filters:strip_icc()/pic6500949.jpg',
         alt: 'Viticulture Essential Edition game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/183394/viticulture-essential-edition',
+        minPlayers: 1,
+        maxPlayers: 6,
+        playTime: 90,
+        complexityRating: 2.89,
         embedId: 'p_CSug__g9M',
         desc: `In Viticulture, the players find themselves in the roles of people in rustic, pre-modern Tuscany who have inherited meager vineyards. They have a few plots of land, an old crushpad, a tiny cellar, and three workers. They each have a dream of being the first to call their winery a true success.
         The players are in the position of determining how they want to allocate their workers throughout the year. Every season is different on a vineyard, so the workers have different tasks they can take care of in the summer and winter. There's competition over those tasks, and often the first worker to get to the job has an advantage over subsequent workers.        
@@ -45,6 +61,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/CzwSm8i7tkLz6cBnrILZBg__itemrep/img/kYm-P2lvyVstKDjvEDciaV3XObg=/fit-in/246x300/filters:strip_icc()/pic3453267.jpg',
         alt: 'Concordia game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/124361/concordia',
+        minPlayers: 2,
+        maxPlayers: 6,
+        playTime: 120,
+        complexityRating: 3.07,
         embedId: 'YkKX8RxPN5Q',
         desc: `Two thousand years ago, the Roman Empire ruled the lands around the Mediterranean Sea. With peace at the borders, harmony inside the provinces, uniform law, and a common currency, the economy thrived and gave rise to mighty Roman dynasties as they expanded throughout the numerous cities. Guide one of these dynasties and send colonists to the remote realms of the Empire; develop your trade network; and appease the ancient gods for their favor — all to gain the chance to emerge victorious!
         Concordia is a peaceful strategy game of economic development in Roman times for 2-5 players aged 13 and up. Instead of looking to the luck of dice or cards, players must rely on their strategic abilities. Be sure to watch your rivals to determine which goals they are pursuing and where you can outpace them! In the game, colonists are sent out from Rome to settle down in cities that produce bricks, food, tools, wine, and cloth. Each player starts with an identical set of playing cards and acquires more cards during the game. These cards serve two purposes:        
@@ -57,6 +77,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/MAIDRapFcDC08pmZIBM7EQ__itemrep/img/bB9fIJTc34pjIAop4vT9Qo9UQvs=/fit-in/246x300/filters:strip_icc()/pic3315057.png',
         alt: 'Heroes of Land, Air and Sea game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/198830/heroes-land-air-sea',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 180,
+        complexityRating: 3.31,
         embedId: 'I9tOvMzv2J0',
         desc: `Heroes of Land, Air & Sea is a 4X-style board game with miniatures that tells the epic tale of orcs vs. humans, dwarves vs. elves, battling kingdoms, and the individuals who turn the tides of war.
         Players control one of these classic factions, competing to expand their kingdom into new territory. Even the greatest kingdoms begin as small townships, therefore players begin with only a basic town hall, a couple of peons, and a single warrior. From there, players must explore the territory around them, build up their work force, fortify their army, and develop their kingdom — all through careful action selection, exploitation, war, and resource management.        
@@ -69,6 +93,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/gTxav_KKQK1rDg-XuCjCSA__itemrep/img/tSLVt-2CpBBSd3UUPWa4zuxc34k=/fit-in/246x300/filters:strip_icc()/pic5164812.jpg',
         alt: 'Oath Chronicles of Empire and Exile game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/291572/oath-chronicles-empire-and-exile',
+        minPlayers: 1,
+        maxPlayers: 6,
+        playTime: 150,
+        complexityRating: 4.06,
         embedId: 'x05AzUYbjIo',
         desc: `In Oath, one to six players guide the course of history in an ancient land. Players might take the role of agents bolstering the old order or scheme to bring the kingdom to ruin. The consequences of one game will ripple through those that follow, changing what resources and actions future players may have at their disposal and even altering the game's core victory condition.
         If a player seizes control by courting anarchy and distrust, future players will have to contend with a land overrun by thieves and petty warlords. In a later game, a warlord might attempt to found a dynasty, creating a line of rulers that might last generations or be crushed by the rise of a terrible, arcane cult.        
@@ -79,6 +107,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/5cjKhFwhZwBcr8e3YA-9Nw__itemrep/img/QHrarMaEq9ntZIb1Ud_jUbpHco4=/fit-in/246x300/filters:strip_icc()/pic1534815.jpg',
         alt: 'Runewars game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/59294/runewars',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 240,
+        complexityRating: 3.85,
         embedId: 'O6-i_duBTAc',
         desc: `Runewars is an epic board game of conquest, adventure, and fantasy empires for two to four players. Runewars pits players against each other in a strategic game of battles and area control, where they must gather resources, raise armies, and lay siege to heavily fortified cities.
         Runewars takes place in the same popular fantasy universe as the board games Runebound, Descent: Journeys in the Dark and Rune Age, and dozens of fan-favorite heroes and monsters play their part. The wars for the dragon runes are beginning, and only one faction will emerge victorious.`,
@@ -88,6 +120,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__itemrep/img/sQgkl-_hydBVvQHAMLt2Zk_3dwI=/fit-in/246x300/filters:strip_icc()/pic4254509.jpg',
         alt: 'Root game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/237182/root',
+        minPlayers: 2,
+        maxPlayers: 6,
+        playTime: 90,
+        complexityRating: 3.90,
         embedId: 'G08TDwBbV7o',
         desc: `Root is a game of adventure and war in which 2 to 4 (1 to 6 with the 'Riverfolk' expansion) players battle for control of a vast wilderness.
         The nefarious Marquise de Cat has seized the great woodland, intent on harvesting its riches. Under her rule, the many creatures of the forest have banded together. This Alliance will seek to strengthen its resources and subvert the rule of Cats. In this effort, the Alliance may enlist the help of the wandering Vagabonds who are able to move through the more dangerous woodland paths. Though some may sympathize with the Alliance’s hopes and dreams, these wanderers are old enough to remember the great birds of prey who once controlled the woods.        
@@ -100,6 +136,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/OYne8uBCHv5oEgRfpOrV0A__itemrep/img/O_pvOOE9kMmDaciwLh7YHsWXsP0=/fit-in/246x300/filters:strip_icc()/pic2648303.jpg',
         alt: 'The 7th Continent game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/180263/7th-continent',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 120,
+        complexityRating: 2.90,
         embedId: 'roqzI03WDGI',
         desc: `It's the early 20th century. You have decided to sail back to the newly discovered seventh continent to attempt to lift the terrible curse that has struck you since your return from the previous expedition.
         In The 7th Continent, a solo or cooperative "choose-your-own-adventure" exploration board game, you choose a character and begin your adventure on your own or with a team of other explorers. Inspired by the Fighting Fantasy book series, you will discover the extent of this wild new land through a variety of terrain and event cards. In a land fraught with danger and wonders, you have to use every ounce of wit and cunning to survive, crafting tools, weapons, and shelter to ensure your survival.        
@@ -111,6 +151,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/gLFt1Kif5Cfag505_COYYw__itemrep/img/CzdGl701odpNfxS8lZ8cmslVtg8=/fit-in/246x300/filters:strip_icc()/pic3926631.jpg',
         alt: 'Galaxy Trucker game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/31481/galaxy-trucker',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 60,
+        complexityRating: 2.33,
         embedId: 'S2dmyqzCN5Q',
         desc: `In a galaxy far, far away... they need sewer systems, too. Corporation Incorporated builds them. Everyone knows their drivers -- the brave men and women who fear no danger and would, if the pay was good enough, even fly through Hell.
         Now you can join them. You will gain access to prefabricated spaceship components cleverly made from sewer pipes. Can you build a space ship durable enough to weather storms of meteors? Armed enough to defend against pirates? Big enough to carry a large crew and valuable cargo? Fast enough to get there first?        
@@ -126,6 +170,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/cnFppsVNOSTJ-W3APQFuTg__itemrep/img/3U1E1lUUSqbaZXENQ9meKj2xHXs=/fit-in/246x300/filters:strip_icc()/pic1974056.jpg',
         alt: 'Eclipse game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/72125/eclipse',
+        minPlayers: 2,
+        maxPlayers: 9,
+        playTime: 120,
+        complexityRating: 3.68,
         embedId: 'WonIjyQP0sk',
         desc: `The galaxy has been a peaceful place for many years. After the ruthless Terran–Hegemony War (30.027–33.364), much effort has been employed by all major spacefaring species to prevent the terrifying events from repeating themselves. The Galactic Council was formed to enforce precious peace, and it has taken many courageous efforts to prevent the escalation of malicious acts. Nevertheless, tension and discord are growing among the seven major species and in the Council itself. Old alliances are shattering, and hasty diplomatic treaties are made in secrecy. A confrontation of the superpowers seems inevitable – only the outcome of the galactic conflict remains to be seen. Which faction will emerge victorious and lead the galaxy under its rule?
         A game of Eclipse places you in control of a vast interstellar civilization, competing for success with its rivals. You will explore new star systems, research technologies, and build spaceships with which to wage war. There are many potential paths to victory, so you need to plan your strategy according to the strengths and weaknesses of your species, while paying attention to the other civilizations' endeavors.        
@@ -136,6 +184,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__itemrep/img/RVh5N-_HcMziJ3M6Q1eLTlj8XIQ=/fit-in/246x300/filters:strip_icc()/pic3163924.jpg',
         alt: 'Scythe game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/169786/scythe',
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 150,
+        complexityRating: 3.36,
         embedId: 'ffMLIL5qGQg',
         desc: `It is a time of unrest in 1920s Europa. The ashes from the first great war still darken the snow. The capitalistic city-state known simply as “The Factory”, which fueled the war with heavily armored mechs, has closed its doors, drawing the attention of several nearby countries.
         Scythe is an engine-building game set in an alternate-history 1920s period. It is a time of farming and war, broken hearts and rusted gears, innovation and valor. In Scythe, each player represents a character from one of five factions of Eastern Europe who are attempting to earn their fortune and claim their faction's stake in the land around the mysterious Factory. Players conquer territory, enlist new recruits, reap resources, gain villagers, build structures, and activate monstrous mechs.        
@@ -149,6 +201,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/2ewHIIG_TRq8bYlqk0jIMw__itemrep/img/Nz7z5Qk3fZ3R6IM14pDRg1D8XKE=/fit-in/246x300/filters:strip_icc()/pic3738560.jpg',
         alt: 'Android Netrunner game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/124742/android-netrunner',
+        minPlayers: 2,
+        maxPlayers: 2,
+        playTime: 45,
+        complexityRating: 3.40,
         embedId: 'vvRwynAp5tI&t=84s',
         desc: `Welcome to New Angeles, home of the Beanstalk. From our branch offices in this monument of human achievement, NBN proudly broadcasts all your favorite media programming. We offer fully comprehensive streaming in music and threedee, news and sitcoms, classic movies and sensies. We cover it all. Ours is a brave new age, and as humanity hurtles into space and the future with an astonishing series of new advances every day, NBN and our affiliates are keeping pace, bringing you all the vid that's fit to view.
         Android: Netrunner is an asymmetrical Living Card Game for two players. Set in the cyberpunk future of Android and Infiltration, the game pits a megacorporation and its massive resources against the subversive talents of lone runners.        
@@ -162,6 +218,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/RdCWCXPnBGSxoOhk5Hkq_g__itemrep/img/264PX3elW_Vltw05AQ5Dql2AlPU=/fit-in/246x300/filters:strip_icc()/pic6530423.jpg',
         alt: 'Arkham Horror the card game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/205637/arkham-horror-card-game',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 120,
+        complexityRating: 3.51,
         embedId: 'm1w-bfmicQo',
         desc: `Something evil stirs in Arkham, and only you can stop it. Blurring the traditional lines between role-playing and card game experiences, Arkham Horror: The Card Game is a Living Card Game of Lovecraftian mystery, monsters, and madness!
         In the game, you and your friend (or up to three friends with two Core Sets) become characters within the quiet New England town of Arkham. You have your talents, sure, but you also have your flaws. Perhaps you've dabbled a little too much in the writings of the Necronomicon, and its words continue to haunt you. Perhaps you feel compelled to cover up any signs of otherworldly evils, hampering your own investigations in order to protect the quiet confidence of the greater population. Perhaps you'll be scarred by your encounters with a ghoulish cult.        
@@ -174,6 +234,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/tZN9xSmobQLvGBW7wOW3aA__itemrep/img/4KhyISQ3jmG5kVyyYK1uAN8ADkk=/fit-in/246x300/filters:strip_icc()/pic5239853.jpg',
         alt: 'Marval Villainous Infinite Power game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/302336/marvel-villainous-infinite-power',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 80,
+        complexityRating: 2.65,
         embedId: 'kb4e5C4vx3s',
         desc: `Dominate the Marvel universe as an iconic comic book villain! Each villain follows a unique path to victory; each uses different abilities to face other villains and mighty heroes from across the universe. Choose Hela, Killmonger, Taskmaster, Thanos, or Ultron and fulfill your dark destiny!
         In Marvel Villainous: Infinite Power, players move their villains to different locations within their domain, carry out the actions there, and deal twists of fate to their opponents from a shared fate deck. Three different game modes allow players to scale the difficulty of their game by facing more or fewer events — situations that extract a heavy toll on villains until they are resolved the only way villains know how. Specialty cards add to each villain's ability, making them even more formidable as more specialty cards are played. With beginner and advance options, this game is an adventure for the whole family!`,
@@ -183,6 +247,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/6uEBiPxMH8gfGJ6f3HLNGg__itemrep/img/xdfjqCsBjWVDYGtRx99CsCE69pU=/fit-in/246x300/filters:strip_icc()/pic1807124.png',
         alt: 'Xia Legends of a Drift System game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/82222/xia-legends-drift-system',
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 180,
+        complexityRating: 3.50,
         embedId: 'RmWgTtlzP1w',
         desc: `Xia: Legends of a Drift System is a 3-5 player sandbox style competitive space adventure. Each player starts as a lowly but hopeful captain of a small starship.
         Players fly their ships about the system, completing a variety of missions, exploring new sectors and battling other ships. Navigating hazardous environments, players choose to mine, salvage, or trade valuable cargo. Captains vie with each other for Titles, riches and, most importantly, Fame.        
@@ -196,6 +264,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__itemrep/img/sBBqwZDhiH4fyBRK5-LPxuX2JfQ=/fit-in/246x300/filters:strip_icc()/pic5934958.png',
         alt: 'Furnace game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/318084/furnace',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 60,
+        complexityRating: 2.21,
         embedId: 'bUxi_yM8u9w',
         desc: `Furnace is an engine-building Eurogame in which players take on the roles of 19th-century capitalists building their industrial corporations and aspiring to make as much money as they can by purchasing companies, extracting resources, and processing them in the best combinations possible.
         Each player starts the game with a random start-up card, the resources depicted at the top of that card, and four colored discs valued 1-4.        
@@ -210,6 +282,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/Noz8-u1ba828WUv69pTXKg__itemrep/img/EwNAAUagulHIXWq2Jfj4EnyRO2k=/fit-in/246x300/filters:strip_icc()/pic3613444.jpg',
         alt: 'Bunny Kingdom game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/184921/bunny-kingdom',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 60,
+        complexityRating: 2.29,
         embedId: 'WHB2nJ2_wXE',
         desc: `Peace has come at last to the great Bunny Kingdom! Lead your clan of rabbits to glory by gathering resources and building new cities across the land!
         Draft cards and pick the right ones to position your warrens on the 100 squares of the board, provide resources to your colonies, build new cities to increase your influence, and plan your strategy to score big at the end of the game. Settle in lakesides or fields to collect water and grow carrots, gather mushrooms in the green forest, and climb the highest mountains to discover rare and precious resources... Secretly rally rabbit lords and recruit skillful masters to make your cities and resources even more valuable at the end of the game.        
@@ -220,6 +296,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/lVFArtZrwFEDo23sDcSMEg__itemrep/img/wnK1bUAUW75sReQfGqXiH1l6q-M=/fit-in/246x300/filters:strip_icc()/pic2486481.jpg',
         alt: 'Specter Ops game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/155624/specter-ops',
+        minPlayers: 2,
+        maxPlayers: 5,
+        playTime: 120,
+        complexityRating: 2.39,
         embedId: 'fBdD4cTnjbc',
         desc: `NOTE: Specter Ops: Broken Covenant is included as well. Adds new characters.
         A secret agent of A.R.K. has infiltrated a top secret Raxxon facility, attempting to complete three mission objectives before they escape — but they are hunted by genetically modified Raxxon Hunters. Players can choose which side they wish to join.
@@ -230,6 +310,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/aaEdtCTpdlDLTn_tuDuC0g__itemrep/img/igYl52gn__yUKqZBJomz3lVw4k4=/fit-in/246x300/filters:strip_icc()/pic1615561.jpg',
         alt: 'Euphoria Build a Better Dystopia game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/133848/euphoria-build-better-dystopia',
+        minPlayers: 2,
+        maxPlayers: 6,
+        playTime: 60,
+        complexityRating: 3.12,
         embedId: 'Bpu1MNbPL1g',
         desc: `You find yourself in a dystopian cityscape with a few workers at your disposal to make your mark on the world. Like most people in dystopian fiction, your workers are oblivious to their situation. This world is all they've ever known, and you may use them at your whim.
         The world as we know it has ended, and in its place the city of Euphoria has risen. Believing that a new world order is needed to prevent another apocalypse, the Euphorian elite erect high walls around their golden city and promote intellectual equality above all else. Gone are personal freedoms; gone is knowledge of the past. All that matters is the future.        
@@ -245,6 +329,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/ztNshEv3Fsm46HCJaEOFPw__itemrep/img/fgFxHXp815uaLr-wVObbguDdjfI=/fit-in/246x300/filters:strip_icc()/pic2241156.png',
         alt: 'Alchemists game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/161970/alchemists',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 120,
+        complexityRating: 3.92,
         embedId: 'E2eAVGlniMI',
         desc: `Mandrake root and scorpion tail; spongy mushroom and warty toad — these are the foundations of the alchemist's livelihood, science, and art.
         But what arcane secrets do these strange ingredients hide? Now it is time to find out. Mix them into potions and drink them to determine their effects — or play it safe and test the concoction on a helpful assistant! Gain riches selling potions to wandering adventurers and invest these riches in powerful artifacts. As your knowledge grows, so will your reputation, as you publish your theories for all to see. Knowledge, wealth, and fame can all be found in the murky depths of the alchemist's cauldron.
@@ -258,6 +346,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/JYqwG_v1B3RhpB7NcmeDOA__itemrep/img/Z6Zac8NvuJQN5jBl3Z7uppanUbc=/fit-in/246x300/filters:strip_icc()/pic70547.jpg',
         alt: 'Shadows Over Camelot game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/15062/shadows-over-camelot',
+        minPlayers: 3,
+        maxPlayers: 8,
+        playTime: 90,
+        complexityRating: 2.54,
         embedId: 'EXgFlIBdqzE',
         desc: `Shadows over Camelot is a cooperative/semi-cooperative hand-management and deduction-based board game for 3–7 players.
         Each player represents a knight of the Round Table and they must collaborate to overcome a number of quests, ranging from defeating the Black Knight to the search for the Holy Grail. Completed quests place white swords on the Round Table; failed quests add black swords and/or siege engines around Camelot. The knights are trying to build a majority of white swords on the Table before Camelot falls.        
@@ -270,6 +362,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/wNCSCl961fMzDUhwetfjTg__itemrep/img/NZUZmeX5k7vw_-9ChzLHO4x3T_E=/fit-in/246x300/filters:strip_icc()/pic1236119.jpg',
         alt: 'Elder Sign game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/100423/elder-sign',
+        minPlayers: 1,
+        maxPlayers: 8,
+        playTime: 90,
+        complexityRating: 2.35,
         embedId: 'krMnzY6tGWw',
         desc: `It is 1926, and the museum's extensive collection of exotic curios and occult artifacts poses a threat to the barriers between our world and the elder evils lurking between dimensions. Gates to the beyond begin to leak open, and terrifying creatures of increasing strength steal through them. Animals, the mad, and those of more susceptible minds are driven to desperation by the supernatural forces the portals unleash. Only a handful of investigators race against time to locate the eldritch symbols necessary to seal the portals forever. Only they can stop the Ancient One beyond from finding its way to Earth and reducing humanity to cinders.
         Elder Sign is a fast-paced, cooperative dice game of supernatural intrigue for one to eight players by Richard Launius and Kevin Wilson, the designers of Arkham Horror. Players take the roles of investigators racing against time to stave off the imminent return of the Ancient One. Armed with tools, allies, and occult knowledge, investigators must put their sanity and stamina to the test as they adventure to locate Elder Signs, the eldritch symbols used to seal away the Ancient Ones and win the game.        
@@ -280,6 +376,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/1YcHesB7LRvCF8i9vgH7qw__itemrep/img/nYCvnessgiah0aTixm_fKGqdlbY=/fit-in/246x300/filters:strip_icc()/pic6009608.png',
         alt: 'Suburbia game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/123260/suburbia',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 90,
+        complexityRating: 2.77,
         embedId: '4e82eJ2rbMI',
         desc: `Plan, build, and develop a small town into a major metropolis. Use hex-shaped building tiles to add residential, commercial, civic, and industrial areas, as well as special points of interest that provide benefits and take advantage of the resources of nearby towns. Your goal is to have your borough thrive and end up with a greater population than any of your opponents.
         Suburbia is a tile-laying game in which each player tries to build up an economic engine and infrastructure that will be initially self-sufficient, and eventually become both profitable and encourage population growth. As your town grows, you'll modify both your income and your reputation. As your income increases, you'll have more cash on hand to purchase better and more valuable buildings, such as an international airport or a high-rise office building. As your reputation increases, you'll gain more and more population — and the player with the largest population at the end of the game wins.        
@@ -290,6 +390,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/xkOTIpxwGQN4iyvbeqnytQ__itemrep/img/JJCsLrOkBnbBq1tJws24aRXW44g=/fit-in/246x300/filters:strip_icc()/pic1961827.jpg',
         alt: 'Castles of Mad King Ludwig game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/155426/castles-mad-king-ludwig',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 90,
+        complexityRating: 2.66,
         embedId: '_SBCrF6MHrA',
         desc: `In the tile-laying game Castles of Mad King Ludwig, players are tasked with building an amazing, extravagant castle for King Ludwig II of Bavaria...one room at a time. You see, the King loves castles, having built Neuschwanstein (the castle that inspired the Disney theme park castles) and others, but now he's commissioned you to build the biggest, best castle ever — subject, of course, to his ever-changing whims. Each player acts as a building contractor who is adding rooms to the castle he's building while also selling his services to other players.
         In the game, each player starts with a simple foyer. One player takes on the role of the Master Builder, and that player sets prices for a set of rooms that can be purchased by the other players, with him getting to pick from the leftovers after the other players have paid him for their rooms. When a room is added to a castle, the player who built it gains castle points based on the size and type of room constructed, as well as bonus points based on the location of the room. When a room is completed, with all entranceways leading to other rooms in the castle, the player receives one of seven special rewards.        
@@ -300,6 +404,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/FbFnaTx3aT5dM18K_bR_Pg__itemrep/img/spcA9lqJ28nt3L9-PDqc2taxFX4=/fit-in/246x300/filters:strip_icc()/pic3165731.jpg',
         alt: 'Robinson Crusoe Adventures on the Cursed Island game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/121921/robinson-crusoe-adventures-cursed-island',
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 120,
+        complexityRating: 3.81,
         embedId: '1b__PzNtWxI',
         desc: `Robinson Crusoe: Adventures on the Cursed Island is a game created by Ignacy Trzewiczek, the author of Stronghold. This time Trzewiczek takes the players to a deserted island, where they'll play the parts of shipwreck survivors confronted by an extraordinary adventure. They'll be faced with the challenges of building a shelter, finding food, fighting wild beasts, and protecting themselves from weather changes. Building walls around their homes, animal domestication, constructing weapons and tools from what they find, and much more await them on the island. The players decide in which direction the game will unfold and – after several in-game weeks of hard work – how their settlement will look. Will they manage to discover the secret of the island in the meantime? Will they find a pirate treasure, or an abandoned village? Will they discover an underground city or a cursed temple at the bottom of a volcano? Answers to these questions lie in hundreds of event cards and hundreds of object and structure cards that can be used during the game...
         Robinson Crusoe: Adventures on the Cursed Island is an epic game from Portal. You will build a shelter, palisade, weapons, you will create tools like axes, knives, sacks, you will do everything you can to… to survive. You will have to find food, fight wild beasts, protect yourself from weather changes…        
@@ -312,6 +420,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/rwOMxx4q5yuElIvo-1-OFw__itemrep/img/NaQx3XWoNAOMDGl4AXf4nxlhHo0=/fit-in/246x300/filters:strip_icc()/pic1904079.jpg',
         alt: 'Splendor game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/148228/splendor',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 30,
+        complexityRating: 1.78,
         embedId: 'rue8-jvbc9I',
         desc: `Splendor is a game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops—all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige.
         On your turn, you may (1) collect chips (gems), or (2) buy and build a card, or (3) reserve one card. If you collect chips, you take either three different kinds of chips or two chips of the same kind. If you buy a card, you pay its price in chips and add it to your playing area. To reserve a card—in order to make sure you get it, or, why not, your opponents don't get it—you place it in front of you face down for later building; this costs you a round, but you also get gold in the form of a joker chip, which you can use as any gem.        
@@ -322,6 +434,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/UTBiMz6852dq3K_yfpgpLQ__itemrep/img/BdHzJE7U9L1UDAoQN-lKWZ38YkM=/fit-in/246x300/filters:strip_icc()/pic5998666.jpg',
         alt: 'Dominant Species Marine game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/262941/dominant-species-marine',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 150,
+        complexityRating: 3.87,
         embedId: '5SBFCyvwfZE',
         desc: `Sixty-Something Millions of Years Ago — A great ice age has ended. With massive warming altering the globe, another titanic struggle for supremacy has unwittingly commenced between the varying animal species.
         Dominant Species: Marine is a game that abstractly recreates a small portion of ancient history: the ending of an onerous ice age and what that entails for the living creatures trying to adapt to the slowly-changing earth.        
@@ -341,6 +457,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/bre12I1YiXkZr7elvriz4A__itemrep/img/pKM9lklmQLXJx2xta9eR5NSezec=/fit-in/246x300/filters:strip_icc()/pic5375624.jpg',
         alt: 'Terra Mystica game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/120677/terra-mystica',
+        minPlayers: 2,
+        maxPlayers: 5,
+        playTime: 150,
+        complexityRating: 3.97,
         embedId: 'pU292g8BO7Q',
         desc: `In the land of Terra Mystica dwell 14 different peoples in seven landscapes, and each group is bound to its own home environment, so to develop and grow, they must terraform neighboring landscapes into their home environments in competition with the other groups.
         Terra Mystica is a full information game, without any luck, that rewards strategic planning. Each player governs one of the 14 groups. With subtlety and craft, the player must attempt to rule as great an area as possible and to develop that group's skills. There are also four religious cults in which you can progress. To do all that, each group has special skills and abilities.        
@@ -359,6 +479,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/hAsqLdANmtExR5Zi41v94Q__itemrep/img/dXKil3cOdgiEBV28I2pkiZ06EEs=/fit-in/246x300/filters:strip_icc()/pic5241325.png',
         alt: 'Fort game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/296912/fort',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 40,
+        complexityRating: 2.42,
         embedId: '_OdrIpLEFLQ',
         desc: `Fort is a 2-4 player card game about building forts and following friends.
         In Fort, you're a kid! And like many kids, you want to grow your circle of friends, collect pizza and toys, and build the coolest fort.        
@@ -370,6 +494,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/wg9oOLcsKvDesSUdZQ4rxw__itemrep/img/IwUOQfhP5c0KcRJBY4X_hi3LpsY=/fit-in/246x300/filters:strip_icc()/pic3536616.jpg',
         alt: 'Terraforming Mars game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/167791/terraforming-mars',
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 120,
+        complexityRating: 3.25,
         embedId: 'n3yVpsiVwL8',
         desc: `In the 2400s, mankind begins to terraform the planet Mars. Giant corporations, sponsored by the World Government on Earth, initiate huge projects to raise the temperature, the oxygen level, and the ocean coverage until the environment is habitable. In Terraforming Mars, you play one of those corporations and work together in the terraforming process, but compete for getting victory points that are awarded not only for your contribution to the terraforming, but also for advancing human infrastructure throughout the solar system, and doing other commendable things.
         The players acquire unique project cards (from over two hundred different ones) by buying them to their hand. The projects (cards) can represent anything from introducing plant life or animals, hurling asteroids at the surface, building cities, to mining the moons of Jupiter and establishing greenhouse gas industries to heat up the atmosphere. The cards can give you immediate bonuses, as well as increasing your production of different resources. Many cards also have requirements and they become playable when the temperature, oxygen, or ocean coverage increases enough. Buying cards is costly, so there is a balance between buying cards (3 megacredits per card) and actually playing them (which can cost anything between 0 to 41 megacredits, depending on the project). Standard Projects are always available to complement your cards.        
@@ -386,6 +514,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/OiqKsYDh7pqeRYKG__kMSw__itemrep/img/7RUFLxeNec7dSbH0d_t77bFj3mo=/fit-in/246x300/filters:strip_icc()/pic4893652.jpg',
         alt: 'Alhambra game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/6249/alhambra',
+        minPlayers: 2,
+        maxPlayers: 6,
+        playTime: 60,
+        complexityRating: 2.10,
         embedId: 'PXb6N7q7RNc',
         desc: `Granada, 1278. At the foot of the Sierra Nevada mountains, one of the most exciting and interesting project of the Spanish Middle Ages begins: the construction of the ALHAMBRA.
         The best master builders in the whole of Europe and Arabia want to demonstrate their skill. Employ the most suitable teams of builders and make sure that you always have enough of the right currency. Because no matter whether they are stonemasons from the north or horticulturalists from the south, they all want a proper wage and insist on their "native" currency. With their help towers can be constructed, gardens laid out, pavilions and arcades erected and seraglios and chambers built.        
@@ -398,6 +530,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/rz22tqa5PCYvK9oDjIbvxg__itemrep/img/8tBInJIElBaiYVJ-gngzWmrSrsw=/fit-in/246x300/filters:strip_icc()/pic1790789.jpg',
         alt: 'Caverna The Cave Farmers game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/102794/caverna-cave-farmers',
+        minPlayers: 1,
+        maxPlayers: 7,
+        playTime: 210,
+        complexityRating: 3.78,
         embedId: '3VIO_eiQGs4',
         desc: `Following along the same lines as its predecessor (Agricola), Caverna: The Cave Farmers is a worker-placement game at heart, with a focus on farming. In the game, you are the bearded leader of a small dwarf family that lives in a little cave in the mountains. You begin the game with a farmer and his spouse, and each member of the farming family represents an action that the player can take each turn. Together, you cultivate the forest in front of your cave and dig deeper into the mountain. You furnish the caves as dwellings for your offspring as well as working spaces for small enterprises.
         It's up to you how much ore you want to mine. You will need it to forge weapons that allow you to go on expeditions to gain bonus items and actions. While digging through the mountain, you may come across water sources and find ore and ruby mines that help you increase your wealth. Right in front of your cave, you can increase your wealth even further with agriculture: You can cut down the forest to sow fields and fence in pastures to hold your animals. You can also expand your family while running your ever-growing farm. In the end, the player with the most efficiently developed home board wins.        
@@ -409,6 +545,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/wfeAiLK5n5hD1omhnlYLLA__itemrep/img/vp5yky_tCOAF26AvLGzH7LLB-vc=/fit-in/246x300/filters:strip_icc()/pic2601683.jpg',
         alt: 'Mysterium game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/181304/mysterium',
+        minPlayers: 2,
+        maxPlayers: 7,
+        playTime: 45,
+        complexityRating: 1.91,
         embedId: 'Bw2Xz9wp4KI',
         desc: `In the 1920s, Mr. MacDowell, a gifted astrologer, immediately detected a supernatural being upon entering his new house in Scotland. He gathered eminent mediums of his time for an extraordinary séance, and they have seven hours to make contact with the ghost and investigate any clues that it can provide to unlock an old mystery.
         Unable to talk, the amnesiac ghost communicates with the mediums through visions, which are represented in the game by illustrated cards. The mediums must decipher the images to help the ghost remember how he was murdered: Who did the crime? Where did it take place? Which weapon caused the death? The more the mediums cooperate and guess well, the easier it is to catch the right culprit.        
@@ -424,6 +564,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/pN_2LoK9ICB6TD5h3QSPAQ__itemrep/img/tj7qXyHBKOWmb5Itx0n8UA0mUR4=/fit-in/246x300/filters:strip_icc()/pic2682914.jpg',
         alt: 'Dogs of War game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/158435/dogs-war',
+        minPlayers: 3,
+        maxPlayers: 5,
+        playTime: 75,
+        complexityRating: 2.68,
         embedId: 'uvvEFGenXNA',
         desc: `Dogs of War is an elegant game set in a steampunk-influenced renaissance universe. Noble houses engage each other in a series of fierce battles, and it's up to the players and the Dogs of War they control to deploy their private armies in support of whatever house they wish to favor. Clockwork knights and imposing war machines shift the tides of war as they enter the battlefields, but the interest of their Dog of War captains actually lie in the rewards offered by each noble house to its supporters. Each Dog of War has a special ability that helps them claim influence, win battles, or betray the house to which they've sworn allegiance!
         Dogs of War is not a game of pure military power, but rather a game in which deception and betrayal often lead the way to a decisive victory. The goal for the Dogs of War is to earn the most power by the end of the game. Thanks to thoughtful game design and development, there are many ways to achieve this, like defeating other captains in battle, getting rewards from the Houses you help, amassing gold and troops, and most importantly, gaining influence with the most successful Houses.`,
@@ -433,6 +577,10 @@ export const gameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/oxdsZKIX5_3ovDo38EIaeg__itemrep/img/EQReG95qMc561VugTP8CvqO9zKE=/fit-in/246x300/filters:strip_icc()/pic1872452.jpg',
         alt: 'Eldritch Horror game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/146021/eldritch-horror',
+        minPlayers: 1,
+        maxPlayers: 8,
+        playTime: 240,
+        complexityRating: 3.32,
         embedId: 'RL_WqY3L4SA',
         desc: `Across the globe, ancient evil is stirring. Now, you and your trusted circle of colleagues must travel around the world, working against all odds to hold back the approaching horror. Foul monsters, brutal encounters, and obscure mysteries will take you to your limit and beyond. All the while, you and your fellow investigators must unravel the otherworldy mysteries scattered around the globe in order to push back the gathering mayhem that threatens to overwhelm humanity. The end draws near! Do you have the courage to prevent global destruction?
         Eldritch Horror is a co-operative game of terror and adventure in which one to eight players take the roles of globetrotting investigators working to solve mysteries, gather clues, and protect the world from an Ancient One – that is, an elder being intent on destroying our world. Each Ancient One comes with its own unique decks of Mystery and Research cards, which draw you deeper into the lore surrounding each loathsome creature. Discover the true name of Azathoth or battle Cthulhu on the high seas.        
@@ -441,11 +589,87 @@ export const gameInfo = {
         All the while, the arrival of the Ancient One approaches. Its malign influence is manifested in Eldritch Horror as you draw Mythos Cards, which govern the appearance of otherworldly gates, fearsome monsters, and other ominous elements. Mythos cards keep your investigators under pressure, introducing new threats, even as the arrival of the Great Old One draws nearer! Since the investigators draw a new Mythos card each round, they're certain to have their hands full battling foul creatures and following up on strange rumors, even as they work to solve their three all-important mysteries.        
         With twelve unique investigators, two hundred-fifty tokens, and over three hundred cards, Eldritch Horror presents an epic, world-spanning adventure with each and every game.`,
     },
+    paxpamir: {
+        name: "Pax Pamir: Second Edition",
+        gameImgURL: "https://cf.geekdo-images.com/oSM_AuKYfGIwOtKbVEsoVg__itemrep/img/4yTV5vAsuDi8MZP6wWysZA8tmQg=/fit-in/246x300/filters:strip_icc()/pic4503733.png",
+        alt: "Pax Pamir: Second Edition game",
+        gameSiteURL: "https://boardgamegeek.com/boardgame/256960/pax-pamir-second-edition",
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 120,
+        complexityRating: 3.84,
+        embedId: "PyCTv7uuaNs",
+        desc: `In Pax Pamir, players assume the role of nineteenth century Afghan leaders attempting to forge a new state after the collapse of the Durrani Empire. Western histories often call this period "The Great Game" because of the role played by the Europeans who attempted to use central Asia as a theater for their own rivalries. In this game, those empires are viewed strictly from the perspective of the Afghans who sought to manipulate the interloping ferengi (foreigners) for their own purposes.
+        In terms of game play, Pax Pamir is a pretty straightforward tableau builder. Players spend most of their turns purchasing cards from a central market, then playing those cards in front of them in a single row called a court. Playing cards adds units to the game's map and grants access to additional actions that can be taken to disrupt other players and influence the course of the game. That last point is worth emphasizing. Though everyone is building their own row of cards, the game offers many ways for players to interfere with each other directly and indirectly.        
+        To survive, players will organize into coalitions. Throughout the game, the dominance of the different coalitions will be evaluated by the players when a special card, called a "Dominance Check", is resolved. If a single coalition has a commanding lead during one of these checks, those players loyal to that coalition will receive victory points based on their influence in their coalition. However, if Afghanistan remains fragmented during one of these checks, players instead will receive victory points based on their personal power base.        
+        After each Dominance Check, victory is checked and the game will be partially reset, offering players a fresh attempt to realize their ambitions. The game ends when a single player is able to achieve a lead of four or more victory points or after the fourth and final Dominance Check is resolved.`,
+    },
+    mindmgmt: {
+        name: "Mind MGMT: The Psychic Espionage Game",
+        gameImgURL: "https://cf.geekdo-images.com/hYP-VIJGRFR8yB78-UN7Rg__itemrep/img/J-PIFZfKwV5ZYJkHUH_Zt1ef1Ds=/fit-in/246x300/filters:strip_icc()/pic5154610.jpg",
+        alt: "Mind MGMT game",
+        gameSiteURL: "https://boardgamegeek.com/boardgame/284653/mind-mgmt-psychic-espionage-game",
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 75,
+        complexityRating: 2.92,
+        embedId: "e_EJnadrYhU",
+        desc: `Working from the shadows, Mind MGMT once used its psychically-powered agents to put a stop to global crises. However, absolute power corrupts absolutely, and Mind MGMT is now rotting from the inside. To tighten its iron grip on the world stage, Mind MGMT deploys covert operatives around the world to recruit other psychically-attuned individuals to their side. How can this enigmatic organization, hell bent on global domination, be defeated?
+        Thankfully, a few renegade agents have figured out that Mind MGMT has been compromised and have defected, turning their backs on the syndicate. They now use their own psychic abilities to prevent Mind MGMT from achieving its nefarious goals.        
+        In Mind MGMT: The Psychic Espionage "Game.", one player controls Mind MGMT and must scour the city for new recruits. They move around on a secret map, trying to visit locations that match one of their three randomly drawn feature cards. They can also use their four Immortals to protect locations from being exposed.        
+        All other players control the rogue agents who must try to stop Mind MGMT before it's too late! They ask questions to the Recruiter and deduce their whereabouts from the answers they receive. Rogue agents can use dry-erase "mental notes" to track all the information they're given.        
+        Mind MGMT wins by either collecting twelve recruits or surviving sixteen turns. The rogue agents can win only by capturing Mind MGMT, which they do when they believe they're on the same block as Mind MGMT.`,
+    },
+    flamecraft: {
+        name: "Flamecraft",
+        gameImgURL: "https://cf.geekdo-images.com/EvGtnsBDcfnKiqSiXHothQ__itemrep/img/jX6vD-lydthyBuFRXuuWOnkayh0=/fit-in/246x300/filters:strip_icc()/pic6605448.jpg",
+        alt: "Flamecraft game",
+        gameSiteURL: "https://boardgamegeek.com/boardgame/336986/flamecraft",
+        minPlayers: 1,
+        maxPlayers: 5,
+        playTime: 60,
+        complexityRating: 2.19,
+        embedId: "ec7oNMU_3zU",
+        desc: `Artisan dragons, the smaller and magically talented versions of their larger (and destructive) cousins, are sought by shopkeepers so that they may delight customers with their flamecraft. You are a Flamekeeper, skilled in the art of conversing with dragons, placing them in their ideal home and using enchantments to entice them to produce wondrous things. Your reputation will grow as you aid the dragons and shopkeepers, and the Flamekeeper with the most reputation will be known as the Master of Flamecraft.
+        In Flamecraft, 1-5 players take on the role of Flamekeepers, gathering items, placing dragons and casting enchantments to enhance the shops of the town. Dragons are specialized (bread, meat, iron, crystal, plant and potion) and the Flamekeepers know which shops are the best home for each. Visit a shop to gain items and a favor from one of the dragons there. Gathered items can be used to enchant a shop, gaining reputation and the favors of all the dragons in the shop. If you are fortunate enough to attract fancy dragons then you will have opportunities to secure even more reputation.`,
+    },
+    ahoy: {
+        name: "Ahoy",
+        gameImgURL: "https://cf.geekdo-images.com/yHPkYCQixecmdL9Sabj6kQ__itemrep/img/8YQaXsJsmXS_lYynStBKLhjULhE=/fit-in/246x300/filters:strip_icc()/pic6946121.png",
+        alt: "Ahoy game",
+        gameSiteURL: "https://boardgamegeek.com/boardgame/359402/ahoy",
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 75,
+        complexityRating: 2.82,
+        embedId: "Eh5f6B1Pilg",
+        desc: `Ahoy is a lightly asymmetrical game where two to four players take the roles of swashbucklers and soldiers seeking Fame on the high seas.
+        One player controls the Bluefin Squadron, a company of sharks and their toothy friends, who patrol these waters and keep order with shot and sword. Another player controls the Mollusk Union, an alliance of undersea creatures and their comrades-in-arms, who fight to reclaim their ancestral home. In games with more people, some players control Smugglers, maverick captains who run blockades to smuggle luxuries and essentials, delivering them to those with the most need—or the most coin. Explore the seas. As you play, you’ll make a unique map full of treasure troves, dangerous wreckage, and mighty sea currents, using deluxe double-layer region tiles.        
+        Featuring development from the same team that brought you Root and Oath, Ahoy offers deep, interactive gameplay in a fast-playing and easy-to-learn design with a colorful setting brought to life by Kyle Ferrin's gorgeous illustrations.`,
+    },
+    lunacapital: {
+        name: "LUNA Capital",
+        gameImgURL: "https://cf.geekdo-images.com/tsoRGi5tKQ5W2LeXDhb-cQ__itemrep/img/K07MfOEc6uIlBShc0DU_ui1eQLA=/fit-in/246x300/filters:strip_icc()/pic5977208.jpg",
+        alt: "LUNA Capital game",
+        gameSiteURL: "https://boardgamegeek.com/boardgame/323613/luna-capital",
+        minPlayers: 1,
+        maxPlayers: 4,
+        playTime: 45,
+        complexityRating: 2.19,
+        embedId: "mba99OeQEe0",
+        desc: `The dream of maintaining human life on the surface of the moon has now come true. The project to build cities on Earth’s beloved satellite is under way. Things are moving full speed ahead too, the possibilities are enormous because this is 1977, the year when lunar living becomes reality. The most enterprising companies have decided to sponsor teams of scientists, builders, publicists and freelance nightlife entertainers to set out to construct the best client base in the galaxy. On top of this out of the world chance, the Lunar Colonization Authority shall assign the capital of the Moon to the best of the projects that are presented, making the chance for an even juicier reward!
+        In LUNA Capital, the players must optimally manage the elements of the game to build the best possible lunar settlement, and to make it worthy of becoming the capital of the entire off-planet colony. They will have a series of construction cards in a common “market”, and each of the players shall be tied to a number of project tiles. The players take turns drawing cards and the tiles that accompany them, and then place them in their personal playing area. The cards must be laid out in a maximum of three lines and must be placed so that they are always in ascending numerical value. Once the card has been placed, the tiles are then put on the spaces for them on the cards, in an attempt to group together the various projects in the most efficient way possible.        
+        The tiles show what projects are available, all of which are essential for the construction of the city worthy of the term. They include oxygen collectors, greenhouses, residential complexes and (of extreme importance) sales offices to sell apartments with the best views in the galaxy. Each of these categories scores according to how they are arranged within the personal area of each player. Whoever is able to best take advantage of their arrangement and placement shall become the mayor of LUNA Capital.`,
+    },
     // game: {
     //     name: "",
     //     gameImgURL: "",
     //     alt: "",
     //     gameSiteURL: "",
+    //     minPlayers: ,
+    //     maxPlayers: ,
+    //     playTime: ,
+    //     complexityRating: ,
     //     embedId: "",
     //     desc: ``,
     // },
@@ -457,6 +681,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/6gDD73LSCMrr7ab1LHCXCg__itemrep/img/8JT5XGPKSWOt3VUGpjmfdkrBeSc=/fit-in/246x300/filters:strip_icc()/pic3719954.jpg',
         alt: 'Muse game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/234396/muse',
+        minPlayers: 2,
+        maxPlayers: 12,
+        playTime: 30,
+        complexityRating: 1.13,
         embedId: 'U3iUNIaQKwY',
         desc: `Where will your muse guide you?
         Lead your teammates to inspiration using cryptic clues and surreal imagery in Muse, a beautiful party game with over one hundred fully-illustrated cards.       
@@ -468,6 +696,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/hHFs0_KRoW_FJ0cMIVgZcw__itemrep/img/uTJREz55VIG7CJAy1oQYBE1duAU=/fit-in/246x300/filters:strip_icc()/pic4991925.jpg',
         alt: 'Concept game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/147151/concept',
+        minPlayers: 4,
+        maxPlayers: 12,
+        playTime: 40,
+        complexityRating: 1.39,
         embedId: 'Z02w7AL3Rbg',
         desc: `In Concept, your goal is to guess words through the association of icons. A team of two players – neighbors at the table – choose a word or phrase that the other players need to guess. Acting together, this team places pieces judiciously on the available icons on the game board.
         To get others to guess "milk", for example, the team might place the question mark icon (which signifies the main concept) on the liquid icon, then cubes of this color on the icons for "food/drink" and "white". For a more complicated concept, such as "Leonardo DiCaprio", the team can use the main concept and its matching cubes to clue players into the hidden phrase being an actor or director, while then using sub-concept icons and their matching cubes to gives clues to particular movies in which DiCaprio starred, such as Titanic or Inception.       
@@ -478,6 +710,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/cAPTkL2BR3snLO71dkH8rw__itemrep/img/B-g9_MGH_PcCOh8tQ6IMKyJq6Xw=/fit-in/246x300/filters:strip_icc()/pic2576459.jpg',
         alt: 'The Resistance game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/41114/resistance',
+        minPlayers: 5,
+        maxPlayers: 10,
+        playTime: 30,
+        complexityRating: 1.60,
         embedId: 'DUENzjE9Jwg',
         desc: `The Empire must fall. Our mission must succeed. By destroying their key bases, we will shatter Imperial strength and liberate our people. Yet spies have infiltrated our ranks, ready for sabotage. We must unmask them. In five nights we reshape destiny or die trying. We are the Resistance!
         The Resistance is a party game of social deduction. It is designed for five to ten players, lasts about 30 minutes, and has no player elimination. The Resistance is inspired by Mafia/Werewolf, yet it is unique in its core mechanics, which increase the resources for informed decisions, intensify player interaction, and eliminate player elimination.       
@@ -488,6 +724,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__itemrep/img/e8zw8YQvQB8q8zfWkHQ48Ls920g=/fit-in/246x300/filters:strip_icc()/pic2582929.jpg',
         alt: 'Codenames game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/178900/codenames',
+        minPlayers: 2,
+        maxPlayers: 8,
+        playTime: 15,
+        complexityRating: 1.27,
         embedId: 'J8RWBooJivg',
         desc: `Codenames is an easy party game to solve puzzles.
         The game is divided into red and blue, each side has a team leader, the team leader's goal is to lead their team to the final victory.
@@ -499,6 +739,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/Ehx72XRdSeQHISVXcZVnHg__itemrep/img/00p3aUl2ug4XZtXMhB2VqrUmNTg=/fit-in/246x300/filters:strip_icc()/pic2453926.jpg',
         alt: 'Spyfall game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/166384/spyfall',
+        minPlayers: 3,
+        maxPlayers: 8,
+        playTime: 15,
+        complexityRating: 1.24,
         embedId: 'RAP8yVSKhps',
         desc: `Spyfall is a party game unlike any other, one in which you get to be a spy and try to understand what's going on around you. It's really simple!
         Spyfall is played over several rounds, and at the start of each round all players receive cards showing the same location — a casino, a traveling circus, a pirate ship, or even a space station — except that one player receives a card that says "Spy" instead of the location. Players then start asking each other questions — "Why are you dressed so strangely?" or "When was the last time we got a payday?" or anything else you can come up with — trying to guess who among them is the spy. The spy doesn't know where he is, so he has to listen carefully. When it's his time to answer, he'd better create a good story!       
@@ -510,6 +754,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/XNphrzWB2Zc5e_NNBLLNxA__itemrep/img/-Lb2GC9jQcJSSNJl1GhQ-m3h9bU=/fit-in/246x300/filters:strip_icc()/pic4818329.jpg',
         alt: 'Coffee Roaster game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/196526/coffee-roaster',
+        minPlayers: 1,
+        maxPlayers: 1,
+        playTime: 30,
+        complexityRating: 2.13,
         embedId: 's5pGEe3cZfM',
         desc: `Coffee Roaster is a solitaire pool-building game. You choose a variety of coffee beans you want to roast, and put a number of tokens specific to that variety into a bag. Each turn, you draw a number of bean tokens randomly from the bag to advance their roast level. When you are finished, you make a cup-testing to check the taste of your coffee and score points accordingly. Each variety has its own target roast level, but approaching the target is not enough for perfect roasting; you also have to even out the roast level of each bean, while not spoiling the flavor of that variety.
         You also have to screen out smoke tokens and burnt bean tokens that hinder your roasting, and reject bean tokens that spoil the taste. It is important to control the contents of your bag utilizing flavor effects and unique effects caused by placing tokens on the roast board.        
@@ -520,6 +768,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/YNxdh6E-eqvtC9P91o5Uzw__itemrep/img/QKf-7KDptjPsdcnbuHJvg43syw4=/fit-in/246x300/filters:strip_icc()/pic2452463.jpg',
         alt: 'Elevenses game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/144388/elevenses',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 30,
+        complexityRating: 1.40,
         embedId: '0Yjqy-YlwqE',
         desc: `Elevenses is a card game in which respectable 1920s socialites strive to serve the finest morning teas!
         Each player starts the round with an identical set of eleven morning tea cards. Each card has a point value as well a special action which must be carried out when it is played. The lower the point value of a card, the better its power. The powers lead to surprising interactions between the players! Cards must also be played to a specific position on the table. Whenever a card is played, in most cases you pick up the card that was previously in its position, requiring you to plan your morning tea carefully!        
@@ -531,6 +783,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/4EVpaxECrqdKYVtBJnFLeA__itemrep/img/khilAzQQ1Dz-niiDbwb7OEShAoU=/fit-in/246x300/filters:strip_icc()/pic3008714.png',
         alt: 'Good Cop Bad Cop game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/153064/good-cop-bad-cop',
+        minPlayers: 4,
+        maxPlayers: 8,
+        playTime: 20,
+        complexityRating: 1.26,
         embedId: 'UYz6CaXw5tU',
         desc: `Good Cop Bad Cop is a 52 card hidden identity, deduction game where each player takes on the role of a law enforcement officer in a corrupt district. Players must investigate others to figure out who is on their side, grab one of the 2-3 guns on the table, and shoot the opposing leader to win the game.`,
     },
@@ -539,6 +795,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/IwEAO-GRsYdO6WeA0uWtFg__itemrep/img/j_QOjjZFDRVcQOKeZHBhg7CjSc4=/fit-in/246x300/filters:strip_icc()/pic5578189.jpg',
         alt: 'Quest game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/316287/quest',
+        minPlayers: 4,
+        maxPlayers: 10,
+        playTime: 30,
+        complexityRating: 1.63,
         embedId: 'XrZkvjK4cpg',
         desc: `In Quest, all will show their true colors as Good and Evil struggle for the future of civilization. Hidden amongst King Arthur’s loyal servants are Mordred’s unscrupulous minions. These forces of Evil are few in number, but if they go unknown, they can sabotage Arthur’s great quests.
         Players are secretly dealt roles that determine if their allegiance is to Good or to Evil. Then, players debate, reason, and lie as they decide who to send on Quests—knowing that if just one minion of Mordred joins, the Quest could fail. Quest includes 25 different characters and many different ways to play the base game.        
@@ -549,6 +809,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/r1GDaTzdNoSz2gcZELRFng__itemrep/img/nGOXPiCluuWmfSSGKP0j-bFkb7Y=/fit-in/246x300/filters:strip_icc()/pic4835109.png',
         alt: 'Trial by Trolley game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/282171/trial-trolley',
+        minPlayers: 3,
+        maxPlayers: 13,
+        playTime: 90,
+        complexityRating: 1.02,
         embedId: '6oeHHfSoqt8',
         desc: `In Trial by Trolley, one player acts as the Trolley Operator and must choose where to send a murderous, out of control, trolley. Every other player at the table plays cards and argues in order to convince the operator to spare their lives and condemn everyone on the other track to a gruesome death-by-trolley.
         Each round, one player will act as the trolley conductor. This person will be the judge, and will choose which track the trolley will murder.        
@@ -563,6 +827,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/Fn3PSPZVxa3YurlorITQ1Q__itemrep/img/XEFhq_xryUgTUJpNGF4tQH_5WRs=/fit-in/246x300/filters:strip_icc()/pic1900075.jpg',
         alt: 'Sushi Go game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/133473/sushi-go',
+        minPlayers: 2,
+        maxPlayers: 5,
+        playTime: 15,
+        complexityRating: 1.16,
         embedId: 'WO1cP9wzrw',
         desc: `In the super-fast sushi card game Sushi Go!, you are eating at a sushi restaurant and trying to grab the best combination of sushi dishes as they whiz by. Score points for collecting the most sushi rolls or making a full set of sashimi. Dip your favorite nigiri in wasabi to triple its value! And once you've eaten it all, finish your meal with all the pudding you've got! But be careful which sushi you allow your friends to take; it might be just what they need to beat you!
         Sushi Go! takes the card-drafting mechanism of Fairy Tale and 7 Wonders and distills it into a twenty-minute game that anyone can play. The dynamics of "draft and pass" are brought to the fore, while keeping the rules to a minimum. As you see the first few hands of cards, you must quickly assess the make-up of the round and decide which type of sushi you'll go for. Then, each turn you'll need to weigh which cards to keep and which to pass on. The different scoring combinations allow for some clever plays and nasty blocks. Round to round, you must also keep your eye on the goal of having the most pudding cards at the end of the game!`,
@@ -572,6 +840,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__itemrep/img/8vG-UtGeFbhMXPTzLDUOqWot8hA=/fit-in/246x300/filters:strip_icc()/pic3283110.png',
         alt: 'Santorini game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/194655/santorini',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 20,
+        complexityRating: 1.74,
         embedId: 'EZi-MZEylRQ',
         desc: `Santorini is a re-imagining of the purely abstract 2004 edition. Since its original inception over 30 years ago, Santorini has been continually developed, enhanced and refined by designer Gordon Hamilton.
         Santorini is an accessible strategy game, simple enough for an elementary school classroom while aiming to provide gameplay depth and content for hardcore gamers to explore, The rules are simple. Each turn consists of 2 steps:        
@@ -585,6 +857,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/ecO5eAd3RkctQ0-Tbqv37Q__itemrep/img/Y_6XiSED1VO6ZskJSHdIjKuWe84=/fit-in/246x300/filters:strip_icc()/pic5428723.jpg',
         alt: 'Under Falling Skies game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/306735/under-falling-skies',
+        minPlayers: 1,
+        maxPlayers: 1,
+        playTime: 40,
+        complexityRating: 2.45,
         embedId: 'YpbBEUeYwZs',
         desc: `Aliens have arrived to conquer Earth. Enemy ships fill the skies. Humanity retreats to underground bunkers located below cities across the globe. Stand against the common threat! Fight the invaders city by city. Build a team from around the globe to save your planet and defeat the aliens!   
         Under Falling Skies is a solo game with a multi-mission campaign. In each mission, you take charge of defending a besieged city.        
@@ -598,6 +874,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/03kajQYeuaJQP8VydWnOng__itemrep/img/6PXgBSYOksr2URzFGda4TQByLMY=/fit-in/246x300/filters:strip_icc()/pic4346773.jpg',
         alt: "Don't Get Got game",
         gameSiteURL: 'https://boardgamegeek.com/boardgame/262547/dont-get-got',
+        minPlayers: 2,
+        maxPlayers: 10,
+        playTime: 30,
+        complexityRating: 1.05,
         embedId: 'ae29wxdhlP4',
         desc: `Don't Get Got! is a party game in which each player receives six secret missions. The first player to complete three of these missions wins.
         You don't sit at a table to complete missions, though. This game is designed to run in the background of whatever else you have going on, which means you can play it anywhere — at home, on holiday, in the office, or yes, at a party.        
@@ -608,6 +888,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/mVmmntn2oQd0PfFrWBvwIQ__itemrep/img/xtiNZzN_7T6xZ3EPxzgYcBz9Ydk=/fit-in/246x300/filters:strip_icc()/pic404651.jpg',
         alt: 'Scrabble game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/320/scrabble',
+        minPlayers: 2,
+        maxPlayers: 4,
+        playTime: 90,
+        complexityRating: 2.08,
         embedId: 'K1KgvZwwJqo',
         desc: `In this classic word game, players use their seven drawn letter-tiles to form words on the gameboard. Each word laid out earns points based on the commonality of the letters used, with certain board spaces giving bonuses. But a word can only be played if it uses at least one already-played tile or adds to an already-played word. This leads to slightly tactical play, as potential words are rejected because they would give an opponent too much access to the better bonus spaces.`,
     },
@@ -616,6 +900,10 @@ export const smallGameInfo = {
         gameImgURL: 'https://cf.geekdo-images.com/2V3d4ryhxkS3RoPtDrvpUw__itemrep/img/csUMnSfGhuxa8ga0gvo77dEQYC0=/fit-in/246x300/filters:strip_icc()/pic875761.jpg',
         alt: 'Tsuro game',
         gameSiteURL: 'https://boardgamegeek.com/boardgame/16992/tsuro',
+        minPlayers: 2,
+        maxPlayers: 8,
+        playTime: 20,
+        complexityRating: 1.23,
         embedId: 'cxpQDmkdEQY',
         desc: `From the publisher:
         A beautiful and beautifully simple game of laying a tile before your own token to continue its path on each turn. The goal is to keep your token on the board longer than anyone else's, but as the board fills up this becomes harder because there are fewer empty spaces left... and another player's tile may also extend your own path in a direction you'd rather not go. Easy to introduce to new players, Tsuro lasts a mere 15 minutes and actually does work for any number from 2 to 8.      
@@ -625,4 +913,31 @@ export const smallGameInfo = {
         Gameplay:        
         The game consists of tiles with twisting lines on them, a 6x6 grid on which to lay these tiles and a token for each player. Each player has a hand of tiles. On your turn you do two things: place a tile from your hand onto the board next to your token and move your token as far as it can go along the line it is currently on, until it is stopped by an empty space with no tile in (yet), the edge of the board or colliding with another player's token. If your token reaches the edge of the board or collides with another player's token, you are out of the game. The aim of the game is to be the last player left with a token on the board. Strategy therefore consists of trying to drive your opponents either into each other or off the board whilst extending your own route in directions that will make it difficult for your opponents to do the same.`,
     },
+    justone: {
+        name: 'Just One',
+        gameImgURL: 'https://cf.geekdo-images.com/qKcKjHpzAvLddwBhyindag__itemrep/img/ysgzTQQB05uQdsRE_bol7kPAzbo=/fit-in/246x300/filters:strip_icc()/pic4268499.jpg',
+        alt: 'Just One game',
+        gameSiteURL: 'https://boardgamegeek.com/boardgame/254640/just-one',
+        minPlayers: 3,
+        maxPlayers: 7,
+        playTime: 60,
+        complexityRating: 1.05,
+        embedId: 'H5MGw6hsN5I',
+        desc: `Just One is a cooperative party game in which you play together to discover as many mystery words as possible. Find the best clue to help your teammate. Be unique, as all identical clues will be cancelled!
+        A complete game is played over 13 cards. The goal is to get a score as close to 13 as possible. In case of a right answer, the players score 1 point. In case of wrong answer, they lose the current card as well as the top card of the deck. Thus losing 2 points. In case of lack of answer, the players only lose the current card, and therefore only 1 point.       
+        You have the choice - make the difference!`
+    },
+    telestrations: {
+        name: 'Telestrations After Dark',
+        gameImgURL: 'https://cf.geekdo-images.com/lxSrSu2-x2PcDwi78SACjA__itemrep/img/yicOopmTlfp0jc3ip_G3ptl_3xU=/fit-in/246x300/filters:strip_icc()/pic2564213.jpg',
+        alt: 'Telestrations After Dark game',
+        gameSiteURL: 'https://boardgamegeek.com/boardgame/173761/telestrations-after-dark',
+        minPlayers: 4,
+        maxPlayers: 8,
+        playTime: 30,
+        complexityRating: 1.00,
+        embedId: '-3JT-BcKn4A',
+        desc: `This is an adult version of the award winning Telestrations. Gameplay is the same, but the word content has changed to more adult fare. Some of the word cards now include stuff such as "Anaconda", "Jackhammer", "Doggie Style", and "Human Centipede".
+        Original Telestrations: Each player begins by sketching a TELESTRATIONS word dictated by the roll of a die. The old fashioned sand timer may limit the amount of time they get to execute their sketch, but it certainly doesn't limit creativity! Time's up! All players, all at the same time, pass their sketch to the next player, who must guess what's been drawn. Players then simultaneously pass their guess -- which hopefully matches the original word (or does it??) -- to the next player who must try to draw the word they see -- and so on.`
+    }
 };

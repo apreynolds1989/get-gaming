@@ -8,12 +8,12 @@ import {
 import './index.css';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
-import { Library } from './Library';
+import { Library } from './NewLibrary';
 import { Gallery } from './Gallery';
 import { ContactForm } from './ContactForm';
 import { Galleries } from './Galleries';
 import { EventOneImages, EventOneImageNames, EventTwoImages, EventTwoImageNames, EventThreeImages, EventThreeImageNames } from './imageFiles';
-import { gameInfo, smallGameInfo } from './gameInfo';
+import { gameInfo, smallGameInfo } from './data/gameInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

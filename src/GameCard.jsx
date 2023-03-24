@@ -4,7 +4,7 @@ import { ToggleDesc } from './ToggleDesc';
 import { EmbedVideo } from './EmbedVideo';
 
 export const GameCard = ({ isMobileSize, gameImgURL, alt, gameSiteURL, gameName, desc, embedId }) => {
-    const variantSize = gameName.length < 31 ? 35 : 27
+    const variantSize = gameName.length < 31 ? 35 : 25
     const variantMarginBottom = gameName.length < 31 ? 0 : 1
 
     return (

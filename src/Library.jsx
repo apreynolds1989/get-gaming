@@ -3,7 +3,7 @@ import {
     Table, TableBody, TableCell, TableContainer,
     TableHead, TableRow, Paper, useMediaQuery, Box
 } from '@mui/material';
-import { gameInfo } from './gameInfo';
+import { gameInfo } from './data/gameInfo';
 import videoPlayerIcon from './img/videoPlayerIcon.png';
 import bggLogo from './img/bggLogo.png';
 import { HeaderAppBar } from './HeaderAppBar';

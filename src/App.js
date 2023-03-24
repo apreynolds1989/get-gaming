@@ -7,17 +7,21 @@ import { EventCard } from './EventCard';
 import { GameDisplay } from './GameDisplay';
 import { GameCard } from './GameCard';
 import { Footer } from './Footer';
-import { gameInfo, smallGameInfo } from './gameInfo';
+import { gameInfo, smallGameInfo } from './data/gameInfo';
 import { ExtraGamesCard } from './ExtraGamesCard';
 import { FeaturedGamesBanner } from './FeaturedGamesBanner';
+import { fullGamesTableData } from './utilities/formatGamesInfo';
 
 export const App = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
     const isLargeScreen = useMediaQuery('(min-width:1250px)');
 
     const gameOne = gameInfo.cosmicEncounter;
-    const gameTwo = gameInfo.androidNetrunner;
+    const gameTwo = gameInfo.mindmgmt;
     const gameThree = smallGameInfo.theResistance;
+    const gameFour = smallGameInfo.telestrations;
+    const gameFive = smallGameInfo.justone;
+    // console.log(fullGamesTableData);
 
     return (
       <Paper sx={{maxWidth: '100vw', overflow: 'hidden'}}>
@@ -25,12 +29,12 @@ export const App = () => {
         <Splash />
         <EventCard 
             isMobileSize={isMobileSize}
-            date='TBD'
-            time='TBD'
-            address=''
-            location='TBD'
-            openToWebsite=''
-            openTo='TBD'
+            date='March 27, 2023'
+            time='7:00 PM'
+            address='https://goo.gl/maps/oMciM8kkQEvCtMCo7'
+            location='Wooden Walls Distilling'
+            openToWebsite='https://www.meetup.com/NDevMeetup/'
+            openTo='NDev'
             linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
             host={'Andrew Reynolds'}
             // coHostLinkedIn={'https://www.linkedin.com/in/devin-marsh/'}
@@ -75,8 +79,8 @@ export const App = () => {
         <Box
             display='flex'
             sx={{ 
-              flexDirection: isLargeScreen ? 'row' : 'column',
-              alignItems: isLargeScreen ? 'flex-start' : 'center',
+            flexDirection: isLargeScreen ? 'row' : 'column',
+            alignItems: isLargeScreen ? 'flex-start' : 'center',
             }}
             justifyContent='space-around'
         >
@@ -90,6 +94,41 @@ export const App = () => {
                         gameName={gameThree.name} 
                         desc={gameThree.desc} 
                         embedId={gameThree.embedId} 
+                        />
+                } 
+            />
+            <GameDisplay
+                cardToDisplay={
+                    <GameCard
+                        isMobileSize={isMobileSize}
+                        gameImgURL={gameFour.gameImgURL}
+                        alt={gameFour.alt}
+                        gameSiteURL={gameFour.gameSiteURL}
+                        gameName={gameFour.name} 
+                        desc={gameFour.desc} 
+                        embedId={gameFour.embedId} 
+                        />
+                } 
+            />
+        </Box>
+        <Box
+            display='flex'
+            sx={{ 
+              flexDirection: isLargeScreen ? 'row' : 'column',
+              alignItems: isLargeScreen ? 'flex-start' : 'center',
+            }}
+            justifyContent='space-around'
+        >
+            <GameDisplay
+                cardToDisplay={
+                    <GameCard
+                        isMobileSize={isMobileSize}
+                        gameImgURL={gameFive.gameImgURL}
+                        alt={gameFive.alt}
+                        gameSiteURL={gameFive.gameSiteURL}
+                        gameName={gameFive.name} 
+                        desc={gameFive.desc} 
+                        embedId={gameFive.embedId} 
                         />
                 } 
             />

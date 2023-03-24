@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, Box } from '@mui/material';
-import { smallGameInfo } from './gameInfo';
+import { smallGameInfo } from './data/gameInfo';
 
 const smallGameNames = Object.keys(smallGameInfo).sort();
 
