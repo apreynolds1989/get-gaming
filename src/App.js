@@ -10,7 +10,7 @@ import { Footer } from './Footer';
 import { gameInfo, smallGameInfo } from './data/gameInfo';
 import { ExtraGamesCard } from './ExtraGamesCard';
 import { FeaturedGamesBanner } from './FeaturedGamesBanner';
-import { fullGamesTableData } from './utilities/formatGamesInfo';
+// import { fullGamesTableData } from './utilities/formatGamesInfo';
 
 export const App = () => {
     const isMobileSize = useMediaQuery('(max-width:600px)');
