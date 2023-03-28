@@ -29,12 +29,12 @@ export const App = () => {
         <Splash />
         <EventCard 
             isMobileSize={isMobileSize}
-            date='March 27, 2023'
-            time='7:00 PM'
-            address='https://goo.gl/maps/oMciM8kkQEvCtMCo7'
-            location='Wooden Walls Distilling'
-            openToWebsite='https://www.meetup.com/NDevMeetup/'
-            openTo='NDev'
+            date='TBD'
+            time='TBD'
+            address=''
+            location='TBD'
+            openToWebsite=''
+            openTo='TBD'
             linkedIn={'https://www.linkedin.com/in/andrew-reynolds-071020226/'}
             host={'Andrew Reynolds'}
             // coHostLinkedIn={'https://www.linkedin.com/in/devin-marsh/'}
