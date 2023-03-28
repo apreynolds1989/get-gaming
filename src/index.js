@@ -12,7 +12,16 @@ import { Library } from './NewLibrary';
 import { Gallery } from './Gallery';
 import { ContactForm } from './ContactForm';
 import { Galleries } from './Galleries';
-import { EventOneImages, EventOneImageNames, EventTwoImages, EventTwoImageNames, EventThreeImages, EventThreeImageNames } from './imageFiles';
+import { 
+    EventOneImages, 
+    EventOneImageNames, 
+    EventTwoImages, 
+    EventTwoImageNames, 
+    EventThreeImages, 
+    EventThreeImageNames, 
+    EventFourImages, 
+    EventFourImageNames 
+} from './imageFiles';
 import { gameInfo, smallGameInfo } from './data/gameInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -46,7 +55,7 @@ root.render(
                         altOne={gameInfo.cosmicEncounter.alt}
                     />} 
             />
-                        <Route 
+            <Route 
                 path="/Oct13-2022-Gallery" 
                 element={
                     <Gallery 
@@ -59,6 +68,21 @@ root.render(
                         gameSiteURLTwo={smallGameInfo.theResistance.gameSiteURL}
                         gameImgURLTwo={smallGameInfo.theResistance.gameImgURL}
                         altTwo={smallGameInfo.theResistance.alt}
+                    />} 
+            />
+            <Route 
+                path="/Mar27-2023-Gallery" 
+                element={
+                    <Gallery 
+                        header='Get Gaming with NDev - Mar 27 2023' 
+                        images={EventFourImages} 
+                        imageNames={EventFourImageNames} 
+                        gameSiteURLOne={gameInfo.cosmicEncounter.gameSiteURL}
+                        gameImgURLOne={gameInfo.cosmicEncounter.gameImgURL}
+                        altOne={gameInfo.cosmicEncounter.alt}
+                        gameSiteURLTwo={gameInfo.mindmgmt.gameSiteURL}
+                        gameImgURLTwo={gameInfo.mindmgmt.gameImgURL}
+                        altTwo={gameInfo.mindmgmt.alt}
                     />} 
             />
             <Route path="/get-gaming/ContactForm" element={<ContactForm />} />
