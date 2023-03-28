@@ -1,10 +1,20 @@
 {
   "files": {
     "main.css": "/get-gaming/static/css/main.f37a0ece.css",
-    "main.js": "/get-gaming/static/js/main.81e6b09a.js",
+    "main.js": "/get-gaming/static/js/main.0859fb76.js",
     "static/js/787.429bdbde.chunk.js": "/get-gaming/static/js/787.429bdbde.chunk.js",
+    "static/media/IMG_3361.jpeg": "/get-gaming/static/media/IMG_3361.a01143cf05432d7bb0d2.jpeg",
+    "static/media/IMG_3357.jpeg": "/get-gaming/static/media/IMG_3357.c89af8d615d131077386.jpeg",
+    "static/media/IMG_3360.jpeg": "/get-gaming/static/media/IMG_3360.b9bf6e1a8826a2fac5de.jpeg",
+    "static/media/IMG_3356.jpeg": "/get-gaming/static/media/IMG_3356.8dbaab8e409ff904a51f.jpeg",
+    "static/media/IMG_3358.jpeg": "/get-gaming/static/media/IMG_3358.3be724b1ff18956f2783.jpeg",
+    "static/media/IMG_3352.jpeg": "/get-gaming/static/media/IMG_3352.38104ae9aff8246959f9.jpeg",
+    "static/media/IMG_3359.jpeg": "/get-gaming/static/media/IMG_3359.6cc744a1b9dd7d4c57cb.jpeg",
+    "static/media/IMG_3354.jpeg": "/get-gaming/static/media/IMG_3354.f936f536b3c25908ad90.jpeg",
     "static/media/IMG_2675.jpeg": "/get-gaming/static/media/IMG_2675.a9c0a8a6d454b948c827.jpeg",
     "static/media/Root-bg.jpeg": "/get-gaming/static/media/Root-bg.e3e120f3d79c58d83a36.jpeg",
+    "static/media/IMG_3362.jpeg": "/get-gaming/static/media/IMG_3362.3017fb276c709f3a0004.jpeg",
+    "static/media/IMG_3353.jpeg": "/get-gaming/static/media/IMG_3353.8661abd18ac9a2b20686.jpeg",
     "static/media/IMG_2811.jpeg": "/get-gaming/static/media/IMG_2811.1f473b245d06f02040fd.jpeg",
     "static/media/IMG_2632.jpeg": "/get-gaming/static/media/IMG_2632.148da10742159884891f.jpeg",
     "static/media/IMG_2808.jpeg": "/get-gaming/static/media/IMG_2808.e1d00992bf31c2e014d1.jpeg",
@@ -30,11 +40,11 @@
     "static/media/mapIcon.png": "/get-gaming/static/media/mapIcon.3e569e95f970b057fb3c.png",
     "index.html": "/get-gaming/index.html",
     "main.f37a0ece.css.map": "/get-gaming/static/css/main.f37a0ece.css.map",
-    "main.81e6b09a.js.map": "/get-gaming/static/js/main.81e6b09a.js.map",
+    "main.0859fb76.js.map": "/get-gaming/static/js/main.0859fb76.js.map",
     "787.429bdbde.chunk.js.map": "/get-gaming/static/js/787.429bdbde.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f37a0ece.css",
-    "static/js/main.81e6b09a.js"
+    "static/js/main.0859fb76.js"
   ]
 }
